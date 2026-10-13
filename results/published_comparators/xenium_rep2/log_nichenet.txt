@@ -1,0 +1,3 @@
+Warning message:
+replacing previous import ‘e1071::element’ by ‘ggplot2::element’ when loading ‘nichenetr’ 
+background 124 geneset_oi 15 ABCC11,BASP1,CENPF,CTTN,CXCR4,ENAH,EPCAM,FASN,FOXA1,MDM2,POLR2J3,POSTN,SERHL2,TCIM,TENT5C potential_ligands 7 

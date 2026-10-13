@@ -1,0 +1,20 @@
+{
+ "COMMOT": {"source": "https://github.com/zcang/COMMOT (git clone --depth 1, installed with pip install --no-deps)", "commit": "d117445bc07eaa19109c7609e97d9e35b26e99ca", "commit_date": "2026-06-25", "package_version": "0.0.3",
+            "citation": "Cang Z, et al. Screening cell-cell communication in spatial transcriptomics via collective optimal transport. Nat Methods 2023;20:218-228. doi:10.1038/s41592-022-01728-4. PMID 36690742"},
+ "LIANA+": {"source": "bioconda package liana", "package_version": "1.10.0",
+            "citation": "Dimitrov D, et al. LIANA+ provides an all-in-one framework for cell-cell communication inference. Nat Cell Biol 2024;26:1613-1622. doi:10.1038/s41556-024-01469-w. PMID 39223377"},
+ "nichenetr": {"source": "https://github.com/saeyslab/nichenetr (git clone --depth 1, R CMD INSTALL)", "commit": "66f90d5eeafef280b2b2f339b3fd70ffec1781dd", "commit_date": "2026-06-01", "package_version": "2.2.1.1",
+               "prior_model": "NicheNet v2, Zenodo 10.5281/zenodo.7074291: ligand_target_matrix_nsga2r_final.rds (md5 b09606b04b2d4490418d9028c0e58b9f), lr_network_human_21122021.rds (md5 2a155f81e9ffffd5d5e709fe66bcc465)",
+               "citation": "Browaeys R, Saelens W, Saeys Y. NicheNet: modeling intercellular communication by linking ligands to target genes. Nat Methods 2020;17:159-162. doi:10.1038/s41592-019-0667-5. PMID 31819264; NicheNet v2 protocol: Sang-Aram C, Browaeys R, Seurinck R, Saeys Y. Unraveling cell-cell communication with NicheNet by inferring active ligands from transcriptomics data. Nat Protoc 2025. doi:10.1038/s41596-024-01121-9. PMID 40038548"},
+ "Celcomen/SimComen": {"source": "https://github.com/Teichlab/celcomen (git clone --depth 1, pip install --no-deps)", "commit": "4165b5620cd62ea24d29c54125beb23e93532215", "commit_date": "2026-04-15", "package_version": "0.0.2",
+                       "citation": "Megas S, et al. Celcomen: spatial causal disentanglement for single-cell and tissue perturbation modeling. Nat Commun 2026;17. doi:10.1038/s41467-026-69856-5. PMID 41851134"},
+ "environments": {
+   "cmp (COMMOT, LIANA+)": {"python": "3.11.17", "scanpy": "1.11.5", "anndata": "0.12.19", "pot": "0.9.6.post1", "numpy": "2.0.2", "scipy": "1.17.1", "scikit-learn": "1.9.1", "pandas": "2.3.3"},
+   "cel (Celcomen)": {"python": "3.11.17", "torch": "2.14.1 (CPU)", "torch_geometric": "2.8.1", "numpy": "2.4.6", "scikit-learn": "1.9.1", "scanpy": "1.11.5"},
+   "nn (nichenetr)": {"R": "4.4.3 (2025-02-28)", "Seurat": "5.5.1"}
+ },
+ "package_manager": "micromamba 2.9.0, channels conda-forge + bioconda (PyPI, CRAN and GitHub codeload were not reachable)",
+ "not_run": {
+   "CONCERT, CancerSTFormer, SpaceTravLR": "not attempted: Celcomen/SimComen was installable and runnable within the CPU budget, and the brief asked for at least one published in-silico perturbation model"
+ }
+}

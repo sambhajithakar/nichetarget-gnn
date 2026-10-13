@@ -1,0 +1,8 @@
+nichenetr 2.2.1.1
+R version 4.4.3 (2025-02-28)
+n_background 121
+n_geneset_oi 15
+geneset_oi ABCC11,AR,BASP1,CENPF,CTTN,CXCR4,ENAH,EPCAM,FASN,FOXA1,MDM2,POLR2J3,SERHL2,TCIM,TENT5C
+n_potential_ligands 7
+n_potential_ligands_on_panel 7
+n_lr_pairs_expressed 8

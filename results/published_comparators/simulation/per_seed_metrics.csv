@@ -1,0 +1,221 @@
+scenario,seed,method,auprc,p@10,rank_L1,rank_R1,rank_L2,rank_R2,rank_D1,top25
+Complete LR,1,[check] DE,0.06378409366524816,0.0,88.0,28.0,95.0,31.0,19.0,1
+Complete LR,2,[check] DE,0.05409992681797955,0.0,144.0,29.0,187.0,26.0,27.0,0
+Complete LR,3,[check] DE,0.047911565281660726,0.0,55.0,138.0,41.0,80.0,20.0,1
+Complete LR,4,[check] DE,0.07191347769768236,0.0,33.0,62.0,58.0,28.0,21.0,1
+Complete LR,5,[check] DE,0.0588659420289855,0.0,150.0,28.0,32.0,161.0,14.0,1
+Complete LR,1,[check] DE+Selectivity,0.05624338624338624,0.0,116.0,27.0,116.0,28.0,20.0,1
+Complete LR,2,[check] DE+Selectivity,0.05514652014652014,0.0,114.5,28.0,114.5,26.0,24.0,1
+Complete LR,3,[check] DE+Selectivity,0.028000000000000004,0.0,113.5,113.5,113.5,113.5,25.0,1
+Complete LR,4,[check] DE+Selectivity,0.03933862433862434,0.0,114.5,114.5,114.5,27.0,21.0,1
+Complete LR,5,[check] DE+Selectivity,0.04314814814814815,0.0,115.0,27.0,115.0,115.0,15.0,1
+Complete LR,1,[check] LR-communication,0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,2,[check] LR-communication,0.805,0.4,3.5,3.5,1.5,1.5,103.5,4
+Complete LR,3,[check] LR-communication,0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,4,[check] LR-communication,0.805,0.4,3.5,3.5,1.5,1.5,103.5,4
+Complete LR,5,[check] LR-communication,0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,1,[check] LR-communication+Selectivity,0.8049999999999999,0.4,1.0,2.0,3.0,4.0,103.5,4
+Complete LR,2,[check] LR-communication+Selectivity,0.8049999999999999,0.4,3.0,4.0,2.0,1.0,103.5,4
+Complete LR,3,[check] LR-communication+Selectivity,0.8049999999999999,0.4,1.0,3.0,2.0,4.0,103.5,4
+Complete LR,4,[check] LR-communication+Selectivity,0.8049999999999999,0.4,3.0,4.0,1.0,2.0,103.5,4
+Complete LR,5,[check] LR-communication+Selectivity,0.8049999999999999,0.4,1.0,2.0,3.0,4.0,103.5,4
+Complete LR,1,[check] LR-communication (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,106.5,4
+Complete LR,2,[check] LR-communication (niche-stratified),0.805,0.4,3.5,3.5,1.5,1.5,103.5,4
+Complete LR,3,[check] LR-communication (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,106.5,4
+Complete LR,4,[check] LR-communication (niche-stratified),0.805,0.4,3.5,3.5,1.5,1.5,103.5,4
+Complete LR,5,[check] LR-communication (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,105.5,4
+Complete LR,1,[check] LR-communication (niche-stratified)+Selectivity,0.8049999999999999,0.4,1.0,3.0,2.0,4.0,106.5,4
+Complete LR,2,[check] LR-communication (niche-stratified)+Selectivity,0.8049999999999999,0.4,1.0,3.0,4.0,2.0,103.5,4
+Complete LR,3,[check] LR-communication (niche-stratified)+Selectivity,0.8049999999999999,0.4,1.0,3.0,2.0,4.0,106.5,4
+Complete LR,4,[check] LR-communication (niche-stratified)+Selectivity,0.8049999999999999,0.4,2.0,3.0,1.0,4.0,103.5,4
+Complete LR,5,[check] LR-communication (niche-stratified)+Selectivity,0.8049999999999999,0.4,2.0,4.0,1.0,3.0,105.5,4
+Complete LR,1,COMMOT,0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,2,COMMOT,0.6716666666666666,0.4,5.5,5.5,1.5,1.5,104.5,4
+Complete LR,3,COMMOT,0.805,0.4,1.5,1.5,3.5,3.5,104.5,4
+Complete LR,4,COMMOT,0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,5,COMMOT,0.805,0.4,3.5,3.5,1.5,1.5,104.5,4
+Complete LR,1,COMMOT+Selectivity,0.5483333333333333,0.4,3.0,5.0,2.0,4.0,103.5,4
+Complete LR,2,COMMOT+Selectivity,0.6583333333333333,0.4,5.0,6.0,2.0,1.0,104.5,4
+Complete LR,3,COMMOT+Selectivity,0.7383333333333333,0.4,1.0,3.0,2.0,6.0,104.5,4
+Complete LR,4,COMMOT+Selectivity,0.7649999999999999,0.4,1.0,3.0,2.0,5.0,103.5,4
+Complete LR,5,COMMOT+Selectivity,0.8050000000000002,0.4,3.0,4.0,1.0,2.0,104.5,4
+Complete LR,1,COMMOT (niche-stratified),0.6716666666666666,0.4,5.5,5.5,1.5,1.5,105.5,4
+Complete LR,2,COMMOT (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,104.5,4
+Complete LR,3,COMMOT (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,105.5,4
+Complete LR,4,COMMOT (niche-stratified),0.805,0.4,1.5,1.5,3.5,3.5,103.5,4
+Complete LR,5,COMMOT (niche-stratified),0.805,0.4,3.5,3.5,1.5,1.5,104.5,4
+Complete LR,1,COMMOT (niche-stratified)+Selectivity,0.6216666666666666,0.4,4.0,6.0,1.0,3.0,105.5,4
+Complete LR,2,COMMOT (niche-stratified)+Selectivity,0.8050000000000002,0.4,1.0,2.0,4.0,3.0,104.5,4
+Complete LR,3,COMMOT (niche-stratified)+Selectivity,0.8049999999999999,0.4,1.0,3.0,2.0,4.0,105.5,4
+Complete LR,4,COMMOT (niche-stratified)+Selectivity,0.8049999999999999,0.4,1.0,2.0,3.0,4.0,103.5,4
+Complete LR,5,COMMOT (niche-stratified)+Selectivity,0.8050000000000002,0.4,2.0,4.0,1.0,3.0,104.5,4
+Complete LR,1,"COMMOT native (total received signal, malignant)",0.18595238095238095,0.0,11.5,11.5,13.5,13.5,108.5,4
+Complete LR,2,"COMMOT native (total received signal, malignant)",0.5383333333333333,0.2,11.5,11.5,1.5,1.5,108.5,4
+Complete LR,3,"COMMOT native (total received signal, malignant)",0.16214285714285714,0.0,13.5,13.5,15.5,15.5,108.5,4
+Complete LR,4,"COMMOT native (total received signal, malignant)",0.18595238095238095,0.0,13.5,13.5,11.5,11.5,108.5,4
+Complete LR,5,"COMMOT native (total received signal, malignant)",0.20500000000000002,0.2,7.5,7.5,15.5,15.5,108.5,4
+Complete LR,1,"COMMOT native (total received signal, malignant)+Selectivity",0.15981185481185484,0.0,11.0,12.0,13.0,14.0,108.5,4
+Complete LR,2,"COMMOT native (total received signal, malignant)+Selectivity",0.25002164502164503,0.2,11.0,12.0,7.0,3.0,108.5,4
+Complete LR,3,"COMMOT native (total received signal, malignant)+Selectivity",0.13895604395604397,0.0,13.0,15.0,14.0,16.0,108.5,4
+Complete LR,4,"COMMOT native (total received signal, malignant)+Selectivity",0.15981185481185484,0.0,12.0,13.0,11.0,14.0,108.5,4
+Complete LR,5,"COMMOT native (total received signal, malignant)+Selectivity",0.16000000000000003,0.2,8.0,10.0,15.0,16.0,108.5,4
+Complete LR,1,LIANA+ bivariate,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+Complete LR,2,LIANA+ bivariate,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+Complete LR,3,LIANA+ bivariate,0.6716666666666666,0.4,5.5,5.5,1.5,1.5,103.5,4
+Complete LR,4,LIANA+ bivariate,0.21500000000000002,0.2,102.5,102.5,3.5,3.5,102.5,2
+Complete LR,5,LIANA+ bivariate,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,1,LIANA+ bivariate+Selectivity,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+Complete LR,2,LIANA+ bivariate+Selectivity,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+Complete LR,3,LIANA+ bivariate+Selectivity,0.5583333333333333,0.4,5.0,6.0,1.0,4.0,103.5,4
+Complete LR,4,LIANA+ bivariate+Selectivity,0.18166666666666667,0.2,102.5,102.5,3.0,4.0,102.5,2
+Complete LR,5,LIANA+ bivariate+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,1,LIANA+ bivariate (niche-stratified),0.4716666666666667,0.4,3.5,3.5,5.5,5.5,107.5,4
+Complete LR,2,LIANA+ bivariate (niche-stratified),0.36500000000000005,0.4,9.5,9.5,3.5,3.5,107.5,4
+Complete LR,3,LIANA+ bivariate (niche-stratified),0.5383333333333333,0.2,11.5,11.5,1.5,1.5,108.5,4
+Complete LR,4,LIANA+ bivariate (niche-stratified),0.4716666666666667,0.4,3.5,3.5,5.5,5.5,105.5,4
+Complete LR,5,LIANA+ bivariate (niche-stratified),0.4716666666666667,0.4,5.5,5.5,3.5,3.5,107.5,4
+Complete LR,1,LIANA+ bivariate (niche-stratified)+Selectivity,0.38595238095238094,0.4,3.0,6.0,4.0,7.0,107.5,4
+Complete LR,2,LIANA+ bivariate (niche-stratified)+Selectivity,0.19922799422799425,0.2,7.0,12.0,11.0,9.0,107.5,4
+Complete LR,3,LIANA+ bivariate (niche-stratified)+Selectivity,0.255,0.2,12.0,16.0,2.0,8.0,108.5,4
+Complete LR,4,LIANA+ bivariate (niche-stratified)+Selectivity,0.40595238095238095,0.4,3.0,4.0,5.0,7.0,105.5,4
+Complete LR,5,LIANA+ bivariate (niche-stratified)+Selectivity,0.3373809523809524,0.4,7.0,8.0,3.0,5.0,107.5,4
+Complete LR,1,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,2,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,3,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,4,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,5,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,1,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,2,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,3,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,4,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,5,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+Complete LR,1,"LIANA+ bivariate, local Moran's R [post hoc]",0.4716666666666667,0.4,5.5,5.5,3.5,3.5,108.5,4
+Complete LR,2,"LIANA+ bivariate, local Moran's R [post hoc]",0.29833333333333334,0.4,5.5,5.5,9.5,9.5,107.5,4
+Complete LR,3,"LIANA+ bivariate, local Moran's R [post hoc]",0.805,0.4,1.5,1.5,3.5,3.5,108.5,4
+Complete LR,4,"LIANA+ bivariate, local Moran's R [post hoc]",0.805,0.4,3.5,3.5,1.5,1.5,107.5,4
+Complete LR,5,"LIANA+ bivariate, local Moran's R [post hoc]",0.5650000000000001,0.4,9.5,9.5,1.5,1.5,106.5,4
+Complete LR,1,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.425,0.4,5.0,6.0,3.0,4.0,108.5,4
+Complete LR,2,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.2416666666666667,0.4,5.0,8.0,10.0,9.0,107.5,4
+Complete LR,3,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.525,0.4,1.0,5.0,4.0,8.0,108.5,4
+Complete LR,4,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.5583333333333333,0.4,4.0,6.0,1.0,5.0,107.5,4
+Complete LR,5,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.56,0.4,8.0,10.0,1.0,2.0,106.5,4
+Complete LR,1,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.405,0.4,7.5,7.5,3.5,3.5,108.5,4
+Complete LR,2,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.4716666666666667,0.4,3.5,3.5,5.5,5.5,108.5,4
+Complete LR,3,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.805,0.4,1.5,1.5,3.5,3.5,108.5,4
+Complete LR,4,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.805,0.4,3.5,3.5,1.5,1.5,108.5,4
+Complete LR,5,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.6716666666666666,0.4,1.5,1.5,5.5,5.5,108.5,4
+Complete LR,1,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.304047619047619,0.4,7.0,10.0,3.0,6.0,108.5,4
+Complete LR,2,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.3221428571428572,0.3,2.0,4.0,14.0,10.0,108.5,4
+Complete LR,3,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.3716666666666667,0.4,3.0,5.0,4.0,10.0,108.5,4
+Complete LR,4,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.6216666666666667,0.4,3.0,4.0,1.0,6.0,108.5,4
+Complete LR,5,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.49166666666666664,0.4,2.0,5.0,3.0,6.0,108.5,4
+L1–R1 missing,1,[check] DE,0.06378409366524816,0.0,88.0,28.0,95.0,31.0,19.0,1
+L1–R1 missing,2,[check] DE,0.05409992681797955,0.0,144.0,29.0,187.0,26.0,27.0,0
+L1–R1 missing,3,[check] DE,0.047911565281660726,0.0,55.0,138.0,41.0,80.0,20.0,1
+L1–R1 missing,4,[check] DE,0.07191347769768236,0.0,33.0,62.0,58.0,28.0,21.0,1
+L1–R1 missing,5,[check] DE,0.0588659420289855,0.0,150.0,28.0,32.0,161.0,14.0,1
+L1–R1 missing,1,[check] DE+Selectivity,0.05624338624338624,0.0,116.0,27.0,116.0,28.0,20.0,1
+L1–R1 missing,2,[check] DE+Selectivity,0.05514652014652014,0.0,114.5,28.0,114.5,26.0,24.0,1
+L1–R1 missing,3,[check] DE+Selectivity,0.028000000000000004,0.0,113.5,113.5,113.5,113.5,25.0,1
+L1–R1 missing,4,[check] DE+Selectivity,0.03933862433862434,0.0,114.5,114.5,114.5,27.0,21.0,1
+L1–R1 missing,5,[check] DE+Selectivity,0.04314814814814815,0.0,115.0,27.0,115.0,115.0,15.0,1
+L1–R1 missing,1,[check] LR-communication,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,2,[check] LR-communication,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,3,[check] LR-communication,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,4,[check] LR-communication,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,5,[check] LR-communication,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,1,[check] LR-communication+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,2,[check] LR-communication+Selectivity,0.41500000000000004,0.2,102.5,102.5,2.0,1.0,102.5,2
+L1–R1 missing,3,[check] LR-communication+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,4,[check] LR-communication+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,5,[check] LR-communication+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,1,[check] LR-communication (niche-stratified),0.41500000000000004,0.2,105.5,105.5,1.5,1.5,105.5,2
+L1–R1 missing,2,[check] LR-communication (niche-stratified),0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,3,[check] LR-communication (niche-stratified),0.41500000000000004,0.2,105.5,105.5,1.5,1.5,105.5,2
+L1–R1 missing,4,[check] LR-communication (niche-stratified),0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,5,[check] LR-communication (niche-stratified),0.41500000000000004,0.2,104.5,104.5,1.5,1.5,104.5,2
+L1–R1 missing,1,[check] LR-communication (niche-stratified)+Selectivity,0.41500000000000004,0.2,105.5,105.5,1.0,2.0,105.5,2
+L1–R1 missing,2,[check] LR-communication (niche-stratified)+Selectivity,0.41500000000000004,0.2,102.5,102.5,2.0,1.0,102.5,2
+L1–R1 missing,3,[check] LR-communication (niche-stratified)+Selectivity,0.41500000000000004,0.2,105.5,105.5,1.0,2.0,105.5,2
+L1–R1 missing,4,[check] LR-communication (niche-stratified)+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,5,[check] LR-communication (niche-stratified)+Selectivity,0.41500000000000004,0.2,104.5,104.5,1.0,2.0,104.5,2
+L1–R1 missing,1,COMMOT,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,2,COMMOT,0.41500000000000004,0.2,103.5,103.5,1.5,1.5,103.5,2
+L1–R1 missing,3,COMMOT,0.41500000000000004,0.2,103.5,103.5,1.5,1.5,103.5,2
+L1–R1 missing,4,COMMOT,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,5,COMMOT,0.41500000000000004,0.2,103.5,103.5,1.5,1.5,103.5,2
+L1–R1 missing,1,COMMOT+Selectivity,0.24833333333333332,0.2,102.5,102.5,2.0,3.0,102.5,2
+L1–R1 missing,2,COMMOT+Selectivity,0.41500000000000004,0.2,103.5,103.5,2.0,1.0,103.5,2
+L1–R1 missing,3,COMMOT+Selectivity,0.315,0.2,103.5,103.5,1.0,4.0,103.5,2
+L1–R1 missing,4,COMMOT+Selectivity,0.34833333333333333,0.2,102.5,102.5,1.0,3.0,102.5,2
+L1–R1 missing,5,COMMOT+Selectivity,0.41500000000000004,0.2,103.5,103.5,1.0,2.0,103.5,2
+L1–R1 missing,1,COMMOT (niche-stratified),0.41500000000000004,0.2,104.5,104.5,1.5,1.5,104.5,2
+L1–R1 missing,2,COMMOT (niche-stratified),0.41500000000000004,0.2,103.5,103.5,1.5,1.5,103.5,2
+L1–R1 missing,3,COMMOT (niche-stratified),0.41500000000000004,0.2,104.5,104.5,1.5,1.5,104.5,2
+L1–R1 missing,4,COMMOT (niche-stratified),0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,5,COMMOT (niche-stratified),0.41500000000000004,0.2,103.5,103.5,1.5,1.5,103.5,2
+L1–R1 missing,1,COMMOT (niche-stratified)+Selectivity,0.34833333333333333,0.2,104.5,104.5,1.0,3.0,104.5,2
+L1–R1 missing,2,COMMOT (niche-stratified)+Selectivity,0.41500000000000004,0.2,103.5,103.5,2.0,1.0,103.5,2
+L1–R1 missing,3,COMMOT (niche-stratified)+Selectivity,0.41500000000000004,0.2,104.5,104.5,1.0,2.0,104.5,2
+L1–R1 missing,4,COMMOT (niche-stratified)+Selectivity,0.41500000000000004,0.2,102.5,102.5,1.0,2.0,102.5,2
+L1–R1 missing,5,COMMOT (niche-stratified)+Selectivity,0.41500000000000004,0.2,103.5,103.5,1.0,2.0,103.5,2
+L1–R1 missing,1,"COMMOT native (total received signal, malignant)",0.08166666666666667,0.0,107.5,107.5,11.5,11.5,107.5,2
+L1–R1 missing,2,"COMMOT native (total received signal, malignant)",0.41500000000000004,0.2,107.5,107.5,1.5,1.5,107.5,2
+L1–R1 missing,3,"COMMOT native (total received signal, malignant)",0.07214285714285715,0.0,107.5,107.5,13.5,13.5,107.5,2
+L1–R1 missing,4,"COMMOT native (total received signal, malignant)",0.08166666666666667,0.0,107.5,107.5,11.5,11.5,107.5,2
+L1–R1 missing,5,"COMMOT native (total received signal, malignant)",0.07214285714285715,0.0,107.5,107.5,13.5,13.5,107.5,2
+L1–R1 missing,1,"COMMOT native (total received signal, malignant)+Selectivity",0.06651515151515151,0.0,107.5,107.5,11.0,12.0,107.5,2
+L1–R1 missing,2,"COMMOT native (total received signal, malignant)+Selectivity",0.13880952380952383,0.2,107.5,107.5,7.0,3.0,107.5,2
+L1–R1 missing,3,"COMMOT native (total received signal, malignant)+Selectivity",0.05895604395604395,0.0,107.5,107.5,13.0,14.0,107.5,2
+L1–R1 missing,4,"COMMOT native (total received signal, malignant)+Selectivity",0.06651515151515151,0.0,107.5,107.5,11.0,12.0,107.5,2
+L1–R1 missing,5,"COMMOT native (total received signal, malignant)+Selectivity",0.05895604395604395,0.0,107.5,107.5,13.0,14.0,107.5,2
+L1–R1 missing,1,LIANA+ bivariate,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+L1–R1 missing,2,LIANA+ bivariate,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+L1–R1 missing,3,LIANA+ bivariate,0.41500000000000004,0.2,102.5,102.5,1.5,1.5,102.5,2
+L1–R1 missing,4,LIANA+ bivariate,0.21500000000000002,0.2,102.5,102.5,3.5,3.5,102.5,2
+L1–R1 missing,5,LIANA+ bivariate,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,1,LIANA+ bivariate+Selectivity,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+L1–R1 missing,2,LIANA+ bivariate+Selectivity,0.025,0.0,101.5,101.5,101.5,101.5,101.5,0
+L1–R1 missing,3,LIANA+ bivariate+Selectivity,0.315,0.2,102.5,102.5,1.0,4.0,102.5,2
+L1–R1 missing,4,LIANA+ bivariate+Selectivity,0.18166666666666667,0.2,102.5,102.5,3.0,4.0,102.5,2
+L1–R1 missing,5,LIANA+ bivariate+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,1,LIANA+ bivariate (niche-stratified),0.21500000000000002,0.2,106.5,106.5,3.5,3.5,106.5,2
+L1–R1 missing,2,LIANA+ bivariate (niche-stratified),0.21500000000000002,0.2,106.5,106.5,3.5,3.5,106.5,2
+L1–R1 missing,3,LIANA+ bivariate (niche-stratified),0.41500000000000004,0.2,107.5,107.5,1.5,1.5,107.5,2
+L1–R1 missing,4,LIANA+ bivariate (niche-stratified),0.21500000000000002,0.2,104.5,104.5,3.5,3.5,104.5,2
+L1–R1 missing,5,LIANA+ bivariate (niche-stratified),0.21500000000000002,0.2,106.5,106.5,3.5,3.5,106.5,2
+L1–R1 missing,1,LIANA+ bivariate (niche-stratified)+Selectivity,0.16166666666666668,0.2,106.5,106.5,3.0,5.0,106.5,2
+L1–R1 missing,2,LIANA+ bivariate (niche-stratified)+Selectivity,0.08000000000000002,0.2,106.5,106.5,10.0,8.0,106.5,2
+L1–R1 missing,3,LIANA+ bivariate (niche-stratified)+Selectivity,0.165,0.2,107.5,107.5,2.0,8.0,107.5,2
+L1–R1 missing,4,LIANA+ bivariate (niche-stratified)+Selectivity,0.16166666666666668,0.2,104.5,104.5,3.0,5.0,104.5,2
+L1–R1 missing,5,LIANA+ bivariate (niche-stratified)+Selectivity,0.16166666666666668,0.2,106.5,106.5,3.0,5.0,106.5,2
+L1–R1 missing,1,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,2,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,3,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,4,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,5,LIANA+ native (global Moran's R),0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,1,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,2,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,3,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,4,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,5,LIANA+ native (global Moran's R)+Selectivity,0.025,0.0,100.5,100.5,100.5,100.5,100.5,0
+L1–R1 missing,1,"LIANA+ bivariate, local Moran's R [post hoc]",0.21500000000000002,0.2,107.5,107.5,3.5,3.5,107.5,2
+L1–R1 missing,2,"LIANA+ bivariate, local Moran's R [post hoc]",0.115,0.2,106.5,106.5,7.5,7.5,106.5,2
+L1–R1 missing,3,"LIANA+ bivariate, local Moran's R [post hoc]",0.41500000000000004,0.2,107.5,107.5,1.5,1.5,107.5,2
+L1–R1 missing,4,"LIANA+ bivariate, local Moran's R [post hoc]",0.41500000000000004,0.2,106.5,106.5,1.5,1.5,106.5,2
+L1–R1 missing,5,"LIANA+ bivariate, local Moran's R [post hoc]",0.41500000000000004,0.2,105.5,105.5,1.5,1.5,105.5,2
+L1–R1 missing,1,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.18166666666666667,0.2,107.5,107.5,3.0,4.0,107.5,2
+L1–R1 missing,2,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.09357142857142857,0.2,106.5,106.5,8.0,7.0,106.5,2
+L1–R1 missing,3,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.14833333333333332,0.2,107.5,107.5,3.0,6.0,107.5,2
+L1–R1 missing,4,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.315,0.2,106.5,106.5,1.0,4.0,106.5,2
+L1–R1 missing,5,"LIANA+ bivariate, local Moran's R [post hoc]+Selectivity",0.41500000000000004,0.2,105.5,105.5,1.0,2.0,105.5,2
+L1–R1 missing,1,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.21500000000000002,0.2,107.5,107.5,3.5,3.5,107.5,2
+L1–R1 missing,2,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.21500000000000002,0.2,107.5,107.5,3.5,3.5,107.5,2
+L1–R1 missing,3,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.41500000000000004,0.2,107.5,107.5,1.5,1.5,107.5,2
+L1–R1 missing,4,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.41500000000000004,0.2,107.5,107.5,1.5,1.5,107.5,2
+L1–R1 missing,5,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]",0.21500000000000002,0.2,107.5,107.5,3.5,3.5,107.5,2
+L1–R1 missing,1,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.14833333333333332,0.2,107.5,107.5,3.0,6.0,107.5,2
+L1–R1 missing,2,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.07333333333333333,0.1,107.5,107.5,12.0,8.0,107.5,2
+L1–R1 missing,3,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.13166666666666665,0.2,107.5,107.5,3.0,8.0,107.5,2
+L1–R1 missing,4,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.315,0.2,107.5,107.5,1.0,4.0,107.5,2
+L1–R1 missing,5,"LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity",0.21500000000000002,0.2,107.5,107.5,2.0,4.0,107.5,2

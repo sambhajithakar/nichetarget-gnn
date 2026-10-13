@@ -1,0 +1,1707 @@
+[
+ {
+  "seed": 1,
+  "hidden_lr": [
+   "L1",
+   "R1"
+  ],
+  "lr_pairs_given": [
+   [
+    "L2",
+    "R2"
+   ],
+   [
+    "DL0",
+    "DR0"
+   ],
+   [
+    "DL1",
+    "DR1"
+   ],
+   [
+    "DL2",
+    "DR2"
+   ],
+   [
+    "DL3",
+    "DR3"
+   ],
+   [
+    "DL4",
+    "DR4"
+   ],
+   [
+    "DL5",
+    "DR5"
+   ]
+  ],
+  "spatial_scale_r": 3.292346012560892,
+  "commot_pairs_scored": 7,
+  "liana_pairs_scored": 7,
+  "liana_var_columns": [
+   "ligand",
+   "receptor",
+   "ligand_means",
+   "ligand_props",
+   "receptor_means",
+   "receptor_props",
+   "morans",
+   "morans_pvals",
+   "mean",
+   "std"
+  ],
+  "runtime_commot_s": 145.1123399734497,
+  "runtime_liana_s": 0.21838164329528809,
+  "runtime_s": 150.98975729942322,
+  "reproduction_check": {
+   "DE": {
+    "auprc_now": 0.06378409366524816,
+    "auprc_stored": 0.06378409366524816,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   }
+  },
+  "metrics": {
+   "[check] DE": {
+    "auprc": 0.06378409366524816,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 88.0,
+     "R1": 28.0,
+     "L2": 95.0,
+     "R2": 31.0,
+     "D1": 19.0
+    }
+   },
+   "[check] DE+Selectivity": {
+    "auprc": 0.05624338624338624,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 116.0,
+     "R1": 27.0,
+     "L2": 116.0,
+     "R2": 28.0,
+     "D1": 20.0
+    }
+   },
+   "[check] LR-communication": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 105.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 105.5
+    }
+   },
+   "COMMOT": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "COMMOT+Selectivity": {
+    "auprc": 0.24833333333333332,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 2.0,
+     "R2": 3.0,
+     "D1": 102.5
+    }
+   },
+   "COMMOT (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 104.5
+    }
+   },
+   "COMMOT (niche-stratified)+Selectivity": {
+    "auprc": 0.34833333333333333,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.0,
+     "R2": 3.0,
+     "D1": 104.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)": {
+    "auprc": 0.08166666666666667,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 11.5,
+     "R2": 11.5,
+     "D1": 107.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)+Selectivity": {
+    "auprc": 0.06651515151515151,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 11.0,
+     "R2": 12.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 101.5,
+     "R1": 101.5,
+     "L2": 101.5,
+     "R2": 101.5,
+     "D1": 101.5
+    }
+   },
+   "LIANA+ bivariate+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 101.5,
+     "R1": 101.5,
+     "L2": 101.5,
+     "R2": 101.5,
+     "D1": 101.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)+Selectivity": {
+    "auprc": 0.16166666666666668,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 3.0,
+     "R2": 5.0,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ native (global Moran's R)": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ native (global Moran's R)+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]+Selectivity": {
+    "auprc": 0.18166666666666667,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity": {
+    "auprc": 0.14833333333333332,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.0,
+     "R2": 6.0,
+     "D1": 107.5
+    }
+   }
+  }
+ },
+ {
+  "seed": 2,
+  "hidden_lr": [
+   "L1",
+   "R1"
+  ],
+  "lr_pairs_given": [
+   [
+    "L2",
+    "R2"
+   ],
+   [
+    "DL0",
+    "DR0"
+   ],
+   [
+    "DL1",
+    "DR1"
+   ],
+   [
+    "DL2",
+    "DR2"
+   ],
+   [
+    "DL3",
+    "DR3"
+   ],
+   [
+    "DL4",
+    "DR4"
+   ],
+   [
+    "DL5",
+    "DR5"
+   ]
+  ],
+  "spatial_scale_r": 3.2796587541843256,
+  "commot_pairs_scored": 7,
+  "liana_pairs_scored": 7,
+  "liana_var_columns": [
+   "ligand",
+   "receptor",
+   "ligand_means",
+   "ligand_props",
+   "receptor_means",
+   "receptor_props",
+   "morans",
+   "morans_pvals",
+   "mean",
+   "std"
+  ],
+  "runtime_commot_s": 108.82022833824158,
+  "runtime_liana_s": 0.20099306106567383,
+  "runtime_s": 114.27535057067871,
+  "reproduction_check": {
+   "DE": {
+    "auprc_now": 0.05409992681797955,
+    "auprc_stored": 0.05409992681797955,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   }
+  },
+  "metrics": {
+   "[check] DE": {
+    "auprc": 0.05409992681797955,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 144.0,
+     "R1": 29.0,
+     "L2": 187.0,
+     "R2": 26.0,
+     "D1": 27.0
+    }
+   },
+   "[check] DE+Selectivity": {
+    "auprc": 0.05514652014652014,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 28.0,
+     "L2": 114.5,
+     "R2": 26.0,
+     "D1": 24.0
+    }
+   },
+   "[check] LR-communication": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 102.5
+    }
+   },
+   "COMMOT": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "COMMOT+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 103.5
+    }
+   },
+   "COMMOT (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "COMMOT (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 103.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 107.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)+Selectivity": {
+    "auprc": 0.13880952380952383,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 7.0,
+     "R2": 3.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 101.5,
+     "R1": 101.5,
+     "L2": 101.5,
+     "R2": 101.5,
+     "D1": 101.5
+    }
+   },
+   "LIANA+ bivariate+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 101.5,
+     "R1": 101.5,
+     "L2": 101.5,
+     "R2": 101.5,
+     "D1": 101.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)+Selectivity": {
+    "auprc": 0.08000000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 10.0,
+     "R2": 8.0,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ native (global Moran's R)": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ native (global Moran's R)+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]": {
+    "auprc": 0.115,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 7.5,
+     "R2": 7.5,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]+Selectivity": {
+    "auprc": 0.09357142857142857,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 8.0,
+     "R2": 7.0,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity": {
+    "auprc": 0.07333333333333333,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 12.0,
+     "R2": 8.0,
+     "D1": 107.5
+    }
+   }
+  }
+ },
+ {
+  "seed": 3,
+  "hidden_lr": [
+   "L1",
+   "R1"
+  ],
+  "lr_pairs_given": [
+   [
+    "L2",
+    "R2"
+   ],
+   [
+    "DL0",
+    "DR0"
+   ],
+   [
+    "DL1",
+    "DR1"
+   ],
+   [
+    "DL2",
+    "DR2"
+   ],
+   [
+    "DL3",
+    "DR3"
+   ],
+   [
+    "DL4",
+    "DR4"
+   ],
+   [
+    "DL5",
+    "DR5"
+   ]
+  ],
+  "spatial_scale_r": 3.2931214162963323,
+  "commot_pairs_scored": 7,
+  "liana_pairs_scored": 7,
+  "liana_var_columns": [
+   "ligand",
+   "receptor",
+   "ligand_means",
+   "ligand_props",
+   "receptor_means",
+   "receptor_props",
+   "morans",
+   "morans_pvals",
+   "mean",
+   "std"
+  ],
+  "runtime_commot_s": 117.72330951690674,
+  "runtime_liana_s": 0.1893000602722168,
+  "runtime_s": 122.4232861995697,
+  "reproduction_check": {
+   "DE": {
+    "auprc_now": 0.047911565281660726,
+    "auprc_stored": 0.047911565281660726,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   }
+  },
+  "metrics": {
+   "[check] DE": {
+    "auprc": 0.047911565281660726,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 55.0,
+     "R1": 138.0,
+     "L2": 41.0,
+     "R2": 80.0,
+     "D1": 20.0
+    }
+   },
+   "[check] DE+Selectivity": {
+    "auprc": 0.028000000000000004,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 113.5,
+     "R1": 113.5,
+     "L2": 113.5,
+     "R2": 113.5,
+     "D1": 25.0
+    }
+   },
+   "[check] LR-communication": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 105.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 105.5
+    }
+   },
+   "COMMOT": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "COMMOT+Selectivity": {
+    "auprc": 0.315,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "COMMOT (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 104.5
+    }
+   },
+   "COMMOT (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 104.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)": {
+    "auprc": 0.07214285714285715,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 13.5,
+     "R2": 13.5,
+     "D1": 107.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)+Selectivity": {
+    "auprc": 0.05895604395604395,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 13.0,
+     "R2": 14.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "LIANA+ bivariate+Selectivity": {
+    "auprc": 0.315,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 102.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)+Selectivity": {
+    "auprc": 0.165,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 2.0,
+     "R2": 8.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ native (global Moran's R)": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ native (global Moran's R)+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]+Selectivity": {
+    "auprc": 0.14833333333333332,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.0,
+     "R2": 6.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity": {
+    "auprc": 0.13166666666666665,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.0,
+     "R2": 8.0,
+     "D1": 107.5
+    }
+   }
+  }
+ },
+ {
+  "seed": 4,
+  "hidden_lr": [
+   "L1",
+   "R1"
+  ],
+  "lr_pairs_given": [
+   [
+    "L2",
+    "R2"
+   ],
+   [
+    "DL0",
+    "DR0"
+   ],
+   [
+    "DL1",
+    "DR1"
+   ],
+   [
+    "DL2",
+    "DR2"
+   ],
+   [
+    "DL3",
+    "DR3"
+   ],
+   [
+    "DL4",
+    "DR4"
+   ],
+   [
+    "DL5",
+    "DR5"
+   ]
+  ],
+  "spatial_scale_r": 3.2924473302658237,
+  "commot_pairs_scored": 7,
+  "liana_pairs_scored": 7,
+  "liana_var_columns": [
+   "ligand",
+   "receptor",
+   "ligand_means",
+   "ligand_props",
+   "receptor_means",
+   "receptor_props",
+   "morans",
+   "morans_pvals",
+   "mean",
+   "std"
+  ],
+  "runtime_commot_s": 113.35661435127258,
+  "runtime_liana_s": 0.22011995315551758,
+  "runtime_s": 116.30341076850891,
+  "reproduction_check": {
+   "DE": {
+    "auprc_now": 0.07191347769768236,
+    "auprc_stored": 0.07191347769768236,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   }
+  },
+  "metrics": {
+   "[check] DE": {
+    "auprc": 0.07191347769768236,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 33.0,
+     "R1": 62.0,
+     "L2": 58.0,
+     "R2": 28.0,
+     "D1": 21.0
+    }
+   },
+   "[check] DE+Selectivity": {
+    "auprc": 0.03933862433862434,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 114.5,
+     "L2": 114.5,
+     "R2": 27.0,
+     "D1": 21.0
+    }
+   },
+   "[check] LR-communication": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "COMMOT": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "COMMOT+Selectivity": {
+    "auprc": 0.34833333333333333,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 3.0,
+     "D1": 102.5
+    }
+   },
+   "COMMOT (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "COMMOT (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)": {
+    "auprc": 0.08166666666666667,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 11.5,
+     "R2": 11.5,
+     "D1": 107.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)+Selectivity": {
+    "auprc": 0.06651515151515151,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 11.0,
+     "R2": 12.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 102.5
+    }
+   },
+   "LIANA+ bivariate+Selectivity": {
+    "auprc": 0.18166666666666667,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 102.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 104.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)+Selectivity": {
+    "auprc": 0.16166666666666668,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 3.0,
+     "R2": 5.0,
+     "D1": 104.5
+    }
+   },
+   "LIANA+ native (global Moran's R)": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ native (global Moran's R)+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]+Selectivity": {
+    "auprc": 0.315,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity": {
+    "auprc": 0.315,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 107.5
+    }
+   }
+  }
+ },
+ {
+  "seed": 5,
+  "hidden_lr": [
+   "L1",
+   "R1"
+  ],
+  "lr_pairs_given": [
+   [
+    "L2",
+    "R2"
+   ],
+   [
+    "DL0",
+    "DR0"
+   ],
+   [
+    "DL1",
+    "DR1"
+   ],
+   [
+    "DL2",
+    "DR2"
+   ],
+   [
+    "DL3",
+    "DR3"
+   ],
+   [
+    "DL4",
+    "DR4"
+   ],
+   [
+    "DL5",
+    "DR5"
+   ]
+  ],
+  "spatial_scale_r": 3.2950307561944956,
+  "commot_pairs_scored": 7,
+  "liana_pairs_scored": 7,
+  "liana_var_columns": [
+   "ligand",
+   "receptor",
+   "ligand_means",
+   "ligand_props",
+   "receptor_means",
+   "receptor_props",
+   "morans",
+   "morans_pvals",
+   "mean",
+   "std"
+  ],
+  "runtime_commot_s": 113.73571419715881,
+  "runtime_liana_s": 0.23578572273254395,
+  "runtime_s": 116.65150666236877,
+  "reproduction_check": {
+   "DE": {
+    "auprc_now": 0.0588659420289855,
+    "auprc_stored": 0.0588659420289855,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc_now": 0.41500000000000004,
+    "auprc_stored": 0.41500000000000004,
+    "ranks_equal": true,
+    "match": true
+   }
+  },
+  "metrics": {
+   "[check] DE": {
+    "auprc": 0.0588659420289855,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 150.0,
+     "R1": 28.0,
+     "L2": 32.0,
+     "R2": 161.0,
+     "D1": 14.0
+    }
+   },
+   "[check] DE+Selectivity": {
+    "auprc": 0.04314814814814815,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 115.0,
+     "R1": 27.0,
+     "L2": 115.0,
+     "R2": 115.0,
+     "D1": 15.0
+    }
+   },
+   "[check] LR-communication": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 102.5,
+     "R1": 102.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 104.5
+    }
+   },
+   "[check] LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 104.5,
+     "R1": 104.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 104.5
+    }
+   },
+   "COMMOT": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "COMMOT+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 103.5
+    }
+   },
+   "COMMOT (niche-stratified)": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "COMMOT (niche-stratified)+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 103.5,
+     "R1": 103.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 103.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)": {
+    "auprc": 0.07214285714285715,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 13.5,
+     "R2": 13.5,
+     "D1": 107.5
+    }
+   },
+   "COMMOT native (total received signal, malignant)+Selectivity": {
+    "auprc": 0.05895604395604395,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 13.0,
+     "R2": 14.0,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ bivariate (niche-stratified)+Selectivity": {
+    "auprc": 0.16166666666666668,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 106.5,
+     "R1": 106.5,
+     "L2": 3.0,
+     "R2": 5.0,
+     "D1": 106.5
+    }
+   },
+   "LIANA+ native (global Moran's R)": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ native (global Moran's R)+Selectivity": {
+    "auprc": 0.025,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 100.5,
+     "R1": 100.5,
+     "L2": 100.5,
+     "R2": 100.5,
+     "D1": 100.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 105.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R [post hoc]+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 105.5,
+     "R1": 105.5,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 105.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 107.5
+    }
+   },
+   "LIANA+ bivariate, local Moran's R (niche-stratified) [post hoc]+Selectivity": {
+    "auprc": 0.21500000000000002,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 107.5,
+     "R1": 107.5,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 107.5
+    }
+   }
+  }
+ }
+]
