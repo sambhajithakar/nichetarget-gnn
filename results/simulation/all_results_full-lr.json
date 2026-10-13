@@ -1,0 +1,1357 @@
+[
+ {
+  "seed": 1,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.29049440022551254,
+  "readout_overlap": 0.8,
+  "niche_ARI": 0.3850979343408612,
+  "readout_R2": 0.7813973426818848,
+  "final_train_loss": 0.3360736072063446,
+  "metrics": {
+   "DE": {
+    "auprc": 0.06378409366524816,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 88.0,
+     "R1": 28.0,
+     "L2": 95.0,
+     "R2": 31.0,
+     "D1": 19.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.05624338624338624,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 116.0,
+     "R1": 27.0,
+     "L2": 116.0,
+     "R2": 28.0,
+     "D1": 20.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05942933376193081,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 139.0,
+     "R1": 34.0,
+     "L2": 82.0,
+     "R2": 56.0,
+     "D1": 10.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.058455367810206514,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 128.0,
+     "R1": 27.0,
+     "L2": 128.0,
+     "R2": 31.0,
+     "D1": 14.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.4132065383911478,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 186.0,
+     "L2": 2.0,
+     "R2": 189.0,
+     "D1": 166.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 126.5,
+     "L2": 2.0,
+     "R2": 126.5,
+     "D1": 126.5
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.2275281741311453,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 167.0,
+     "L2": 32.0,
+     "R2": 179.0,
+     "D1": 129.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.1698875448875449,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 65.0,
+     "L2": 11.0,
+     "R2": 161.0,
+     "D1": 37.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 106.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 106.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.419047619047619,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 15.0,
+     "L2": 4.0,
+     "R2": 12.0,
+     "D1": 7.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.4666666666666667,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 21.0,
+     "L2": 2.0,
+     "R2": 7.0,
+     "D1": 8.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.4445378151260504,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 17.0,
+     "L2": 2.0,
+     "R2": 7.0,
+     "D1": 12.0
+    }
+   },
+   "w/o spatial message passing (no selectivity)": {
+    "auprc": 0.27,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 137.5,
+     "R1": 18.0,
+     "L2": 137.5,
+     "R2": 15.0,
+     "D1": 1.0
+    }
+   },
+   "w/o spatial message passing": {
+    "auprc": 0.18619047619047618,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 126.5,
+     "R1": 14.0,
+     "L2": 126.5,
+     "R2": 12.0,
+     "D1": 2.0
+    }
+   },
+   "w/o niche conditioning (no selectivity)": {
+    "auprc": 0.6690476190476191,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 4.0,
+     "R2": 14.0,
+     "D1": 7.0
+    }
+   },
+   "w/o niche conditioning": {
+    "auprc": 0.6222222222222222,
+    "p@10": 0.5,
+    "recall@10": 1.0,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 6.0,
+     "L2": 3.0,
+     "R2": 10.0,
+     "D1": 9.0
+    }
+   },
+   "w/o LR edge features (no selectivity)": {
+    "auprc": 0.3373062678062678,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 27.0,
+     "L2": 16.0,
+     "R2": 25.0,
+     "D1": 1.0
+    }
+   },
+   "w/o LR edge features": {
+    "auprc": 0.41114676173499703,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 9.0,
+     "R1": 17.0,
+     "L2": 11.0,
+     "R2": 15.0,
+     "D1": 1.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.5,
+   "w/o spatial message passing": 0.25,
+   "w/o niche conditioning": 0.25,
+   "w/o LR edge features": 0.5
+  },
+  "runtime_s": 510.07232999801636
+ },
+ {
+  "seed": 2,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.41042024179497466,
+  "readout_overlap": 0.8666666666666667,
+  "niche_ARI": 0.3862995181915316,
+  "readout_R2": 0.7955912351608276,
+  "final_train_loss": 0.3586263060569763,
+  "metrics": {
+   "DE": {
+    "auprc": 0.05409992681797955,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 144.0,
+     "R1": 29.0,
+     "L2": 187.0,
+     "R2": 26.0,
+     "D1": 27.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.05514652014652014,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 28.0,
+     "L2": 114.5,
+     "R2": 26.0,
+     "D1": 24.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05951935242696112,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 115.0,
+     "R1": 28.0,
+     "L2": 192.0,
+     "R2": 27.0,
+     "D1": 18.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.05792429792429792,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 129.5,
+     "R1": 28.0,
+     "L2": 129.5,
+     "R2": 26.0,
+     "D1": 18.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.14633251259238314,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 5.0,
+     "R1": 187.0,
+     "L2": 4.0,
+     "R2": 131.0,
+     "D1": 123.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.08166666666666668,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 5.0,
+     "R1": 124.0,
+     "L2": 15.0,
+     "R2": 124.0,
+     "D1": 124.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.1494257547223649,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 118.0,
+     "L2": 27.0,
+     "R2": 64.0,
+     "D1": 44.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.15094017094017093,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 42.0,
+     "L2": 27.0,
+     "R2": 35.0,
+     "D1": 26.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 4.0,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 4.0,
+     "R2": 2.0,
+     "D1": 103.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.11473856209150327,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 8.0,
+     "R1": 17.0,
+     "L2": 115.5,
+     "R2": 115.5,
+     "D1": 9.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.12559482038429406,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 7.0,
+     "R1": 19.0,
+     "L2": 153.0,
+     "R2": 50.0,
+     "D1": 9.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.14033333333333337,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 6.0,
+     "R1": 20.0,
+     "L2": 134.5,
+     "R2": 25.0,
+     "D1": 10.0
+    }
+   },
+   "w/o spatial message passing (no selectivity)": {
+    "auprc": 0.11251748251748252,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 135.0,
+     "R1": 13.0,
+     "L2": 135.0,
+     "R2": 10.0,
+     "D1": 11.0
+    }
+   },
+   "w/o spatial message passing": {
+    "auprc": 0.12115384615384617,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 125.0,
+     "R1": 13.0,
+     "L2": 125.0,
+     "R2": 8.0,
+     "D1": 10.0
+    }
+   },
+   "w/o niche conditioning (no selectivity)": {
+    "auprc": 0.10833333333333334,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 8.0,
+     "R1": 15.0,
+     "L2": 139.0,
+     "R2": 139.0,
+     "D1": 12.0
+    }
+   },
+   "w/o niche conditioning": {
+    "auprc": 0.11422077922077922,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 8.0,
+     "R1": 14.0,
+     "L2": 129.0,
+     "R2": 129.0,
+     "D1": 11.0
+    }
+   },
+   "w/o LR edge features (no selectivity)": {
+    "auprc": 0.11267010767010767,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 39.0,
+     "R1": 21.0,
+     "L2": 140.5,
+     "R2": 9.0,
+     "D1": 11.0
+    }
+   },
+   "w/o LR edge features": {
+    "auprc": 0.1588888888888889,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 18.0,
+     "R1": 15.0,
+     "L2": 132.0,
+     "R2": 8.0,
+     "D1": 9.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.25,
+   "w/o spatial message passing": 0.25,
+   "w/o niche conditioning": 0.0,
+   "w/o LR edge features": 0.25
+  },
+  "runtime_s": 506.12064504623413
+ },
+ {
+  "seed": 3,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.32111328588340166,
+  "readout_overlap": 1.0,
+  "niche_ARI": 0.4197283892992878,
+  "readout_R2": 0.7956385016441345,
+  "final_train_loss": 0.3549887537956238,
+  "metrics": {
+   "DE": {
+    "auprc": 0.047911565281660726,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 55.0,
+     "R1": 138.0,
+     "L2": 41.0,
+     "R2": 80.0,
+     "D1": 20.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.028000000000000004,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 113.5,
+     "R1": 113.5,
+     "L2": 113.5,
+     "R2": 113.5,
+     "D1": 25.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.04385516921080393,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 97.0,
+     "R1": 114.0,
+     "L2": 33.0,
+     "R2": 99.0,
+     "D1": 23.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.037814814814814815,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 125.0,
+     "R1": 125.0,
+     "L2": 27.0,
+     "R2": 125.0,
+     "D1": 25.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.41372751404792973,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 185.0,
+     "L2": 1.0,
+     "R2": 186.0,
+     "D1": 149.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 124.5,
+     "L2": 2.0,
+     "R2": 124.5,
+     "D1": 124.5
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.07074233876004496,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 12.0,
+     "R1": 32.0,
+     "L2": 21.0,
+     "R2": 188.0,
+     "D1": 73.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.09429292929292929,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 11.0,
+     "R1": 27.0,
+     "L2": 15.0,
+     "R2": 157.0,
+     "D1": 36.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 106.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 106.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.22040196645459803,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 7.0,
+     "R1": 24.0,
+     "L2": 6.0,
+     "R2": 19.0,
+     "D1": 13.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.19048540605023273,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 11.0,
+     "R1": 41.0,
+     "L2": 9.0,
+     "R2": 19.0,
+     "D1": 8.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.20502070393374738,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 7.0,
+     "R1": 24.0,
+     "L2": 8.0,
+     "R2": 23.0,
+     "D1": 12.0
+    }
+   },
+   "w/o spatial message passing (no selectivity)": {
+    "auprc": 0.07676470588235294,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 134.0,
+     "R1": 134.0,
+     "L2": 134.0,
+     "R2": 34.0,
+     "D1": 4.0
+    }
+   },
+   "w/o spatial message passing": {
+    "auprc": 0.06579365079365079,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 125.0,
+     "R1": 125.0,
+     "L2": 125.0,
+     "R2": 14.0,
+     "D1": 9.0
+    }
+   },
+   "w/o niche conditioning (no selectivity)": {
+    "auprc": 0.4015873015873016,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 6.0,
+     "L2": 3.0,
+     "R2": 42.0,
+     "D1": 18.0
+    }
+   },
+   "w/o niche conditioning": {
+    "auprc": 0.3627039627039627,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 11.0,
+     "L2": 3.0,
+     "R2": 26.0,
+     "D1": 22.0
+    }
+   },
+   "w/o LR edge features (no selectivity)": {
+    "auprc": 0.08516949152542372,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 15.0,
+     "R1": 59.0,
+     "L2": 80.0,
+     "R2": 148.5,
+     "D1": 6.0
+    }
+   },
+   "w/o LR edge features": {
+    "auprc": 0.15140522875816992,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 9.0,
+     "R1": 17.0,
+     "L2": 24.0,
+     "R2": 132.0,
+     "D1": 6.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.25,
+   "w/o spatial message passing": 0.5,
+   "w/o niche conditioning": 0.5,
+   "w/o LR edge features": 0.75
+  },
+  "runtime_s": 503.903981924057
+ },
+ {
+  "seed": 4,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.3407701239550837,
+  "readout_overlap": 0.9333333333333333,
+  "niche_ARI": 0.3864981927075834,
+  "readout_R2": 0.7616965174674988,
+  "final_train_loss": 0.3683443069458008,
+  "metrics": {
+   "DE": {
+    "auprc": 0.07191347769768236,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 33.0,
+     "R1": 62.0,
+     "L2": 58.0,
+     "R2": 28.0,
+     "D1": 21.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.03933862433862434,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 114.5,
+     "L2": 114.5,
+     "R2": 27.0,
+     "D1": 21.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.06820211515863689,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 46.0,
+     "R1": 37.0,
+     "L2": 72.0,
+     "R2": 40.0,
+     "D1": 18.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.07835340266374749,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 29.0,
+     "R1": 27.0,
+     "L2": 122.5,
+     "R2": 28.0,
+     "D1": 21.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.41511991677129295,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 189.0,
+     "L2": 1.0,
+     "R2": 185.0,
+     "D1": 109.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 125.0,
+     "L2": 1.0,
+     "R2": 125.0,
+     "D1": 125.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.0788477801268499,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 20.0,
+     "R1": 88.0,
+     "L2": 11.0,
+     "R2": 86.0,
+     "D1": 30.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.12527650806088836,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 19.0,
+     "R1": 30.0,
+     "L2": 9.0,
+     "R2": 31.0,
+     "D1": 26.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 3.0,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.5430860805860807,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 16.0,
+     "L2": 1.0,
+     "R2": 13.0,
+     "D1": 7.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.7669172932330828,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 19.0,
+     "L2": 1.0,
+     "R2": 7.0,
+     "D1": 3.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.5578711484593837,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 17.0,
+     "L2": 1.0,
+     "R2": 10.0,
+     "D1": 7.0
+    }
+   },
+   "w/o spatial message passing (no selectivity)": {
+    "auprc": 0.2504040404040404,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 27.0,
+     "R1": 130.5,
+     "L2": 130.5,
+     "R2": 22.0,
+     "D1": 1.0
+    }
+   },
+   "w/o spatial message passing": {
+    "auprc": 0.15615384615384614,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 12.0,
+     "R1": 120.0,
+     "L2": 120.0,
+     "R2": 13.0,
+     "D1": 3.0
+    }
+   },
+   "w/o niche conditioning (no selectivity)": {
+    "auprc": 0.7733333333333332,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 25.0,
+     "L2": 1.0,
+     "R2": 6.0,
+     "D1": 3.0
+    }
+   },
+   "w/o niche conditioning": {
+    "auprc": 0.531060606060606,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 20.0,
+     "L2": 1.0,
+     "R2": 11.0,
+     "D1": 8.0
+    }
+   },
+   "w/o LR edge features (no selectivity)": {
+    "auprc": 0.29315462975055506,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 31.0,
+     "L2": 19.0,
+     "R2": 145.5,
+     "D1": 1.0
+    }
+   },
+   "w/o LR edge features": {
+    "auprc": 0.24833333333333335,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 10.0,
+     "R1": 15.0,
+     "L2": 12.0,
+     "R2": 129.0,
+     "D1": 2.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.75,
+   "w/o spatial message passing": 0.0,
+   "w/o niche conditioning": 0.5,
+   "w/o LR edge features": 0.5
+  },
+  "runtime_s": 499.3267333507538
+ },
+ {
+  "seed": 5,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.34486927284985974,
+  "readout_overlap": 0.8,
+  "niche_ARI": 0.3724152101289331,
+  "readout_R2": 0.7904406189918518,
+  "final_train_loss": 0.3564634919166565,
+  "metrics": {
+   "DE": {
+    "auprc": 0.0588659420289855,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 150.0,
+     "R1": 28.0,
+     "L2": 32.0,
+     "R2": 161.0,
+     "D1": 14.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.04314814814814815,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 115.0,
+     "R1": 27.0,
+     "L2": 115.0,
+     "R2": 115.0,
+     "D1": 15.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.06637481935910051,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 37.0,
+     "R1": 26.0,
+     "L2": 46.0,
+     "R2": 178.0,
+     "D1": 17.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.08189939370973853,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 28.0,
+     "R1": 26.0,
+     "L2": 29.0,
+     "R2": 126.0,
+     "D1": 16.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.3134814950460162,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 185.0,
+     "L2": 4.0,
+     "R2": 191.0,
+     "D1": 153.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 125.5,
+     "L2": 2.0,
+     "R2": 125.5,
+     "D1": 125.5
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.10120282606969914,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 26.0,
+     "R1": 6.0,
+     "L2": 17.0,
+     "R2": 190.0,
+     "D1": 50.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.12803030303030305,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 18.0,
+     "R1": 11.0,
+     "L2": 10.0,
+     "R2": 154.0,
+     "D1": 24.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 105.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 3.0,
+     "D1": 105.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.07255835667600373,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 21.0,
+     "R1": 17.0,
+     "L2": 18.0,
+     "R2": 118.0,
+     "D1": 118.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.3369444444444445,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 18.0,
+     "R1": 8.0,
+     "L2": 1.0,
+     "R2": 16.0,
+     "D1": 161.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.3355982905982906,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 18.0,
+     "R1": 10.0,
+     "L2": 1.0,
+     "R2": 13.0,
+     "D1": 136.5
+    }
+   },
+   "w/o spatial message passing (no selectivity)": {
+    "auprc": 0.04371794871794872,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 143.5,
+     "R1": 13.0,
+     "L2": 30.0,
+     "R2": 143.5,
+     "D1": 143.5
+    }
+   },
+   "w/o spatial message passing": {
+    "auprc": 0.06243589743589743,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 128.5,
+     "R1": 12.0,
+     "L2": 13.0,
+     "R2": 128.5,
+     "D1": 128.5
+    }
+   },
+   "w/o niche conditioning (no selectivity)": {
+    "auprc": 0.2769047619047619,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 60.0,
+     "R1": 20.0,
+     "L2": 1.0,
+     "R2": 14.0,
+     "D1": 158.5
+    }
+   },
+   "w/o niche conditioning": {
+    "auprc": 0.30857894736842106,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 25.0,
+     "R1": 19.0,
+     "L2": 1.0,
+     "R2": 10.0,
+     "D1": 137.0
+    }
+   },
+   "w/o LR edge features (no selectivity)": {
+    "auprc": 0.03757551669316375,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 151.0,
+     "R1": 17.0,
+     "L2": 37.0,
+     "R2": 151.0,
+     "D1": 151.0
+    }
+   },
+   "w/o LR edge features": {
+    "auprc": 0.055384615384615386,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 130.5,
+     "R1": 13.0,
+     "L2": 16.0,
+     "R2": 130.5,
+     "D1": 130.5
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.75,
+   "w/o spatial message passing": 0.5,
+   "w/o niche conditioning": 0.75,
+   "w/o LR edge features": 0.25
+  },
+  "runtime_s": 504.639910697937
+ }
+]

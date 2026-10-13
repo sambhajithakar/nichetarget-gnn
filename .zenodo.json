@@ -1,0 +1,12 @@
+{
+  "title": "NicheTarget-GNN: niche-aware graph neural networks with counterfactual perturbation for cell-state-specific target discovery in the tumor microenvironment",
+  "upload_type": "software",
+  "description": "Code, simulator, analysis scripts and raw outputs for the manuscript 'Niche-Aware Heterogeneous Graph Neural Networks with Counterfactual Perturbation for Discovering Cell-State-Specific Druggable Targets in the Tumor Microenvironment' (Computers in Biology and Medicine, submitted). Includes the simulation benchmark, the Xenium breast cancer and Perturb-map analyses, and per-gene scores for every method.",
+  "creators": [
+    {"name": "Thakar, Sambhaji Balaso", "affiliation": "Aditya BioNova Analytics, Pune, India", "orcid": "0000-0002-0423-2015"},
+    {"name": "Ghorpade, Pradnya Namdev", "affiliation": "Aditya BioNova Analytics, Pune, India", "orcid": "0000-0001-6593-825X"}
+  ],
+  "license": "MIT",
+  "keywords": ["graph neural network", "spatial transcriptomics", "tumor microenvironment", "drug target discovery", "counterfactual perturbation"],
+  "access_right": "open"
+}

@@ -1,0 +1,24 @@
+{"n_spots": 6363, "n_train_spots": 6013, "n_genes_model": 1759, "n_readout": 318, "n_lr_pairs": 1487, "ko_spots": {"Tgfbr2": 224, "Ifngr2": 105, "Jak2": 21}, "comparison_spots": 1061, "ifng_genes_in_readout": ["Cxcl9", "Cxcl10", "Stat1", "Irf1", "Gbp2", "Gbp3", "Gbp5", "Gbp7", "Ido1", "Cd274", "Psmb8", "Psmb9", "Tap1", "H2-Aa", "H2-Ab1", "H2-Eb1", "Ciita", "Iigp1", "Igtp", "Irgm1", "Socs1"], "tgfb_genes_in_readout": ["Serpine1", "Smad7", "Skil", "Tgfbi", "Ccn2", "Fn1", "Col1a1", "Col1a2", "Col3a1", "Postn", "Ltbp2", "Pmepa1", "Junb", "Timp1"]}
+epoch    0 loss 2.1591
+epoch   25 loss 0.4582
+epoch   50 loss 0.3971
+epoch   75 loss 0.3787
+epoch  100 loss 0.3702
+epoch  125 loss 0.3629
+epoch  150 loss 0.3545
+epoch  175 loss 0.3442
+epoch  200 loss 0.3413
+epoch  225 loss 0.3328
+epoch  250 loss 0.3282
+epoch  275 loss 0.3229
+epoch  300 loss 0.3225
+epoch  325 loss 0.3128
+epoch  350 loss 0.3097
+epoch  375 loss 0.3117
+epoch  399 loss 0.3020
+full seed 2 done in 4918s
+                     method knockout  n_ko_spots  spearman_pred_vs_obs  rank_of_true_gene  n_candidates  percentile                             top5_genes  frac_ifng_genes_predicted_down  mean_pred_ifng_change
+0           NicheTarget-GNN   Tgfbr2         224              0.386383                160          1371    0.884026     [Mia, Ifngr1, Bmp6, Fgfr2, Plxna2]                        0.761905              -0.001981
+1           NicheTarget-GNN   Ifngr2         105             -0.194599                888          1347    0.341500  [Adora2b, Slc3a2, Mfng, Kcnj15, Dll4]                        0.571429              -0.000047
+2  Co-expression regression   Tgfbr2         224              0.344810                215          1371    0.843910   [Itm2b, Herpud1, Itgb7, Ptprf, Xbp1]                        0.285714               0.006945
+3  Co-expression regression   Ifngr2         105             -0.550841               1280          1347    0.050483     [Hdc, Lrp2, H2-Q6, H2-T23, Entpd1]                        0.380952               0.010473

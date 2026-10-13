@@ -1,0 +1,1102 @@
+[
+ {
+  "seed": 6,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.3491696208138394,
+  "readout_overlap": 0.8666666666666667,
+  "niche_ARI": 0.4074506311061043,
+  "readout_R2": 0.8405788540840149,
+  "final_train_loss": 0.354714959859848,
+  "metrics": {
+   "DE": {
+    "auprc": 0.05491861962493927,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 142.0,
+     "R1": 29.0,
+     "L2": 173.0,
+     "R2": 25.0,
+     "D1": 27.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.05481318681318681,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 28.0,
+     "L2": 114.5,
+     "R2": 25.0,
+     "D1": 26.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05830315418572833,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 136.0,
+     "R1": 31.0,
+     "L2": 193.0,
+     "R2": 16.0,
+     "D1": 26.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.05733950260266049,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 134.0,
+     "R1": 28.0,
+     "L2": 134.0,
+     "R2": 19.0,
+     "D1": 26.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.07035434017531204,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 184.0,
+     "L2": 8.0,
+     "R2": 135.0,
+     "D1": 170.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.058333333333333334,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 15.0,
+     "R1": 121.0,
+     "L2": 12.0,
+     "R2": 121.0,
+     "D1": 121.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.04116675021067056,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 28.0,
+     "R1": 146.0,
+     "L2": 26.0,
+     "R2": 97.0,
+     "D1": 130.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.08966665249975207,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 24.0,
+     "R1": 44.0,
+     "L2": 23.0,
+     "R2": 31.0,
+     "D1": 36.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 102.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 1.0,
+     "D1": 103.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.10922077922077922,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 11.0,
+     "R1": 10.0,
+     "L2": 116.0,
+     "R2": 116.0,
+     "D1": 14.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.09895104895104895,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 11.0,
+     "L2": 151.5,
+     "R2": 151.5,
+     "D1": 15.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.09053221288515406,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 14.0,
+     "R1": 12.0,
+     "L2": 136.0,
+     "R2": 136.0,
+     "D1": 17.0
+    }
+   },
+   "NicheTarget-GNN (ensemble of 3)": {
+    "auprc": 0.14023809523809525,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 18.0,
+     "R1": 14.0,
+     "L2": 127.0,
+     "R2": 9.0,
+     "D1": 15.0
+    }
+   },
+   "Hybrid (GNN ensemble + LR-communication)": {
+    "auprc": 0.6370588235294117,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 2.0,
+     "L2": 25.0,
+     "R2": 1.0,
+     "D1": 17.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.25
+  },
+  "runtime_s": 650.1185989379883
+ },
+ {
+  "seed": 7,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.3778034493730749,
+  "readout_overlap": 0.8666666666666667,
+  "niche_ARI": 0.4287405461333796,
+  "readout_R2": 0.7831103801727295,
+  "final_train_loss": 0.3615777790546417,
+  "metrics": {
+   "DE": {
+    "auprc": 0.05730617753893615,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 99.0,
+     "R1": 29.0,
+     "L2": 160.0,
+     "R2": 28.0,
+     "D1": 25.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.05424338624338624,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 115.0,
+     "R1": 28.0,
+     "L2": 115.0,
+     "R2": 27.0,
+     "D1": 25.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.04620653800309401,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 131.0,
+     "R1": 50.0,
+     "L2": 172.0,
+     "R2": 28.0,
+     "D1": 25.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.05514652014652014,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 129.0,
+     "R1": 28.0,
+     "L2": 129.0,
+     "R2": 26.0,
+     "D1": 24.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.1518054054054054,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 6.0,
+     "R1": 185.0,
+     "L2": 3.0,
+     "R2": 125.0,
+     "D1": 90.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.18166666666666667,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 6.0,
+     "R1": 124.0,
+     "L2": 2.0,
+     "R2": 124.0,
+     "D1": 124.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.18817073010621402,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 182.0,
+     "L2": 3.0,
+     "R2": 81.0,
+     "D1": 93.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.21217086834733895,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 158.0,
+     "L2": 3.0,
+     "R2": 34.0,
+     "D1": 35.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 104.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8050000000000002,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 3.0,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 104.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.1894871794871795,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 13.0,
+     "L2": 118.0,
+     "R2": 118.0,
+     "D1": 12.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.33491596638655463,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 10.0,
+     "L2": 135.5,
+     "R2": 17.0,
+     "D1": 14.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.3393604108309991,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 9.0,
+     "L2": 129.5,
+     "R2": 17.0,
+     "D1": 14.0
+    }
+   },
+   "NicheTarget-GNN (ensemble of 3)": {
+    "auprc": 0.29833333333333334,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 6.0,
+     "L2": 126.0,
+     "R2": 12.0,
+     "D1": 10.0
+    }
+   },
+   "Hybrid (GNN ensemble + LR-communication)": {
+    "auprc": 0.6532051282051282,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 23.5,
+     "R2": 4.0,
+     "D1": 13.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.0
+  },
+  "runtime_s": 640.8989338874817
+ },
+ {
+  "seed": 8,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.33113117202806897,
+  "readout_overlap": 0.9333333333333333,
+  "niche_ARI": 0.41659388651103035,
+  "readout_R2": 0.7968624234199524,
+  "final_train_loss": 0.3652007281780243,
+  "metrics": {
+   "DE": {
+    "auprc": 0.05683365822818155,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 176.0,
+     "R1": 28.0,
+     "L2": 102.0,
+     "R2": 29.0,
+     "D1": 24.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.056124223602484466,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 115.0,
+     "R1": 25.0,
+     "L2": 115.0,
+     "R2": 28.0,
+     "D1": 23.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05527243344861022,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 183.0,
+     "R1": 27.0,
+     "L2": 134.0,
+     "R2": 29.0,
+     "D1": 24.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.05777257525083612,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 128.5,
+     "R1": 25.0,
+     "L2": 128.5,
+     "R2": 26.0,
+     "D1": 23.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.24812931603915211,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 182.0,
+     "L2": 1.0,
+     "R2": 183.0,
+     "D1": 80.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.14833333333333332,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 12.0,
+     "R1": 124.5,
+     "L2": 2.0,
+     "R2": 124.5,
+     "D1": 124.5
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.05047115386152752,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 43.0,
+     "R1": 72.0,
+     "L2": 11.0,
+     "R2": 127.0,
+     "D1": 118.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.09532604297123042,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 23.0,
+     "R1": 34.0,
+     "L2": 13.0,
+     "R2": 39.0,
+     "D1": 41.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 102.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 102.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 3.0,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 103.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.30820512820512824,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 118.0,
+     "R1": 2.0,
+     "L2": 6.0,
+     "R2": 8.0,
+     "D1": 13.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.5369491525423729,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 59.0,
+     "R1": 1.0,
+     "L2": 2.0,
+     "R2": 9.0,
+     "D1": 15.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.6038961038961039,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 22.0,
+     "R1": 1.0,
+     "L2": 2.0,
+     "R2": 7.0,
+     "D1": 11.0
+    }
+   },
+   "NicheTarget-GNN (ensemble of 3)": {
+    "auprc": 0.49166666666666664,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 125.5,
+     "R1": 5.0,
+     "L2": 1.0,
+     "R2": 4.0,
+     "D1": 12.0
+    }
+   },
+   "Hybrid (GNN ensemble + LR-communication)": {
+    "auprc": 0.7083333333333333,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 24.0,
+     "R1": 2.0,
+     "L2": 1.0,
+     "R2": 3.0,
+     "D1": 12.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.5
+  },
+  "runtime_s": 612.241551399231
+ },
+ {
+  "seed": 9,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.34633731036480186,
+  "readout_overlap": 1.0,
+  "niche_ARI": 0.4247868155240399,
+  "readout_R2": 0.8144341707229614,
+  "final_train_loss": 0.357738196849823,
+  "metrics": {
+   "DE": {
+    "auprc": 0.055995688834757106,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 164.0,
+     "R1": 26.0,
+     "L2": 156.0,
+     "R2": 29.0,
+     "D1": 23.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.056336996336996334,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 26.0,
+     "L2": 114.5,
+     "R2": 28.0,
+     "D1": 21.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05750372110522057,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 50.0,
+     "R1": 26.0,
+     "L2": 158.0,
+     "R2": 53.0,
+     "D1": 23.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.07307278742762614,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 31.0,
+     "R1": 26.0,
+     "L2": 127.5,
+     "R2": 33.0,
+     "D1": 22.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.4130052512405454,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 185.0,
+     "L2": 2.0,
+     "R2": 187.0,
+     "D1": 180.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.34833333333333333,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 127.0,
+     "L2": 1.0,
+     "R2": 127.0,
+     "D1": 127.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.06433082907992582,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 9.0,
+     "R1": 180.0,
+     "L2": 14.0,
+     "R2": 188.0,
+     "D1": 159.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.07276923076923078,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 13.0,
+     "R1": 156.5,
+     "L2": 10.0,
+     "R2": 156.5,
+     "D1": 50.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 102.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 102.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.5,
+     "R1": 1.5,
+     "L2": 3.5,
+     "R2": 3.5,
+     "D1": 104.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8050000000000002,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 3.0,
+     "R2": 4.0,
+     "D1": 104.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.21956876456876456,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 118.5,
+     "R1": 13.0,
+     "L2": 3.0,
+     "R2": 12.0,
+     "D1": 11.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.30954545454545457,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 147.5,
+     "R1": 11.0,
+     "L2": 2.0,
+     "R2": 4.0,
+     "D1": 16.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.28335497835497836,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 130.5,
+     "R1": 11.0,
+     "L2": 2.0,
+     "R2": 6.0,
+     "D1": 14.0
+    }
+   },
+   "NicheTarget-GNN (ensemble of 3)": {
+    "auprc": 0.19954545454545453,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 126.5,
+     "R1": 20.0,
+     "L2": 4.0,
+     "R2": 11.0,
+     "D1": 8.0
+    }
+   },
+   "Hybrid (GNN ensemble + LR-communication)": {
+    "auprc": 0.6583333333333333,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 24.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 12.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 1.0
+  },
+  "runtime_s": 647.2443873882294
+ },
+ {
+  "seed": 10,
+  "effect": 1.0,
+  "hidden_lr": [],
+  "state_ARI": 0.347964637067937,
+  "readout_overlap": 1.0,
+  "niche_ARI": 0.41348520477503625,
+  "readout_R2": 0.8003050088882446,
+  "final_train_loss": 0.34801143407821655,
+  "metrics": {
+   "DE": {
+    "auprc": 0.0595917715745302,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 112.0,
+     "R1": 29.0,
+     "L2": 144.0,
+     "R2": 27.0,
+     "D1": 20.0
+    }
+   },
+   "DE+Selectivity": {
+    "auprc": 0.05857789269553975,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 114.5,
+     "R1": 28.0,
+     "L2": 114.5,
+     "R2": 26.0,
+     "D1": 17.0
+    }
+   },
+   "DE (niche-stratified)": {
+    "auprc": 0.05482436642048487,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 139.0,
+     "R1": 35.0,
+     "L2": 129.0,
+     "R2": 28.0,
+     "D1": 20.0
+    }
+   },
+   "DE (niche-stratified)+Selectivity": {
+    "auprc": 0.059193277310924365,
+    "p@10": 0.0,
+    "recall@10": 0.0,
+    "ranks": {
+     "L1": 130.0,
+     "R1": 28.0,
+     "L2": 130.0,
+     "R2": 25.0,
+     "D1": 17.0
+    }
+   },
+   "NeighbourhoodCorr": {
+    "auprc": 0.4143079989445986,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 182.0,
+     "L2": 2.0,
+     "R2": 184.0,
+     "D1": 134.0
+    }
+   },
+   "NeighbourhoodCorr+Selectivity": {
+    "auprc": 0.41500000000000004,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 126.5,
+     "L2": 2.0,
+     "R2": 126.5,
+     "D1": 126.5
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)": {
+    "auprc": 0.08445642869371683,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 4.0,
+     "R1": 126.0,
+     "L2": 28.0,
+     "R2": 118.0,
+     "D1": 110.0
+    }
+   },
+   "NeighbourhoodCorr (niche-stratified)+Selectivity": {
+    "auprc": 0.19014515455304928,
+    "p@10": 0.1,
+    "recall@10": 0.2,
+    "ranks": {
+     "L1": 2.0,
+     "R1": 38.0,
+     "L2": 18.0,
+     "R2": 35.0,
+     "D1": 32.0
+    }
+   },
+   "LR-communication": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 102.5
+    }
+   },
+   "LR-communication+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 102.5
+    }
+   },
+   "LR-communication (niche-stratified)": {
+    "auprc": 0.805,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.5,
+     "R1": 3.5,
+     "L2": 1.5,
+     "R2": 1.5,
+     "D1": 103.5
+    }
+   },
+   "LR-communication (niche-stratified)+Selectivity": {
+    "auprc": 0.8049999999999999,
+    "p@10": 0.4,
+    "recall@10": 0.8,
+    "ranks": {
+     "L1": 3.0,
+     "R1": 4.0,
+     "L2": 1.0,
+     "R2": 2.0,
+     "D1": 103.5
+    }
+   },
+   "NicheTarget-GNN (global efficacy)": {
+    "auprc": 0.4462121212121212,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 11.0,
+     "L2": 121.5,
+     "R2": 15.0,
+     "D1": 3.0
+    }
+   },
+   "NicheTarget-GNN (no selectivity)": {
+    "auprc": 0.4126838235294118,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 12.0,
+     "L2": 64.0,
+     "R2": 17.0,
+     "D1": 4.0
+    }
+   },
+   "NicheTarget-GNN": {
+    "auprc": 0.44705882352941173,
+    "p@10": 0.2,
+    "recall@10": 0.4,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 11.0,
+     "L2": 22.0,
+     "R2": 17.0,
+     "D1": 4.0
+    }
+   },
+   "NicheTarget-GNN (ensemble of 3)": {
+    "auprc": 0.5097744360902257,
+    "p@10": 0.3,
+    "recall@10": 0.6,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 9.0,
+     "L2": 19.0,
+     "R2": 14.0,
+     "D1": 3.0
+    }
+   },
+   "Hybrid (GNN ensemble + LR-communication)": {
+    "auprc": 0.9428571428571428,
+    "p@10": 0.5,
+    "recall@10": 1.0,
+    "ranks": {
+     "L1": 1.0,
+     "R1": 2.0,
+     "L2": 4.0,
+     "R2": 3.0,
+     "D1": 7.0
+    }
+   }
+  },
+  "niche_localisation_accuracy": {
+   "NicheTarget-GNN": 0.5
+  },
+  "runtime_s": 615.3465156555176
+ }
+]

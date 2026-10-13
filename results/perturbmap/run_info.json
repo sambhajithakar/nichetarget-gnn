@@ -1,0 +1,65 @@
+{
+ "n_spots": 6363,
+ "n_train_spots": 6013,
+ "n_genes_model": 1759,
+ "n_readout": 318,
+ "n_lr_pairs": 1487,
+ "ko_spots": {
+  "Tgfbr2": 224,
+  "Ifngr2": 105,
+  "Jak2": 21
+ },
+ "comparison_spots": 1061,
+ "ifng_genes_in_readout": [
+  "Cxcl9",
+  "Cxcl10",
+  "Stat1",
+  "Irf1",
+  "Gbp2",
+  "Gbp3",
+  "Gbp5",
+  "Gbp7",
+  "Ido1",
+  "Cd274",
+  "Psmb8",
+  "Psmb9",
+  "Tap1",
+  "H2-Aa",
+  "H2-Ab1",
+  "H2-Eb1",
+  "Ciita",
+  "Iigp1",
+  "Igtp",
+  "Irgm1",
+  "Socs1"
+ ],
+ "tgfb_genes_in_readout": [
+  "Serpine1",
+  "Smad7",
+  "Skil",
+  "Tgfbi",
+  "Ccn2",
+  "Fn1",
+  "Col1a1",
+  "Col1a2",
+  "Col3a1",
+  "Postn",
+  "Ltbp2",
+  "Pmepa1",
+  "Junb",
+  "Timp1"
+ ],
+ "n_candidates": {
+  "Tgfbr2": 1371,
+  "Ifngr2": 1347
+ },
+ "observed_ifng_mean_change": {
+  "Tgfbr2": -0.19671891629695892,
+  "Ifngr2": -0.495279461145401
+ },
+ "n_models": {
+  "NicheTarget-GNN (n models)": 3,
+  "w/o spatial message passing (n models)": 3
+ },
+ "runtime_s": 3083.0349867343903
+}

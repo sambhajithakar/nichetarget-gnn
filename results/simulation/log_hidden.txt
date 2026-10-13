@@ -1,0 +1,80 @@
+{"seed": 1, "effect": 1.0, "hidden_lr": ["L1", "R1"], "state_ARI": 0.29049440022551254, "readout_overlap": 0.8, "niche_ARI": 0.3850979343408612, "readout_R2": 0.7874894142150879, "final_train_loss": 0.3449479341506958, "niche_localisation_accuracy": {"NicheTarget-GNN": 1.0}, "runtime_s": 174.53735494613647}
+  DE                                            AUPRC=0.064 P@10=0.00 ranks={'L1': 88.0, 'R1': 28.0, 'L2': 95.0, 'R2': 31.0, 'D1': 19.0}
+  DE+Selectivity                                AUPRC=0.056 P@10=0.00 ranks={'L1': 116.0, 'R1': 27.0, 'L2': 116.0, 'R2': 28.0, 'D1': 20.0}
+  DE (niche-stratified)                         AUPRC=0.059 P@10=0.10 ranks={'L1': 139.0, 'R1': 34.0, 'L2': 82.0, 'R2': 56.0, 'D1': 10.0}
+  DE (niche-stratified)+Selectivity             AUPRC=0.058 P@10=0.00 ranks={'L1': 128.0, 'R1': 27.0, 'L2': 128.0, 'R2': 31.0, 'D1': 14.0}
+  NeighbourhoodCorr                             AUPRC=0.413 P@10=0.20 ranks={'L1': 1.0, 'R1': 186.0, 'L2': 2.0, 'R2': 189.0, 'D1': 166.0}
+  NeighbourhoodCorr+Selectivity                 AUPRC=0.415 P@10=0.20 ranks={'L1': 1.0, 'R1': 126.5, 'L2': 2.0, 'R2': 126.5, 'D1': 126.5}
+  NeighbourhoodCorr (niche-stratified)          AUPRC=0.228 P@10=0.10 ranks={'L1': 1.0, 'R1': 167.0, 'L2': 32.0, 'R2': 179.0, 'D1': 129.0}
+  NeighbourhoodCorr (niche-stratified)+Selectivity AUPRC=0.170 P@10=0.10 ranks={'L1': 2.0, 'R1': 65.0, 'L2': 11.0, 'R2': 161.0, 'D1': 37.0}
+  LR-communication                              AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication+Selectivity                  AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.0, 'R2': 2.0, 'D1': 102.5}
+  LR-communication (niche-stratified)           AUPRC=0.415 P@10=0.20 ranks={'L1': 105.5, 'R1': 105.5, 'L2': 1.5, 'R2': 1.5, 'D1': 105.5}
+  LR-communication (niche-stratified)+Selectivity AUPRC=0.415 P@10=0.20 ranks={'L1': 105.5, 'R1': 105.5, 'L2': 1.0, 'R2': 2.0, 'D1': 105.5}
+  NicheTarget-GNN (global efficacy)             AUPRC=0.476 P@10=0.30 ranks={'L1': 14.0, 'R1': 17.0, 'L2': 1.0, 'R2': 10.0, 'D1': 4.0}
+  NicheTarget-GNN (no selectivity)              AUPRC=0.481 P@10=0.40 ranks={'L1': 9.0, 'R1': 26.0, 'L2': 2.0, 'R2': 5.0, 'D1': 3.0}
+  NicheTarget-GNN                               AUPRC=0.428 P@10=0.40 ranks={'L1': 6.0, 'R1': 21.0, 'L2': 2.0, 'R2': 5.0, 'D1': 8.0}
+{"seed": 2, "effect": 1.0, "hidden_lr": ["L1", "R1"], "state_ARI": 0.41042024179497466, "readout_overlap": 0.8666666666666667, "niche_ARI": 0.3862995181915316, "readout_R2": 0.8171166777610779, "final_train_loss": 0.3565319776535034, "niche_localisation_accuracy": {"NicheTarget-GNN": 0.0}, "runtime_s": 163.76085114479065}
+  DE                                            AUPRC=0.054 P@10=0.00 ranks={'L1': 144.0, 'R1': 29.0, 'L2': 187.0, 'R2': 26.0, 'D1': 27.0}
+  DE+Selectivity                                AUPRC=0.055 P@10=0.00 ranks={'L1': 114.5, 'R1': 28.0, 'L2': 114.5, 'R2': 26.0, 'D1': 24.0}
+  DE (niche-stratified)                         AUPRC=0.060 P@10=0.00 ranks={'L1': 115.0, 'R1': 28.0, 'L2': 192.0, 'R2': 27.0, 'D1': 18.0}
+  DE (niche-stratified)+Selectivity             AUPRC=0.058 P@10=0.00 ranks={'L1': 129.5, 'R1': 28.0, 'L2': 129.5, 'R2': 26.0, 'D1': 18.0}
+  NeighbourhoodCorr                             AUPRC=0.146 P@10=0.20 ranks={'L1': 5.0, 'R1': 187.0, 'L2': 4.0, 'R2': 131.0, 'D1': 123.0}
+  NeighbourhoodCorr+Selectivity                 AUPRC=0.082 P@10=0.10 ranks={'L1': 5.0, 'R1': 124.0, 'L2': 15.0, 'R2': 124.0, 'D1': 124.0}
+  NeighbourhoodCorr (niche-stratified)          AUPRC=0.149 P@10=0.10 ranks={'L1': 2.0, 'R1': 118.0, 'L2': 27.0, 'R2': 64.0, 'D1': 44.0}
+  NeighbourhoodCorr (niche-stratified)+Selectivity AUPRC=0.151 P@10=0.10 ranks={'L1': 3.0, 'R1': 42.0, 'L2': 27.0, 'R2': 35.0, 'D1': 26.0}
+  LR-communication                              AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication+Selectivity                  AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 2.0, 'R2': 1.0, 'D1': 102.5}
+  LR-communication (niche-stratified)           AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication (niche-stratified)+Selectivity AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 2.0, 'R2': 1.0, 'D1': 102.5}
+  NicheTarget-GNN (global efficacy)             AUPRC=0.088 P@10=0.00 ranks={'L1': 17.0, 'R1': 16.0, 'L2': 119.0, 'R2': 119.0, 'D1': 11.0}
+  NicheTarget-GNN (no selectivity)              AUPRC=0.074 P@10=0.00 ranks={'L1': 20.0, 'R1': 21.0, 'L2': 147.5, 'R2': 147.5, 'D1': 13.0}
+  NicheTarget-GNN                               AUPRC=0.079 P@10=0.00 ranks={'L1': 19.0, 'R1': 20.0, 'L2': 132.5, 'R2': 132.5, 'D1': 11.0}
+{"seed": 3, "effect": 1.0, "hidden_lr": ["L1", "R1"], "state_ARI": 0.32111328588340166, "readout_overlap": 1.0, "niche_ARI": 0.4197283892992878, "readout_R2": 0.7881599068641663, "final_train_loss": 0.35498547554016113, "niche_localisation_accuracy": {"NicheTarget-GNN": 1.0}, "runtime_s": 162.8165533542633}
+  DE                                            AUPRC=0.048 P@10=0.00 ranks={'L1': 55.0, 'R1': 138.0, 'L2': 41.0, 'R2': 80.0, 'D1': 20.0}
+  DE+Selectivity                                AUPRC=0.028 P@10=0.00 ranks={'L1': 113.5, 'R1': 113.5, 'L2': 113.5, 'R2': 113.5, 'D1': 25.0}
+  DE (niche-stratified)                         AUPRC=0.044 P@10=0.00 ranks={'L1': 97.0, 'R1': 114.0, 'L2': 33.0, 'R2': 99.0, 'D1': 23.0}
+  DE (niche-stratified)+Selectivity             AUPRC=0.038 P@10=0.00 ranks={'L1': 125.0, 'R1': 125.0, 'L2': 27.0, 'R2': 125.0, 'D1': 25.0}
+  NeighbourhoodCorr                             AUPRC=0.414 P@10=0.20 ranks={'L1': 2.0, 'R1': 185.0, 'L2': 1.0, 'R2': 186.0, 'D1': 149.0}
+  NeighbourhoodCorr+Selectivity                 AUPRC=0.415 P@10=0.20 ranks={'L1': 1.0, 'R1': 124.5, 'L2': 2.0, 'R2': 124.5, 'D1': 124.5}
+  NeighbourhoodCorr (niche-stratified)          AUPRC=0.071 P@10=0.00 ranks={'L1': 12.0, 'R1': 32.0, 'L2': 21.0, 'R2': 188.0, 'D1': 73.0}
+  NeighbourhoodCorr (niche-stratified)+Selectivity AUPRC=0.094 P@10=0.00 ranks={'L1': 11.0, 'R1': 27.0, 'L2': 15.0, 'R2': 157.0, 'D1': 36.0}
+  LR-communication                              AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication+Selectivity                  AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.0, 'R2': 2.0, 'D1': 102.5}
+  LR-communication (niche-stratified)           AUPRC=0.415 P@10=0.20 ranks={'L1': 105.5, 'R1': 105.5, 'L2': 1.5, 'R2': 1.5, 'D1': 105.5}
+  LR-communication (niche-stratified)+Selectivity AUPRC=0.415 P@10=0.20 ranks={'L1': 105.5, 'R1': 105.5, 'L2': 1.0, 'R2': 2.0, 'D1': 105.5}
+  NicheTarget-GNN (global efficacy)             AUPRC=0.183 P@10=0.20 ranks={'L1': 14.0, 'R1': 22.0, 'L2': 9.0, 'R2': 24.0, 'D1': 10.0}
+  NicheTarget-GNN (no selectivity)              AUPRC=0.192 P@10=0.20 ranks={'L1': 13.0, 'R1': 36.0, 'L2': 8.0, 'R2': 23.0, 'D1': 6.0}
+  NicheTarget-GNN                               AUPRC=0.191 P@10=0.20 ranks={'L1': 9.0, 'R1': 25.0, 'L2': 7.0, 'R2': 23.0, 'D1': 14.0}
+{"seed": 4, "effect": 1.0, "hidden_lr": ["L1", "R1"], "state_ARI": 0.3407701239550837, "readout_overlap": 0.9333333333333333, "niche_ARI": 0.3864981927075834, "readout_R2": 0.7717743515968323, "final_train_loss": 0.3574064373970032, "niche_localisation_accuracy": {"NicheTarget-GNN": 0.75}, "runtime_s": 262.0764191150665}
+  DE                                            AUPRC=0.072 P@10=0.00 ranks={'L1': 33.0, 'R1': 62.0, 'L2': 58.0, 'R2': 28.0, 'D1': 21.0}
+  DE+Selectivity                                AUPRC=0.039 P@10=0.00 ranks={'L1': 114.5, 'R1': 114.5, 'L2': 114.5, 'R2': 27.0, 'D1': 21.0}
+  DE (niche-stratified)                         AUPRC=0.068 P@10=0.00 ranks={'L1': 46.0, 'R1': 37.0, 'L2': 72.0, 'R2': 40.0, 'D1': 18.0}
+  DE (niche-stratified)+Selectivity             AUPRC=0.078 P@10=0.00 ranks={'L1': 29.0, 'R1': 27.0, 'L2': 122.5, 'R2': 28.0, 'D1': 21.0}
+  NeighbourhoodCorr                             AUPRC=0.415 P@10=0.20 ranks={'L1': 2.0, 'R1': 189.0, 'L2': 1.0, 'R2': 185.0, 'D1': 109.0}
+  NeighbourhoodCorr+Selectivity                 AUPRC=0.415 P@10=0.20 ranks={'L1': 2.0, 'R1': 125.0, 'L2': 1.0, 'R2': 125.0, 'D1': 125.0}
+  NeighbourhoodCorr (niche-stratified)          AUPRC=0.079 P@10=0.00 ranks={'L1': 20.0, 'R1': 88.0, 'L2': 11.0, 'R2': 86.0, 'D1': 30.0}
+  NeighbourhoodCorr (niche-stratified)+Selectivity AUPRC=0.125 P@10=0.10 ranks={'L1': 19.0, 'R1': 30.0, 'L2': 9.0, 'R2': 31.0, 'D1': 26.0}
+  LR-communication                              AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication+Selectivity                  AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.0, 'R2': 2.0, 'D1': 102.5}
+  LR-communication (niche-stratified)           AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication (niche-stratified)+Selectivity AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.0, 'R2': 2.0, 'D1': 102.5}
+  NicheTarget-GNN (global efficacy)             AUPRC=0.345 P@10=0.20 ranks={'L1': 15.0, 'R1': 118.5, 'L2': 1.0, 'R2': 16.0, 'D1': 8.0}
+  NicheTarget-GNN (no selectivity)              AUPRC=0.527 P@10=0.30 ranks={'L1': 17.0, 'R1': 150.0, 'L2': 1.0, 'R2': 2.0, 'D1': 8.0}
+  NicheTarget-GNN                               AUPRC=0.363 P@10=0.30 ranks={'L1': 15.0, 'R1': 134.5, 'L2': 1.0, 'R2': 9.0, 'D1': 10.0}
+{"seed": 5, "effect": 1.0, "hidden_lr": ["L1", "R1"], "state_ARI": 0.34486927284985974, "readout_overlap": 0.8, "niche_ARI": 0.3724152101289331, "readout_R2": 0.808061957359314, "final_train_loss": 0.35210517048835754, "niche_localisation_accuracy": {"NicheTarget-GNN": 0.5}, "runtime_s": 177.61613273620605}
+  DE                                            AUPRC=0.059 P@10=0.00 ranks={'L1': 150.0, 'R1': 28.0, 'L2': 32.0, 'R2': 161.0, 'D1': 14.0}
+  DE+Selectivity                                AUPRC=0.043 P@10=0.00 ranks={'L1': 115.0, 'R1': 27.0, 'L2': 115.0, 'R2': 115.0, 'D1': 15.0}
+  DE (niche-stratified)                         AUPRC=0.066 P@10=0.00 ranks={'L1': 37.0, 'R1': 26.0, 'L2': 46.0, 'R2': 178.0, 'D1': 17.0}
+  DE (niche-stratified)+Selectivity             AUPRC=0.082 P@10=0.00 ranks={'L1': 28.0, 'R1': 26.0, 'L2': 29.0, 'R2': 126.0, 'D1': 16.0}
+  NeighbourhoodCorr                             AUPRC=0.313 P@10=0.20 ranks={'L1': 1.0, 'R1': 185.0, 'L2': 4.0, 'R2': 191.0, 'D1': 153.0}
+  NeighbourhoodCorr+Selectivity                 AUPRC=0.415 P@10=0.20 ranks={'L1': 1.0, 'R1': 125.5, 'L2': 2.0, 'R2': 125.5, 'D1': 125.5}
+  NeighbourhoodCorr (niche-stratified)          AUPRC=0.101 P@10=0.10 ranks={'L1': 26.0, 'R1': 6.0, 'L2': 17.0, 'R2': 190.0, 'D1': 50.0}
+  NeighbourhoodCorr (niche-stratified)+Selectivity AUPRC=0.128 P@10=0.10 ranks={'L1': 18.0, 'R1': 11.0, 'L2': 10.0, 'R2': 154.0, 'D1': 24.0}
+  LR-communication                              AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.5, 'R2': 1.5, 'D1': 102.5}
+  LR-communication+Selectivity                  AUPRC=0.415 P@10=0.20 ranks={'L1': 102.5, 'R1': 102.5, 'L2': 1.0, 'R2': 2.0, 'D1': 102.5}
+  LR-communication (niche-stratified)           AUPRC=0.415 P@10=0.20 ranks={'L1': 104.5, 'R1': 104.5, 'L2': 1.5, 'R2': 1.5, 'D1': 104.5}
+  LR-communication (niche-stratified)+Selectivity AUPRC=0.415 P@10=0.20 ranks={'L1': 104.5, 'R1': 104.5, 'L2': 1.0, 'R2': 2.0, 'D1': 104.5}
+  NicheTarget-GNN (global efficacy)             AUPRC=0.076 P@10=0.00 ranks={'L1': 18.0, 'R1': 15.0, 'L2': 20.0, 'R2': 119.5, 'D1': 119.5}
+  NicheTarget-GNN (no selectivity)              AUPRC=0.090 P@10=0.00 ranks={'L1': 25.0, 'R1': 22.0, 'L2': 16.0, 'R2': 26.0, 'D1': 148.5}
+  NicheTarget-GNN                               AUPRC=0.104 P@10=0.00 ranks={'L1': 21.0, 'R1': 19.0, 'L2': 15.0, 'R2': 22.0, 'D1': 131.5}

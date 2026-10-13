@@ -1,0 +1,7 @@
+method,knockout,n_ko_spots,spearman_pred_vs_obs,rank_of_true_gene,n_candidates,percentile,top5_genes,frac_ifng_genes_predicted_down,mean_pred_ifng_change
+NicheTarget-GNN,Tgfbr2,224,0.371864527395089,152,1371,0.8898614150255288,"[np.str_('Ifngr1'), np.str_('Fgfr2'), np.str_('Ocln'), np.str_('Mfge8'), np.str_('Mia')]",0.7142857142857143,-0.0014656278071925044
+NicheTarget-GNN,Ifngr2,105,-0.07680969131744847,755,1347,0.44023756495916855,"[np.str_('Adora2b'), np.str_('Mfng'), np.str_('Plxna1'), np.str_('Dll4'), np.str_('Kcnj15')]",0.6190476190476191,-5.710179902962409e-05
+w/o spatial message passing,Tgfbr2,224,0.4326382647398022,131,1371,0.9051787016776076,"[np.str_('Tnfsf10'), np.str_('Fgfr2'), np.str_('Ntn1'), np.str_('Ang'), np.str_('Il1rap')]",0.7619047619047619,-0.0006571428384631872
+w/o spatial message passing,Ifngr2,105,-0.2992188291523923,1084,1347,0.19599109131403114,"[np.str_('Hdc'), np.str_('Tnfrsf1a'), np.str_('Cklf'), np.str_('Mfng'), np.str_('Tnfsf10')]",0.38095238095238093,0.00020317865710239857
+Co-expression regression,Tgfbr2,224,0.34481023390345295,215,1371,0.8439095550692925,"[np.str_('Itm2b'), np.str_('Herpud1'), np.str_('Itgb7'), np.str_('Ptprf'), np.str_('Xbp1')]",0.2857142857142857,0.006944674998521805
+Co-expression regression,Ifngr2,105,-0.5508414094623044,1280,1347,0.050482553823311016,"[np.str_('Hdc'), np.str_('Lrp2'), np.str_('H2-Q6'), np.str_('H2-T23'), np.str_('Entpd1')]",0.38095238095238093,0.01047263853251934

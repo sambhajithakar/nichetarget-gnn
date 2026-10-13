@@ -1,0 +1,31 @@
+{"n_cells": 118370, "n_genes": 313, "n_target": 19350, "n_reference": 18474, "target_clusters": [1, 16, 22], "reference_clusters": [7, 8, 11, 17], "lineage_of_cluster": {"1": "malignant", "2": "macrophage", "3": "T cell", "4": "fibroblast", "5": "fibroblast", "6": "T cell", "7": "malignant", "8": "malignant", "9": "perivascular", "10": "myoepithelial", "11": "malignant", "12": "endothelial", "13": "B cell", "14": "plasma cell", "15": "T cell", "16": "malignant", "17": "malignant", "18": "myoepithelial", "19": "macrophage", "20": "fibroblast", "21": "fibroblast", "22": "malignant", "23": "macrophage", "24": "mast cell", "25": "endothelial"}, "lineage_counts": {"malignant": 37824, "myoepithelial": 6996, "fibroblast": 19161, "perivascular": 5107, "endothelial": 4841, "macrophage": 13827, "T cell": 22135, "B cell": 4091, "plasma cell": 3977, "mast cell": 411, "immune-stromal mixed": 0}, "readout": ["ABCC11", "TCIM", "FASN", "MDM2", "SERHL2", "BASP1", "TENT5C", "POSTN", "ENAH", "POLR2J3", "CXCR4", "CTTN", "FOXA1", "EPCAM", "CENPF"], "readout_de": [0.4342536926269531, 0.4105168581008911, 0.37696897983551025, 0.36283040046691895, 0.35011622309684753, 0.3052006959915161, 0.291922390460968, 0.28195783495903015, 0.27942919731140137, 0.2516857385635376, 0.2514912486076355, 0.23827844858169556, 0.22911226749420166, 0.2157677412033081, 0.20770424604415894], "n_lr_pairs_in_panel": 35, "lr_pairs_used": 35, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.08           0.02        0.18          0.11         0.11        0.21    0.18    0.04         0.08       0.01                   0.0
+1       0.29           0.47        0.09          0.02         0.02        0.06    0.05    0.00         0.00       0.00                   0.0
+2       0.85           0.03        0.03          0.01         0.01        0.04    0.03    0.00         0.00       0.00                   0.0
+3       0.01           0.00        0.05          0.02         0.03        0.12    0.59    0.11         0.04       0.00                   0.0
+4       0.01           0.01        0.62          0.05         0.04        0.14    0.08    0.01         0.03       0.01                   0.0
+epoch    0 loss 0.7372
+epoch   25 loss 0.2177
+epoch   50 loss 0.2106
+epoch   75 loss 0.1974
+epoch  100 loss 0.1774
+epoch  125 loss 0.1750
+epoch  150 loss 0.1981
+epoch  175 loss 0.1836
+epoch  200 loss 0.1915
+epoch  225 loss 0.1779
+epoch  250 loss 0.1962
+epoch  275 loss 0.1792
+epoch  300 loss 0.1859
+epoch  325 loss 0.1924
+epoch  350 loss 0.1895
+epoch  375 loss 0.1790
+epoch  400 loss 0.1729
+epoch  425 loss 0.1741
+epoch  450 loss 0.1735
+epoch  475 loss 0.1631
+epoch  499 loss 0.1659
+model 0 trained in 818s
+model 0 scanned in 1420s
+members done; run again without --no-combine to combine
