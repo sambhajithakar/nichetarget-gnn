@@ -1,6 +1,6 @@
 # NicheTarget-GNN
 
-Code and data outputs for the manuscript *Niche-Aware Heterogeneous Graph Neural Networks with Counterfactual Perturbation for Discovering Cell-State-Specific Druggable Targets in the Tumor Microenvironment* (Thakar and Ghorpade, submitted to Computers in Biology and Medicine). License: MIT. Please cite the archived release (see `CITATION.cff`).
+Code and data outputs for the manuscript *Niche-Aware Heterogeneous Graph Neural Networks with Counterfactual Perturbation for Discovering Cell-State-Specific Druggable Targets in the Tumour Microenvironment* (Thakar and Ghorpade, submitted to Computers in Biology and Medicine). License: MIT. Please cite the archived release (see `CITATION.cff`).
 
 Niche-aware graph neural network with counterfactual target inhibition for ranking cell-state-specific, selective drug targets from spatial transcriptomics.
 
@@ -15,7 +15,7 @@ Niche-aware graph neural network with counterfactual target inhibition for ranki
 | `scripts/run_simulation.py` | Simulation benchmark (`--hide-lr L1 R1` for the incomplete-database scenario) |
 | `scripts/summarise_simulation.py` | Tables and Figs 3–5 |
 | `scripts/make_figures_static.py` | Figs 1–2 |
-| `results/simulation/` | Raw outputs (JSON per scenario, per-gene rankings per seed, logs) |
+| `results/simulation/` | Raw outputs (JSON per scenario, per-gene rankings per seed, logs); `superseded_untied_metrics/` holds the first analysis of seeds 1–5 with untied ranks, kept for transparency |
 | `results/simulation_v2/` | Ensemble and hybrid variants on seeds 6–10 |
 
 ## Reproduce
@@ -42,7 +42,9 @@ PyTorch could not be installed in the environment used for the real-data runs, s
 | `scripts/make_fig_xenium.py`, `make_fig_perturbmap.py`, `make_tables_xenium.py` | Fig. 6, Fig. 7, Table 3 / S4 |
 | `results/xenium_rep1/`, `results/xenium_rep2/` | Per-gene scores (`gene_scores.csv`), run info, logs, trained parameters |
 | `results/xenium_evaluation/` | Evidence evaluation and replicate concordance |
-| `results/perturbmap/` | `perturbmap_validation.csv`, per-read-out effects, logs |
+| `results/perturbmap/` | `perturbmap_validation.csv`, per-read-out effects, logs, `spearman_bootstrap_ci.csv` |
+| `scripts/stats_supplement.py` | Benjamini–Hochberg *q*-values for the evidence tests (`results/xenium_evaluation/evidence_tests_bh.csv`) and bootstrap CIs for the Perturb-map Spearman values |
+| `scripts/figvec.py`, `make_figures_vector.py` | Submission figures as vector PDF + TIFF (Figs 1–5, S1, graphical abstract); Figs 6–7 come from `make_fig_xenium.py` / `make_fig_perturbmap.py` |
 
 Data: 10x Genomics "Xenium_FFPE_Human_Breast_Cancer_Rep1/Rep2"; GEO GSE193460 (Perturb-map); Open Targets Platform 26.09 (`fetch_ot.py`); DepMap 25Q2 (Zenodo 17161166); NicheNet v1/v2 and CellPhoneDB v2.1.7 ligand–receptor pairs (`build_lr.py`). Copies of the processed inputs are in `../data/`.
 
@@ -58,3 +60,8 @@ python scripts/run_perturbmap.py --npz perturbmap/npz --raw perturbmap/raw --lr 
     --seeds 1 2 3 --variants full no_spatial
 ```
 On a 4-core CPU one Xenium ensemble member takes about 15–20 min to train and 25 min to scan 298 genes (use `--members 0 1 2 --no-combine` in separate processes, then run once more with `--members -1` to load them and combine); one Perturb-map model takes 15 min (no spatial) to 85 min (full).
+
+```bash
+python scripts/stats_supplement.py --results results
+python scripts/make_figures_vector.py figures_out   # Figs 1-5, S1, graphical abstract
+```

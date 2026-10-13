@@ -1,0 +1,61 @@
+section,method,evidence_set,top25,p,q_bh_all60
+xenium_rep1,DE,OT_breast,5,0.2150476880353943,0.3859552027759712
+xenium_rep1,DE,OT_clinical,4,0.8574382357421407,0.9118280493227805
+xenium_rep1,DE,DepMap_breast,5,0.0001317894411124,0.001976841616686
+xenium_rep1,DE (niche-stratified),OT_breast,6,0.0896894822967687,0.21525475751224488
+xenium_rep1,DE (niche-stratified),OT_clinical,6,0.5083973440900292,0.6565127900732398
+xenium_rep1,DE (niche-stratified),DepMap_breast,5,0.0001317894411124,0.001976841616686
+xenium_rep1,NeighbourhoodCorr,OT_breast,5,0.2150476880353943,0.3859552027759712
+xenium_rep1,NeighbourhoodCorr,OT_clinical,6,0.5083973440900292,0.6565127900732398
+xenium_rep1,NeighbourhoodCorr,DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep1,NeighbourhoodCorr (niche-stratified),OT_breast,6,0.0896894822967687,0.21525475751224488
+xenium_rep1,NeighbourhoodCorr (niche-stratified),OT_clinical,6,0.5083973440900292,0.6565127900732398
+xenium_rep1,NeighbourhoodCorr (niche-stratified),DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep1,LR-communication,OT_breast,4,0.4188613694743842,0.644402106883668
+xenium_rep1,LR-communication,OT_clinical,12,0.0029177985682723,0.021883489262042248
+xenium_rep1,LR-communication,DepMap_breast,0,1.0,1.0
+xenium_rep1,LR-communication (niche-stratified),OT_breast,3,0.6638495320121599,0.811317348577504
+xenium_rep1,LR-communication (niche-stratified),OT_clinical,11,0.0103225852069007,0.06881723471267133
+xenium_rep1,LR-communication (niche-stratified),DepMap_breast,1,0.5082239815080789,0.6565127900732398
+xenium_rep1,NicheTarget-GNN (single model),OT_breast,7,0.0304925518090844,0.10450555132608719
+xenium_rep1,NicheTarget-GNN (single model),OT_clinical,4,0.8574382357421407,0.9118280493227805
+xenium_rep1,NicheTarget-GNN (single model),DepMap_breast,6,4.780966746974355e-06,0.0002868580048184613
+xenium_rep1,NicheTarget-GNN (global efficacy),OT_breast,6,0.0896894822967687,0.21525475751224488
+xenium_rep1,NicheTarget-GNN (global efficacy),OT_clinical,4,0.8574382357421407,0.9118280493227805
+xenium_rep1,NicheTarget-GNN (global efficacy),DepMap_breast,4,0.0021729970648432,0.018625689127227427
+xenium_rep1,NicheTarget-GNN (ensemble of 3),OT_breast,6,0.0896894822967687,0.21525475751224488
+xenium_rep1,NicheTarget-GNN (ensemble of 3),OT_clinical,3,0.9498215524443988,0.9825740197700676
+xenium_rep1,NicheTarget-GNN (ensemble of 3),DepMap_breast,5,0.0001317894411124,0.001976841616686
+xenium_rep1,Hybrid (GNN ensemble + LR-communication),OT_breast,5,0.2150476880353943,0.3859552027759712
+xenium_rep1,Hybrid (GNN ensemble + LR-communication),OT_clinical,6,0.5083973440900292,0.6565127900732398
+xenium_rep1,Hybrid (GNN ensemble + LR-communication),DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep2,DE,OT_breast,5,0.2315731216655827,0.3859552027759712
+xenium_rep2,DE,OT_clinical,7,0.3346641684148823,0.5284171080234984
+xenium_rep2,DE,DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep2,DE (niche-stratified),OT_breast,6,0.0993696526240757,0.22082145027572378
+xenium_rep2,DE (niche-stratified),OT_clinical,7,0.3346641684148823,0.5284171080234984
+xenium_rep2,DE (niche-stratified),DepMap_breast,2,0.1384675766269351,0.2864846412971071
+xenium_rep2,NeighbourhoodCorr,OT_breast,5,0.2315731216655827,0.3859552027759712
+xenium_rep2,NeighbourhoodCorr,OT_clinical,6,0.5252102320585919,0.6565127900732398
+xenium_rep2,NeighbourhoodCorr,DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep2,NeighbourhoodCorr (niche-stratified),OT_breast,7,0.0348351837753624,0.10450555132608719
+xenium_rep2,NeighbourhoodCorr (niche-stratified),OT_clinical,4,0.8662366468566415,0.9118280493227805
+xenium_rep2,NeighbourhoodCorr (niche-stratified),DepMap_breast,4,0.0021729970648432,0.018625689127227427
+xenium_rep2,LR-communication,OT_breast,3,0.6820261555709994,0.811317348577504
+xenium_rep2,LR-communication,OT_clinical,9,0.0859446251931479,0.21525475751224488
+xenium_rep2,LR-communication,DepMap_breast,0,1.0,1.0
+xenium_rep2,LR-communication (niche-stratified),OT_breast,4,0.4396711747864733,0.6565127900732398
+xenium_rep2,LR-communication (niche-stratified),OT_clinical,10,0.0343281897389785,0.10450555132608719
+xenium_rep2,LR-communication (niche-stratified),DepMap_breast,1,0.5082239815080789,0.6565127900732398
+xenium_rep2,NicheTarget-GNN (single model),OT_breast,7,0.0348351837753624,0.10450555132608719
+xenium_rep2,NicheTarget-GNN (single model),OT_clinical,5,0.7166636579101285,0.811317348577504
+xenium_rep2,NicheTarget-GNN (single model),DepMap_breast,4,0.0021729970648432,0.018625689127227427
+xenium_rep2,NicheTarget-GNN (global efficacy),OT_breast,5,0.2315731216655827,0.3859552027759712
+xenium_rep2,NicheTarget-GNN (global efficacy),OT_clinical,5,0.7166636579101285,0.811317348577504
+xenium_rep2,NicheTarget-GNN (global efficacy),DepMap_breast,2,0.1384675766269351,0.2864846412971071
+xenium_rep2,NicheTarget-GNN (ensemble of 3),OT_breast,6,0.0993696526240757,0.22082145027572378
+xenium_rep2,NicheTarget-GNN (ensemble of 3),OT_clinical,5,0.7166636579101285,0.811317348577504
+xenium_rep2,NicheTarget-GNN (ensemble of 3),DepMap_breast,3,0.0221397189115191,0.08302394591819662
+xenium_rep2,Hybrid (GNN ensemble + LR-communication),OT_breast,5,0.2315731216655827,0.3859552027759712
+xenium_rep2,Hybrid (GNN ensemble + LR-communication),OT_clinical,6,0.5252102320585919,0.6565127900732398
+xenium_rep2,Hybrid (GNN ensemble + LR-communication),DepMap_breast,3,0.0221397189115191,0.08302394591819662

@@ -1,7 +1,12 @@
 """Fig. 6: NicheTarget-GNN on Xenium FFPE human breast cancer (Rep1).
 
     python scripts/make_fig_xenium.py --data rep1.pkl --run results/xenium_rep1 \
-        --eval results/xenium_evaluation/evaluation_xenium_rep1.csv --out ../manuscript/figures/Fig6_xenium.png
+        --eval results/xenium_evaluation/evaluation_all.csv --out ../manuscript/submission_cbm/figures/Figure_6
+
+Print version (Elsevier): laid out in points at 190 mm width (all text >= 7 pt),
+written as vector PDF + TIFF by figvec.render(); the three spatial maps are
+embedded rasters (~750 dpi at print size). A 1 mm scale bar is drawn under each
+map (Xenium cell centroids are in microns).
 """
 from __future__ import annotations
 
@@ -15,7 +20,9 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(__file__))
-import figlib as F  # noqa: E402
+import figlib as F  # noqa: E402  (raster_points)
+import figvec as V  # noqa: E402
+from figvec import text, line, rect, circle, W2  # noqa: E402
 
 LIN_COL = {"malignant": "#D55E00", "myoepithelial": "#CC79A7", "fibroblast": "#009E73", "perivascular": "#8C564B",
            "endothelial": "#56B4E9", "macrophage": "#E69F00", "T cell": "#0072B2", "B cell": "#17BECF",
@@ -23,13 +30,32 @@ LIN_COL = {"malignant": "#D55E00", "myoepithelial": "#CC79A7", "fibroblast": "#0
 NICHE_COL = ["#D55E00", "#999999", "#0072B2", "#009E73", "#CC79A7"]
 
 
+def hbar(x0, y0, w, labels, values, color, label_w=42, bar_h=7.0, gap=2.6, xlabel=None):
+    out = []
+    pw = w - label_w - 20
+    vmax = max(max(values), 1e-9)
+    for i, (lab, v) in enumerate(zip(labels, values)):
+        y = y0 + i * (bar_h + gap)
+        out.append(text(x0 + label_w - 3, y + bar_h - 1.2, lab, 7, "end"))
+        out.append(rect(x0 + label_w, y, max(v, 0) / vmax * pw, bar_h, color))
+        out.append(text(x0 + label_w + max(v, 0) / vmax * pw + 2, y + bar_h - 1.2, f"{v:.2f}", 7))
+    h = len(labels) * (bar_h + gap)
+    if xlabel:
+        out.append(text(x0 + label_w + pw / 2, y0 + h + 8, xlabel, 7, "middle", fill="#444"))
+        h += 10
+    return "\n".join(out), h
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", required=True)
     ap.add_argument("--run", required=True)
     ap.add_argument("--eval", required=True)
-    ap.add_argument("--out", required=True)
+    ap.add_argument("--out", required=True, help="output base path (extension ignored)")
+    ap.add_argument("--dpi", type=int, default=600)
+    ap.add_argument("--preview", default=None)
     a = ap.parse_args()
+    base = os.path.splitext(a.out)[0]
     d = pickle.load(open(a.data, "rb"))
     coords = d["coords"]          # microns; y grows downwards as in the H&E image
     info = json.load(open(os.path.join(a.run, "run_info.json")))
@@ -41,81 +67,102 @@ def main():
     ref = np.isin(cluster, info["reference_clusters"])
     rng = np.random.default_rng(0)
     order = rng.permutation(len(coords))
-    W = 1000
+    span_x = float(coords[:, 0].max() - coords[:, 0].min())   # raster_points scales by the x span
+    W = W2
+    pw = 172.0
+    xs = [4.0, 183.0, 362.0]
+    RPX, PT = 1800, 1.3                 # raster width (px) and point radius (px)
     body = []
-    pw = 315
-    # A lineages
-    href, ph = F.raster_points(coords[order], [LIN_COL[lineages[t]] for t in ct[order]], 1260, point=0.9)
-    body += [F.text(10, 18, "A", 14, weight="bold"), F.text(30, 18, "Cell lineages (Rep1, 164,000 cells)", 11),
-             F.image(href, 10, 26, pw, pw * ph / 1260)]
-    # B states
+    href, ph_px = F.raster_points(coords[order], [LIN_COL[lineages[t]] for t in ct[order]], RPX, point=PT)
+    mh = pw * ph_px / RPX
+    my = 14.0
+    titles = [f"Cell lineages (Rep1, {len(coords):,} cells)", "Malignant states", "Niches (k-means on neighbourhood)"]
+    for k, x0 in enumerate(xs):
+        body += [text(x0, 9, "ABC"[k], 9, weight="bold"), text(x0 + 10, 9, titles[k], 7.5)]
+    body.append(F.image(href, xs[0], my, pw, mh))
     col = np.where(tgt, "#D55E00", np.where(ref, "#0072B2", "#DDDDDD"))
     o2 = np.argsort(tgt | ref, kind="stable")
-    href, _ = F.raster_points(coords[o2], list(col[o2]), 1260, point=0.9)
-    body += [F.text(340, 18, "B", 14, weight="bold"), F.text(360, 18, "Malignant states", 11),
-             F.image(href, 340, 26, pw, pw * ph / 1260)]
-    # C niches
-    href, _ = F.raster_points(coords[order], [NICHE_COL[n] for n in niche[order]], 1260, point=0.9)
-    body += [F.text(670, 18, "C", 14, weight="bold"), F.text(690, 18, "Niches (k-means on neighbourhood)", 11),
-             F.image(href, 670, 26, pw, pw * ph / 1260)]
-    ymap = 26 + pw * ph / 1260 + 8
-    body.append(F.legend(10, ymap, [(k, v) for k, v in LIN_COL.items()], size=9, sw=8, col_w=105, ncol=3))
-    body.append(F.legend(340, ymap, [(f"invasive tumour (target, n={info['n_target']:,})", "#D55E00"),
-                                     (f"DCIS (reference, n={info['n_reference']:,})", "#0072B2"),
-                                     ("other cells", "#DDDDDD")], size=9, sw=8))
+    href, _ = F.raster_points(coords[o2], list(col[o2]), RPX, point=PT)
+    body.append(F.image(href, xs[1], my, pw, mh))
+    href, _ = F.raster_points(coords[order], [NICHE_COL[n] for n in niche[order]], RPX, point=PT)
+    body.append(F.image(href, xs[2], my, pw, mh))
+    # 1 mm scale bars (1000 um)
+    bar = 1000.0 / span_x * pw
+    sb_y = my + mh + 5
+    for x0 in xs:
+        xe = x0 + pw - 2
+        body.append(line(xe - bar, sb_y, xe, sb_y, "#000", 1.4))
+        body.append(text(xe - bar - 3, sb_y + 2.4, "1 mm", 7, "end"))
+    ly = sb_y + 12
+    body.append(V.legend_items(xs[0], ly, list(LIN_COL.items()), size=7, sw=5.5, col_w=86, ncol=2, row_h=9))
+    body.append(V.legend_items(xs[1], ly, [(f"invasive tumour (target, n = {info['n_target']:,})", "#D55E00"),
+                                           (f"DCIS (reference, n = {info['n_reference']:,})", "#0072B2"),
+                                           ("other cells", "#DDDDDD")], size=7, sw=5.5, row_h=9))
     comp = info["niche_composition"]
     labs = []
     for k in sorted(comp, key=int):
         top = sorted(comp[k].items(), key=lambda kv: -kv[1])[:2]
         labs.append((f"N{k}: " + ", ".join(f"{n} {v:.0%}" for n, v in top), NICHE_COL[int(k)]))
-    body.append(F.legend(670, ymap, labs, size=9, sw=8))
-    y0 = ymap + 5 * 13 + 30
-    # D top targets of the hybrid with component ranks
+    body.append(V.legend_items(xs[2], ly, labs, size=7, sw=5.5, row_h=9))
+    y0 = ly + 6 * 9 + 14
+    # D top targets of the GNN ensemble
     g = pd.read_csv(os.path.join(a.run, "gene_scores.csv"))
     g = g[~g.is_readout]
     hy = "Hybrid (GNN ensemble + LR-communication)"
     gnn = [c for c in g.columns if c.startswith("NicheTarget-GNN (ensemble")][0]
     top = g.sort_values(gnn, ascending=False).head(15)
-    svg, h1 = F.hbar(10, y0 + 22, 320, list(top.gene), list(top[gnn]), color="#D55E00", label_w=70,
-                     xlabel="niche-max efficacy (scaled to max)")
-    body += [F.text(10, y0 + 10, "D", 14, weight="bold"), F.text(30, y0 + 10, "Top 15, NicheTarget-GNN ensemble", 11), svg]
+    svg, h1 = hbar(xs[0], y0 + 8, pw, list(top.gene), list(top[gnn]), "#D55E00",
+                   xlabel="niche-max efficacy (scaled to max)")
+    body += [text(xs[0], y0, "D", 9, weight="bold"), text(xs[0] + 10, y0, "Top 15, NicheTarget-GNN ensemble", 7.5), svg]
     lr = "LR-communication (niche-stratified)"
     top2 = g.sort_values(lr, ascending=False).head(15)
-    svg, _ = F.hbar(340, y0 + 22, 320, list(top2.gene), list(top2[lr]), color="#0072B2", label_w=70,
-                    xlabel="Spearman with read-out (max over niches)")
-    body += [F.text(340, y0 + 10, "E", 14, weight="bold"), F.text(360, y0 + 10, "Top 15, LR-communication", 11), svg]
+    svg, _ = hbar(xs[1], y0 + 8, pw, list(top2.gene), list(top2[lr]), "#0072B2",
+                  xlabel="Spearman with read-out (max over niches)")
+    body += [text(xs[1], y0, "E", 9, weight="bold"),
+             text(xs[1] + 10, y0, "Top 15, LR-communication (niche-stratified)", 7.5), svg]
     # F evidence: AUPRC / prevalence for four methods and three evidence sets
     ev = pd.read_csv(a.eval)          # evaluation_all.csv: bars = mean over sections, dots = sections
-    meths = [("DE", "DE"), (lr, "LR-comm."), (gnn, "GNN ens."), (hy, "Hybrid")]
-    sets = [("OT_breast", "Open Targets breast"), ("OT_clinical", "Clinical-stage drug"), ("DepMap_breast", "DepMap breast dep.")]
-    x0, yb, bw = 690, y0 + 40, 13
+    meths = [("DE", "DE"), (lr, "LR-comm. (niche-strat.)"), (gnn, "GNN ensemble"), (hy, "Hybrid")]
+    sets = [("OT_breast", ["Open Targets", "breast"]), ("OT_clinical", ["Clinical-stage", "drug"]),
+            ("DepMap_breast", ["DepMap breast", "dependency"])]
+
     def enr(m, s):
         r = ev[ev.method == m]
         return (r[f"{s}_AUPRC"] / r[f"{s}_prevalence"]).to_numpy()
+
     maxv = max(enr(m, s).max() for m, _ in meths for s, _ in sets)
-    ph2 = 210
-    body += [F.text(670, y0 + 10, "F", 14, weight="bold"), F.text(690, y0 + 10, "External evidence (Rep1 and Rep2)", 11)]
+    ymax = float(np.ceil(maxv / 2) * 2)
+    x0, yb, ph2, bw = xs[2] + 20, y0 + 12, 104.0, 9.0
+    Y = lambda v: yb + ph2 - v / ymax * ph2  # noqa: E731
+    body += [text(xs[2], y0, "F", 9, weight="bold"), text(xs[2] + 10, y0, "External evidence (Rep1 and Rep2)", 7.5)]
     mcol = ["#999999", "#0072B2", "#D55E00", "#009E73"]
+    for v in np.arange(0, ymax + 1e-9, 2):
+        body.append(line(x0, Y(v), x0 + 150, Y(v), "#E6E6E6", 0.4))
+        body.append(line(x0 - 2.5, Y(v), x0, Y(v), "#333", 0.6))
+        body.append(text(x0 - 4, Y(v) + 2.5, f"{v:g}", 7, "end"))
     for si, (s, sl) in enumerate(sets):
-        gx = x0 + 20 + si * 95
+        gx = x0 + 6 + si * 49
         for mi, (m, _) in enumerate(meths):
             vs = enr(m, s)
-            hh = vs.mean() / maxv * ph2
-            body.append(f'<rect x="{gx + mi * bw}" y="{yb + ph2 - hh:.1f}" width="{bw - 2}" height="{hh:.1f}" fill="{mcol[mi]}"/>')
+            body.append(rect(gx + mi * bw, Y(vs.mean()), bw - 1.5, Y(0) - Y(vs.mean()), mcol[mi]))
             for v in vs:
-                body.append(f'<circle cx="{gx + mi * bw + (bw - 2) / 2:.1f}" cy="{yb + ph2 - v / maxv * ph2:.1f}" r="1.8" fill="#222"/>')
-        body.append(F.text(gx + 2 * bw, yb + ph2 + 13, sl, 8.5, "middle"))
-    y1 = yb + ph2 - 1 / maxv * ph2
-    body.append(f'<line x1="{x0 + 10}" y1="{y1:.1f}" x2="{x0 + 300}" y2="{y1:.1f}" stroke="#555" stroke-dasharray="3,3"/>')
-    body.append(F.text(x0 + 300, y1 - 3, "random", 8.5, "end", fill="#555"))
-    body.append(f'<line x1="{x0 + 10}" y1="{yb}" x2="{x0 + 10}" y2="{yb + ph2}" stroke="#888"/>')
-    for v in range(0, int(maxv) + 1, 2 if maxv > 6 else 1):
-        yy = yb + ph2 - v / maxv * ph2
-        body.append(F.text(x0 + 6, yy + 3, str(v), 8.5, "end", fill="#555"))
-    body.append(F.text(x0 - 12, yb + ph2 / 2, "AUPRC / prevalence", 9.5, "middle", rotate=-90))
-    body.append(F.legend(x0 + 20, yb + ph2 + 24, [(lab, c) for (_, lab), c in zip(meths, mcol)], size=9, sw=8, col_w=75, ncol=4))
-    H = max(y0 + 22 + h1, yb + ph2 + 45) + 10
-    F.render("\n".join(body), W, H, a.out, svg_path=a.out.replace(".png", ".svg"))
+                body.append(circle(gx + mi * bw + (bw - 1.5) / 2, Y(v), 1.2, "#222", "white", 0.25))
+        for j, t in enumerate(sl):
+            body.append(text(gx + 2 * bw - 0.75, yb + ph2 + 9 + j * 8, t, 7, "middle"))
+    body.append(line(x0, Y(1), x0 + 150, Y(1), "#555", 0.6, "2,2"))
+    body.append(line(x0 + 5, Y(ymax) + 7, x0 + 17, Y(ymax) + 7, "#555", 0.6, "2,2"))
+    body.append(text(x0 + 20, Y(ymax) + 9.4, "random expectation (= 1)", 7, fill="#555"))
+    body.append(line(x0, yb, x0, yb + ph2, "#333", 0.6))
+    body.append(line(x0, yb + ph2, x0 + 150, yb + ph2, "#333", 0.6))
+    body.append(text(x0 - 15, yb + ph2 / 2, "AUPRC / prevalence", 7, "middle", rotate=-90))
+    body.append(V.legend_items(x0 - 12, yb + ph2 + 32, [(lab, c) for (_, lab), c in zip(meths, mcol)],
+                               size=7, sw=5.5, col_w=82, ncol=2, row_h=9))
+    H = max(y0 + 8 + h1, yb + ph2 + 32 + 12) + 4
+    for m, lab in meths:
+        print("  F", lab, {s: np.round(enr(m, s), 2).tolist() for s, _ in sets})
+    size = V.render("\n".join(body), W, H, base, dpi=a.dpi, preview_dir=a.preview)
+    print(f"{os.path.basename(base)}: {size[0]} x {size[1]} px; raster maps {RPX} px over {pw:.0f} pt "
+          f"({RPX / (pw / 72):.0f} dpi); 1 mm bar = {bar:.2f} pt (x span {span_x:.0f} um)")
 
 
 if __name__ == "__main__":
