@@ -21,8 +21,8 @@ import figvec as V  # noqa: E402
 from figvec import text, line, rect, circle, num, W2  # noqa: E402
 
 METHODS = [("NicheTarget-GNN", "NicheTarget-GNN", "#D55E00"),
-           ("w/o spatial message passing", "w/o spatial", "#E69F00"),
-           ("Co-expression regression", "Co-expression", "#999999")]
+           ("w/o spatial message passing", "Non-spatial variant", "#E69F00"),
+           ("Co-expression regression", "Co-expression regression", "#999999")]
 IFNG_COL, TGFB_COL, OTHER_COL = "#0072B2", "#009E73", "#C4C4C4"
 
 
@@ -122,9 +122,9 @@ def main():
     body.append(line(x0, yb + phc, x0 + 140, yb + phc, "#333", 0.6))
     body.append(text(x0 - 22, yb + phc / 2, "percentile (1 = ranked first)", 7, "middle", rotate=-90))
     body.append(text(372, 18.5, "numbers above bars: rank among candidates", 7, fill="#555"))
-    for (_, lab, c), lx in zip(METHODS, (x0 - 32, x0 + 40, x0 + 86)):
-        body.append(V.legend_items(lx, ly, [(lab, c)], size=7, sw=5.5))
-    H = ly + 6
+    for (_, lab, c), (lx, dy) in zip(METHODS, ((x0 - 32, 0), (x0 + 40, 0), (x0 - 32, 9))):
+        body.append(V.legend_items(lx, ly + dy, [(lab, c)], size=7, sw=5.5))
+    H = ly + 15
     size = V.render("\n".join(body), W, H, base, dpi=a.dpi, preview_dir=a.preview)
     print(f"{os.path.basename(base)}: {size[0]} x {size[1]} px")
 

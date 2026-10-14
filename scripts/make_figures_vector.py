@@ -218,6 +218,15 @@ MAIN = ["DE", "DE (niche-stratified)", "NeighbourhoodCorr", "NeighbourhoodCorr (
         "NicheTarget-GNN (ensemble of 3)", "Hybrid (GNN ensemble + LR-communication)"]
 
 
+DISPLAY = {"NeighbourhoodCorr": "Neighbourhood correlation",
+           "NeighbourhoodCorr (niche-stratified)": "Neighbourhood correlation (niche-stratified)",
+           "LR-communication (niche-stratified)+Selectivity": "LR-communication (niche-stratified) + selectivity"}
+
+
+def disp(m):
+    return DISPLAY.get(m, m)
+
+
 def is_ours(m):
     return m.startswith(("NicheTarget-GNN", "Hybrid"))
 
@@ -238,7 +247,7 @@ def fig_benchmark(df, base, prev):
         svg, ph = bar_panel(d_all[s], order, x0, top, pw, row_h, color_of, title=t, letter="AB"[k])
         body.append(svg)
     for i, m in enumerate(order):
-        body.append(text(lab_w - 5, top + (i + 0.5) * row_h + 2.5, m, 7, "end",
+        body.append(text(lab_w - 5, top + (i + 0.5) * row_h + 2.5, disp(m), 7, "end",
                          weight="bold" if is_ours(m) else "normal"))
     H = top + len(order) * row_h + 26
     return V.render("\n".join(body), W, H, base, dpi=1000, preview_dir=prev)
@@ -264,7 +273,7 @@ def fig4(df, out, prev):
 # ----------------------------------------------------------------------------- Fig 5 dot plot
 def fig5(df, out, prev):
     methods = [("DE", "DE", OI["grey"], "square"),
-               ("NeighbourhoodCorr", "NeighbourhoodCorr", OI["orange"], "triangle"),
+               ("NeighbourhoodCorr", "Neighbourhood correlation", OI["orange"], "triangle"),
                ("LR-communication (niche-stratified)", "LR-communication (niche-stratified)", OI["green"], "diamond"),
                ("NicheTarget-GNN", "NicheTarget-GNN", OI["blue"], "circle")]
     d = df[df.scenario == "full-lr"]
@@ -318,12 +327,12 @@ def graphical_abstract(out, prev):
     g = g[~g.is_readout]
     col = [c for c in g.columns if c.startswith("NicheTarget-GNN (ensemble")][0]
     top5 = g.sort_values(col, ascending=False).head(5)[["gene", col]].to_numpy()
-    W, H = 130 * MM, 60 * MM
+    W, H = 130 * MM, 60 * MM - 14
     body = [text(8, 13, "NicheTarget-GNN: niche-aware in-silico target prioritisation", 9.5, weight="bold", fill="#1B3F80"),
-            text(W - 8, 13, "Schematic", 7, "end", fill="#666", italic=True)]
+]
     n, gap, mx, top = 4, 10.0, 6.0, 22.0
     bw = (W - 2 * mx - (n - 1) * gap) / n
-    bh = H - top - 22
+    bh = H - top - 8
     titles = [["Spatial", "cell graph"], ["Niche-aware", "GNN"], ["In-silico", "inhibition"], ["Niche-specific", "ranked targets"]]
     for i in range(n):
         x = mx + i * (bw + gap)
@@ -390,10 +399,6 @@ def graphical_abstract(out, prev):
         body.append(rect(x + 54, yy - 3, float(v) * bmax, 6, OI["vermillion"]))
     body.append(text(x + bw / 2, top + bh - 15, "Xenium breast Rep1", 7, "middle", fill="#444"))
     body.append(text(x + bw / 2, top + bh - 6, "(GNN ensemble, top 5)", 7, "middle", fill="#444"))
-    body.append(text(8, H - 12, "Schematic overview. Panels 1–3 are illustrative drawings, not data. Panel 4: top-5 genes and",
-                     7, fill="#555"))
-    body.append(text(8, H - 4, "scaled niche-max efficacy (NicheTarget-GNN ensemble) from the Xenium breast cancer Rep1 results.",
-                     7, fill="#555"))
     print("  GA top5:", [(gname, round(float(v), 2)) for gname, v in top5])
     return V.render("\n".join(body), W, H, os.path.join(out, "Graphical_abstract"), dpi=600, preview_dir=prev)
 
