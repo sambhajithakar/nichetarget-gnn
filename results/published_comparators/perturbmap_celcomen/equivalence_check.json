@@ -1,0 +1,12 @@
+{
+ "G40_N60_epochs5": {
+  "max_abs_diff_initial_gex": 1.1920928955078125e-07,
+  "max_abs_diff_final_gex": 1.4901161193847656e-07,
+  "max_abs_final_change_published": 0.5929036140441895
+ },
+ "G300_N40_epochs2": {
+  "max_abs_diff_initial_gex": 1.4901161193847656e-07,
+  "max_abs_diff_final_gex": 1.7881393432617188e-07,
+  "max_abs_final_change_published": 0.2268877774477005
+ }
+}

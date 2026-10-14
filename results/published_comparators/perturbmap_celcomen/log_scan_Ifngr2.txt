@@ -1,0 +1,61 @@
+{"n_genes_model": 1759, "n_readout": 318, "n_train_spots": 6013, "n_candidates": {"Tgfbr2": 1371, "Ifngr2": 1347}, "check_matches_paper_run_info": true}
+Ifngr2 {'n_nodes': 1277, 'n_cmp': 566, 'n_edges': 6607, 'base_s': 27.524498462677002}
+Ifngr2 seed 1: 1/1347 candidates, 25s
+Ifngr2 seed 1: 26/1347 candidates, 683s
+Ifngr2 seed 1: 51/1347 candidates, 1590s
+Ifngr2 seed 1: 76/1347 candidates, 2496s
+Ifngr2 seed 1: 101/1347 candidates, 3366s
+Ifngr2 seed 1: 126/1347 candidates, 4154s
+Ifngr2 seed 1: 151/1347 candidates, 4814s
+Ifngr2 seed 1: 176/1347 candidates, 5467s
+Ifngr2 seed 1: 201/1347 candidates, 5970s
+Ifngr2 seed 1: 226/1347 candidates, 6376s
+Ifngr2 seed 1: 251/1347 candidates, 6782s
+Ifngr2 seed 1: 276/1347 candidates, 7181s
+Ifngr2 seed 1: 301/1347 candidates, 7583s
+Ifngr2 seed 1: 326/1347 candidates, 7989s
+Ifngr2 seed 1: 351/1347 candidates, 8392s
+Ifngr2 seed 1: 376/1347 candidates, 8797s
+Ifngr2 seed 1: 401/1347 candidates, 9202s
+Ifngr2 seed 1: 426/1347 candidates, 9608s
+Ifngr2 seed 1: 451/1347 candidates, 10013s
+Ifngr2 seed 1: 476/1347 candidates, 10419s
+Ifngr2 seed 1: 501/1347 candidates, 10826s
+Ifngr2 seed 1: 526/1347 candidates, 11227s
+Ifngr2 seed 1: 551/1347 candidates, 11630s
+Ifngr2 seed 1: 576/1347 candidates, 12033s
+Ifngr2 seed 1: 601/1347 candidates, 12442s
+Ifngr2 seed 1: 626/1347 candidates, 12853s
+Ifngr2 seed 1: 651/1347 candidates, 13262s
+Ifngr2 seed 1: 676/1347 candidates, 13676s
+Ifngr2 seed 1: 701/1347 candidates, 14093s
+Ifngr2 seed 1: 726/1347 candidates, 14501s
+Ifngr2 seed 1: 751/1347 candidates, 14905s
+Ifngr2 seed 1: 776/1347 candidates, 15305s
+Ifngr2 seed 1: 801/1347 candidates, 15710s
+Ifngr2 seed 1: 826/1347 candidates, 16105s
+Ifngr2 seed 1: 851/1347 candidates, 16513s
+Ifngr2 seed 1: 876/1347 candidates, 16924s
+Ifngr2 seed 1: 901/1347 candidates, 17331s
+Ifngr2 seed 1: 926/1347 candidates, 17738s
+Ifngr2 seed 1: 951/1347 candidates, 18132s
+Ifngr2 seed 1: 976/1347 candidates, 18534s
+Ifngr2 seed 1: 1001/1347 candidates, 18944s
+Ifngr2 seed 1: 1026/1347 candidates, 19357s
+Ifngr2 seed 1: 1051/1347 candidates, 19763s
+Ifngr2 seed 1: 1076/1347 candidates, 20182s
+Ifngr2 seed 1: 1101/1347 candidates, 20600s
+Ifngr2 seed 1: 1126/1347 candidates, 21025s
+Ifngr2 seed 1: 1151/1347 candidates, 21442s
+Ifngr2 seed 1: 1176/1347 candidates, 21875s
+Ifngr2 seed 1: 1201/1347 candidates, 22302s
+Ifngr2 seed 1: 1226/1347 candidates, 22723s
+Ifngr2 seed 1: 1251/1347 candidates, 23159s
+Ifngr2 seed 1: 1276/1347 candidates, 23607s
+Ifngr2 seed 1: 1301/1347 candidates, 24068s
+Ifngr2 seed 1: 1326/1347 candidates, 24528s
+Tgfbr2: scan incomplete, not evaluated
+                        method knockout  n_ko_spots  spearman_pred_vs_obs  rank_of_true_gene  n_candidates  percentile                        top5_genes  frac_ifng_genes_predicted_down  mean_pred_ifng_change  n_candidates_with_all_zero_effect
+0  Celcomen/SimComen (1 model)   Ifngr2         105               0.08965                135          1347     0.90052  [Wsb2, Sppl3, Tmed5, Tgfa, St14]                        0.047619               0.000003                                  0
+  knockout                       method  n_genes  spearman  ci95_low  ci95_high
+0   Ifngr2  Celcomen/SimComen (1 model)      318   0.08965  -0.02226   0.194878

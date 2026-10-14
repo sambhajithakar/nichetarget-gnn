@@ -1,0 +1,11 @@
+{
+ "n_genes_model": 1759,
+ "n_readout": 318,
+ "n_train_spots": 6013,
+ "n_candidates": {
+  "Tgfbr2": 1371,
+  "Ifngr2": 1347
+ },
+ "check_matches_paper_run_info": true,
+ "runtime_s": 18.980862379074097
+}

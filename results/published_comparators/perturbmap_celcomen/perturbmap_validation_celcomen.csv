@@ -1,0 +1,3 @@
+method,knockout,n_ko_spots,spearman_pred_vs_obs,rank_of_true_gene,n_candidates,percentile,top5_genes,frac_ifng_genes_predicted_down,mean_pred_ifng_change,n_candidates_with_all_zero_effect
+Celcomen/SimComen (1 model),Tgfbr2,224,0.005280511180201059,1043,1371,0.23997082421590077,"['Tmed5', 'Igf1r', 'Sppl3', 'Lrrc8c', 'Wbp1']",0.0,2.8202230168972164e-06,0
+Celcomen/SimComen (1 model),Ifngr2,105,0.08964964953011642,135,1347,0.9005196733481812,"['Wsb2', 'Sppl3', 'Tmed5', 'Tgfa', 'St14']",0.047619047619047616,2.987394509545993e-06,0
