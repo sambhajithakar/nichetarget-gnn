@@ -66,7 +66,7 @@ def main():
         for short, col in METHODS.items():
             s = d.loc[common, col].to_numpy(float)
             refcols = [("vs_disc", col)]
-            if short == "GNN":
+            if short == "GNN" and DISC_ENSEMBLE in d0.columns:   # sensitivity discovery run is a single model
                 refcols.append(("vs_disc_ensemble", DISC_ENSEMBLE))
             row = {"section": name, "method": short, "passed_gate": passed, "n_common": len(common)}
             for lab, rc in refcols:

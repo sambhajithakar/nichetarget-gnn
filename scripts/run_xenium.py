@@ -188,6 +188,9 @@ def main():
     ap.add_argument("--members", type=int, nargs="*", default=None,
                     help="ensemble members trained in this process (default: all); others are loaded if saved")
     ap.add_argument("--no-combine", action="store_true", help="only train/scan the given members")
+    ap.add_argument("--readout-rule", default="de", choices=["de", "malignant_specific"],
+                    help="malignant_specific: read-out genes restricted to genes expressed more highly in malignant "
+                         "cells than in every non-malignant lineage (sensitivity analysis, SENSITIVITY_PLAN.md)")
     a = ap.parse_args()
     members = list(range(a.n_ensemble)) if a.members is None else a.members
     os.makedirs(a.out, exist_ok=True)
@@ -210,6 +213,11 @@ def main():
     malignant_states[mal_cells] = True
 
     de = NB.de_score(X, target_cells, ref_cells)
+    if a.readout_rule == "malignant_specific":
+        # excludes stromal/immune genes that spill into tumour cells at tissue boundaries
+        lin_mean = np.stack([X[cell_type == t].mean(0) for t in range(len(LINEAGES) - 1) if (cell_type == t).any()])
+        eligible = lin_mean[0] > lin_mean[1:].max(0)
+        de = np.where(eligible, de, -np.inf)
     readout_idx = np.argsort(de)[::-1][:N_READOUT]
     readout = [genes[i] for i in readout_idx]
     programme = X[:, readout_idx].mean(1)
@@ -223,7 +231,7 @@ def main():
             "n_reference": int(len(ref_cells)), "target_clusters": tgt_cl, "reference_clusters": ref_cl,
             "lineage_of_cluster": {int(k): LINEAGES[v] for k, v in lineage_of.items()},
             "lineage_counts": {LINEAGES[t]: int((cell_type == t).sum()) for t in range(len(LINEAGES))},
-            "readout": readout, "readout_de": [float(de[i]) for i in readout_idx],
+            "readout": readout, "readout_rule": a.readout_rule, "readout_de": [float(de[i]) for i in readout_idx],
             "n_lr_pairs_in_panel": len(lr_all), "lr_pairs_used": len(lr_known), "hidden_lr": a.hide_lr}
     print(json.dumps(info), flush=True)
 
