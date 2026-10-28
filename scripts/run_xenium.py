@@ -145,7 +145,9 @@ def run_members(a, members, g, genes, coords, target_cells, ref_cells, niche, in
             params_path = os.path.join(a.out, f"model{e}_params.pkl")
             if os.path.exists(params_path):          # resume: trained earlier, scan was interrupted
                 model.load(pickle.load(open(params_path, "rb")))
-                hist = loss_from_log(os.path.join(a.out, f"log_member{e}.txt"))
+                # single-model runs log training to log.txt (appended on resume), ensemble members to log_member<e>.txt
+                hist = (loss_from_log(os.path.join(a.out, f"log_member{e}.txt"))
+                        or loss_from_log(os.path.join(a.out, "log.txt")))
                 print(f"model {e} loaded from {params_path}", flush=True)
             else:
                 tm = time.time()
@@ -301,7 +303,7 @@ def main():
     table.to_csv(os.path.join(a.out, "gene_scores.csv"), index=False)
     np.save(os.path.join(a.out, "niche.npy"), niche)
     np.save(os.path.join(a.out, "cell_type.npy"), cell_type)
-    info["train_loss_final"] = [h[-1] for h in hist_all]
+    info["train_loss_final"] = [h[-1] if h else None for h in hist_all]
     info["train_loss_curves"] = hist_all
     info["runtime_s"] = time.time() - t0
     json.dump(info, open(os.path.join(a.out, "run_info.json"), "w"), indent=1)
