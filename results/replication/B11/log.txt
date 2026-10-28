@@ -1,0 +1,102 @@
+{"n_cells": 79594, "n_genes": 280, "n_target": 14045, "n_reference": 29124, "target_clusters": [7, 16], "reference_clusters": [0, 3, 12], "lineage_of_cluster": {"0": "malignant", "1": "macrophage", "2": "macrophage", "3": "malignant", "4": "perivascular", "5": "T cell", "6": "fibroblast", "7": "malignant", "8": "fibroblast", "9": "endothelial", "10": "macrophage", "11": "mast cell", "12": "malignant", "13": "fibroblast", "14": "T cell", "15": "T cell", "16": "malignant", "17": "macrophage", "18": "plasma cell", "19": "myoepithelial"}, "lineage_counts": {"malignant": 43169, "myoepithelial": 350, "fibroblast": 10463, "perivascular": 996, "endothelial": 1846, "macrophage": 17488, "T cell": 4289, "B cell": 0, "plasma cell": 762, "mast cell": 231, "immune-stromal mixed": 0}, "readout": ["CCND1", "GATA3", "C15orf48", "TOP2A", "S100A14", "TOMM7", "BASP1", "MKI67", "KRT8", "MDM2", "CENPF", "NOSTRIN", "HMGA1", "FOXA1", "JUP"], "readout_de": [0.456734299659729, 0.21111249923706055, 0.188197061419487, 0.1459503173828125, 0.12224055081605911, 0.09694994986057281, 0.09070947766304016, 0.0856441929936409, 0.07112425565719604, 0.06418463587760925, 0.0627109557390213, 0.058302052319049835, 0.05749604105949402, 0.05408397316932678, 0.05114813148975372], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.66           0.00        0.09          0.01         0.02        0.18    0.02     0.0         0.00       0.00                   0.0
+1       0.89           0.00        0.03          0.00         0.01        0.06    0.00     0.0         0.00       0.00                   0.0
+2       0.40           0.01        0.12          0.02         0.04        0.36    0.04     0.0         0.01       0.00                   0.0
+3       0.05           0.01        0.50          0.02         0.04        0.21    0.13     0.0         0.03       0.01                   0.0
+4       0.05           0.00        0.14          0.01         0.04        0.52    0.20     0.0         0.02       0.01                   0.0
+baselines done 17.634299516677856
+epoch    0 loss 0.2141
+epoch   25 loss 0.0700
+epoch   50 loss 0.0806
+epoch   75 loss 0.0853
+epoch  100 loss 0.0854
+epoch  125 loss 0.0912
+epoch  150 loss 0.0819
+epoch  175 loss 0.0708
+epoch  200 loss 0.0572
+epoch  225 loss 0.0670
+epoch  250 loss 0.0822
+epoch  275 loss 0.0797
+epoch  300 loss 0.0785
+epoch  325 loss 0.0651
+epoch  350 loss 0.0791
+epoch  375 loss 0.0770
+epoch  400 loss 0.0838
+epoch  425 loss 0.0540
+epoch  450 loss 0.0718
+epoch  475 loss 0.0698
+epoch  499 loss 0.0686
+model 0 trained in 766s
+{"n_cells": 79594, "n_genes": 280, "n_target": 14045, "n_reference": 29124, "target_clusters": [7, 16], "reference_clusters": [0, 3, 12], "lineage_of_cluster": {"0": "malignant", "1": "macrophage", "2": "macrophage", "3": "malignant", "4": "perivascular", "5": "T cell", "6": "fibroblast", "7": "malignant", "8": "fibroblast", "9": "endothelial", "10": "macrophage", "11": "mast cell", "12": "malignant", "13": "fibroblast", "14": "T cell", "15": "T cell", "16": "malignant", "17": "macrophage", "18": "plasma cell", "19": "myoepithelial"}, "lineage_counts": {"malignant": 43169, "myoepithelial": 350, "fibroblast": 10463, "perivascular": 996, "endothelial": 1846, "macrophage": 17488, "T cell": 4289, "B cell": 0, "plasma cell": 762, "mast cell": 231, "immune-stromal mixed": 0}, "readout": ["CCND1", "GATA3", "C15orf48", "TOP2A", "S100A14", "TOMM7", "BASP1", "MKI67", "KRT8", "MDM2", "CENPF", "NOSTRIN", "HMGA1", "FOXA1", "JUP"], "readout_de": [0.456734299659729, 0.21111249923706055, 0.188197061419487, 0.1459503173828125, 0.12224055081605911, 0.09694994986057281, 0.09070947766304016, 0.0856441929936409, 0.07112425565719604, 0.06418463587760925, 0.0627109557390213, 0.058302052319049835, 0.05749604105949402, 0.05408397316932678, 0.05114813148975372], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.66           0.00        0.09          0.01         0.02        0.18    0.02     0.0         0.00       0.00                   0.0
+1       0.89           0.00        0.03          0.00         0.01        0.06    0.00     0.0         0.00       0.00                   0.0
+2       0.40           0.01        0.12          0.02         0.04        0.36    0.04     0.0         0.01       0.00                   0.0
+3       0.05           0.01        0.50          0.02         0.04        0.21    0.13     0.0         0.03       0.01                   0.0
+4       0.05           0.00        0.14          0.01         0.04        0.52    0.20     0.0         0.02       0.01                   0.0
+baselines done 14.391886472702026
+model 0 loaded from results/replication/B11/model0_params.pkl
+model 0 scanned in 2710s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:297: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+/home/user/nichetarget-gnn/scripts/run_xenium.py:297: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+Traceback (most recent call last):
+  File "/home/user/nichetarget-gnn/scripts/run_xenium.py", line 314, in <module>
+    main()
+  File "/home/user/nichetarget-gnn/scripts/run_xenium.py", line 304, in main
+    info["train_loss_final"] = [h[-1] for h in hist_all]
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/nichetarget-gnn/scripts/run_xenium.py", line 304, in <listcomp>
+    info["train_loss_final"] = [h[-1] for h in hist_all]
+                                ~^^^^
+IndexError: list index out of range
+{"n_cells": 79594, "n_genes": 280, "n_target": 14045, "n_reference": 29124, "target_clusters": [7, 16], "reference_clusters": [0, 3, 12], "lineage_of_cluster": {"0": "malignant", "1": "macrophage", "2": "macrophage", "3": "malignant", "4": "perivascular", "5": "T cell", "6": "fibroblast", "7": "malignant", "8": "fibroblast", "9": "endothelial", "10": "macrophage", "11": "mast cell", "12": "malignant", "13": "fibroblast", "14": "T cell", "15": "T cell", "16": "malignant", "17": "macrophage", "18": "plasma cell", "19": "myoepithelial"}, "lineage_counts": {"malignant": 43169, "myoepithelial": 350, "fibroblast": 10463, "perivascular": 996, "endothelial": 1846, "macrophage": 17488, "T cell": 4289, "B cell": 0, "plasma cell": 762, "mast cell": 231, "immune-stromal mixed": 0}, "readout": ["CCND1", "GATA3", "C15orf48", "TOP2A", "S100A14", "TOMM7", "BASP1", "MKI67", "KRT8", "MDM2", "CENPF", "NOSTRIN", "HMGA1", "FOXA1", "JUP"], "readout_de": [0.456734299659729, 0.21111249923706055, 0.188197061419487, 0.1459503173828125, 0.12224055081605911, 0.09694994986057281, 0.09070947766304016, 0.0856441929936409, 0.07112425565719604, 0.06418463587760925, 0.0627109557390213, 0.058302052319049835, 0.05749604105949402, 0.05408397316932678, 0.05114813148975372], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.66           0.00        0.09          0.01         0.02        0.18    0.02     0.0         0.00       0.00                   0.0
+1       0.89           0.00        0.03          0.00         0.01        0.06    0.00     0.0         0.00       0.00                   0.0
+2       0.40           0.01        0.12          0.02         0.04        0.36    0.04     0.0         0.01       0.00                   0.0
+3       0.05           0.01        0.50          0.02         0.04        0.21    0.13     0.0         0.03       0.01                   0.0
+4       0.05           0.00        0.14          0.01         0.04        0.52    0.20     0.0         0.02       0.01                   0.0
+baselines done 17.736756801605225
+model 0 loaded from results/replication/B11/model0_params.pkl
+model 0 scanned in 2426s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:299: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+/home/user/nichetarget-gnn/scripts/run_xenium.py:299: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+         gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+218    S100A4                                  0.999107                         1.000000                             0.213374
+54       CD80                                  0.950000                         0.134144                             0.034389
+172      MRC1                                  0.900000                         0.048844                             0.021734
+72      CTLA4                                  0.887500                         0.030638                             0.034389
+138       KIT                                  0.872321                         0.032266                             0.013024
+219    S100A8                                  0.816964                         0.006677                             0.085470
+181     NCAM1                                  0.805357                         0.011148                             0.006986
+63    CEACAM8                                  0.804464                         0.007017                             0.026722
+0      ABCC11                                  0.720536                         0.446860                             0.000000
+166      MLPH                                  0.718750                         0.346115                             0.000000
+99       ESR1                                  0.716964                         0.244584                             0.000000
+148      KRT7                                  0.715179                         0.219191                             0.000000
+1       ACTA2                                  0.713393                         0.188056                             0.000000
+208    PTRHD1                                  0.711607                         0.179558                             0.000000
+87        DSP                                  0.709821                         0.178754                             0.000000
+93   EIF4EBP1                                  0.708036                         0.171895                             0.000000
+82       DMKN                                  0.706250                         0.155469                             0.000000
+176     MYH11                                  0.704464                         0.152382                             0.000000
+177      MYLK                                  0.702679                         0.140897                             0.000000
+267     TRAF4                                  0.699107                         0.107649                             0.000000
+130     IL3RA                                  0.697321                         0.105555                             0.000000
+74       CTTN                                  0.695536                         0.105237                             0.000000
+153    LGALSL                                  0.693750                         0.097371                             0.000000
+224    SEC24A                                  0.691964                         0.095415                             0.000000
+202     PPARG                                  0.690179                         0.087309                             0.000000

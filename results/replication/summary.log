@@ -1,0 +1,92 @@
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1231: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+    section  n_cells  n_malignant  n_target  n_reference                                                                                       readout  passed_gate  mean_expr_ESR1_malignant  mean_expr_PGR_malignant  mean_expr_ERBB2_malignant
+0       B10    66084        29742     10238        19504        POSTN;LUM;ACTA2;MMP2;TOP2A;CXCL12;PDGFRB;CENPF;MKI67;MYLK;LYZ;FCER1G;SFRP4;ZEB2;CCDC80         True                  1.696102                 0.125665                   1.172430
+1       B11    79594        43169     14045        29124  CCND1;GATA3;C15orf48;TOP2A;S100A14;TOMM7;BASP1;MKI67;KRT8;MDM2;CENPF;NOSTRIN;HMGA1;FOXA1;JUP         True                  0.429670                 0.106737                   0.296270
+2       B12   151396        74251     17332        56919             MYBPC1;SCD;SEC11C;LUM;POSTN;CXCR4;AR;LYZ;CDH1;TRIB1;FCER1G;CXCL12;TCIM;SFRP4;MMP2         True                  1.040587                 0.573643                   1.113031
+3       B13    37562         9782      6159         3623           PIGR;SFRP1;KIT;KRT7;SH3YL1;LDHB;TOMM7;DSC2;SLC5A6;LARS;QARS;KLF5;PELI1;ZNF562;EPCAM         True                  0.215172                 0.166733                   0.413113
+4       B14    77387        47103      9942        37161       POSTN;LUM;ACTA2;TOP2A;CENPF;PDGFRB;MYLK;SFRP4;MKI67;APOBEC3B;SVIL;ZEB2;MMP2;CCDC80;MDM2         True                  1.769640                 0.009660                   1.441466
+5       B15    33517        12896      5266         7630    POSTN;LUM;ACTA2;CXCL12;MMP2;SFRP4;CCDC80;FBLN1;GJB2;MYLK;LRRC15;PDGFRB;CRISPLD2;ZEB1;TOP2A         True                  0.710362                 0.606061                   0.293127
+6       B16    15997          900       422          478               POSTN;MMP2;CD4;LYZ;CD163;CXCR4;CCDC80;SFRP4;PTPRC;ADH1B;LUM;IL7R;ZEB2;FGL2;MRC1        False                  0.240826                 0.047080                   0.617275
+7       B17    68194        27265     10018        17247  LUM;POSTN;MMP2;CXCL12;ACTA2;SERHL2;S100A4;CCDC80;FCER1G;PDGFRB;LRRC15;ENAH;GJB2;CEACAM6;MYLK         True                  0.438409                 0.401473                   0.725190
+8      B1_1   124532        29844      2127        27717  TOP2A;MKI67;CENPF;PCLAF;APOBEC3B;MDM2;RTKN2;HMGA1;SRPK1;TUBA4A;POSTN;LUM;S100A8;TENT5C;ACTA2         True                  0.004956                 0.002933                   0.992718
+9      B1_2   141266        33220      2425        30795   TOP2A;MKI67;CENPF;PCLAF;APOBEC3B;HMGA1;MDM2;POSTN;RTKN2;SRPK1;TUBA4A;LUM;ACTA2;MUC6;FAM107B         True                  0.002924                 0.002363                   0.852872
+10     B1_3   108070        27918     15035        12883       SCD;AKR1C1;ABCC11;SERHL2;FASN;SEC11C;AQP3;MYBPC1;FLNB;TOP2A;TPD52;MUC6;EPCAM;PIGR;HMGA1         True                  0.003529                 0.002988                   0.884258
+11       B2   131004        65521     22288        43233         MUC6;ESR1;SCD;KRT8;FAM107B;AGR3;FASN;SEC11C;PGR;UCP1;FOXA1;C15orf48;TPD52;RAB30;BASP1         True                  1.155119                 0.149484                   0.571557
+12       B3   125251        59278     13073        46205             SFRP4;LUM;CCDC80;ACTA2;PDGFRB;ZEB2;CXCL12;TOMM7;ZEB1;MYLK;CAV1;AQP1;DST;PDK4;SVIL         True                  0.012125                 0.004148                   0.427209
+13       B4    37905         9984      2533         7451       POSTN;LUM;ACTA2;MMP2;GJB2;PDGFRB;MYLK;CXCL12;ZEB2;CCDC80;LRRC15;SFRP4;S100A4;LYZ;FCER1G         True                  1.336198                 0.174485                   1.203321
+14       B5   185585        98271     50246        48025                MUC6;STC1;MDM2;ESR1;CCND1;PGR;TOP2A;MLPH;GATA3;CENPF;FLNB;FOXA1;PCLAF;DST;LPXN         True                  0.816403                 0.665173                   0.992475
+15       B6    94953        42364     11236        31128             SFRP4;LUM;CCDC80;ACTA2;ZEB2;PDGFRB;CXCL12;DST;ZEB1;FBLN1;SVIL;MYLK;CAV1;AQP1;PDK4         True                  0.016956                 0.006947                   0.566641
+16       B7    49579        25192     10366        14826          POSTN;LUM;KRT7;ACTA2;KRT8;TCIM;MMP2;SDC4;LYZ;S100A14;ENAH;SLC5A6;CXCL12;FCER1G;KRT23         True                  1.345395                 0.925036                   0.566819
+17       B8    48333        30681     10224        20457          POSTN;LUM;ACTA2;TOP2A;PDGFRB;ZEB1;MMP2;CCDC80;SFRP4;CENPF;MYLK;ZEB2;SVIL;FBLN1;ITM2C         True                  0.622845                 0.263927                   0.879591
+18       B9    98081        47293     16231        31062         LYZ;CD4;TOP2A;FCER1G;PTPRC;CD68;CENPF;CXCR4;C1QC;APOBEC3B;AIF1;FGL2;APOC1;IL7R;CXCL12         True                  1.121403                 0.679806                   0.435583
+19  sample2   135032        19882      6842        13040           SCD;SERHL2;ABCC11;MYBPC1;ERBB2;FASN;EPCAM;POSTN;HMGA1;CD9;PTPRC;LYZ;SEC11C;LUM;TRAC         True                  0.192421                 0.081763                   1.577225
+                                                    0         1         2         3              4
+method                                             DE  DE-niche       GNN  LR-niche  NbrCorr-niche
+n_donors                                           17        17        17        17             17
+vs_disc_spearman_median                      0.146954    0.2204 -0.127525  0.875293       0.018789
+vs_disc_spearman_q1                          0.087491  0.164345 -0.191802  0.870537      -0.031362
+vs_disc_spearman_q3                          0.212397    0.2824   0.04151  0.893231       0.063793
+vs_disc_top25_overlap_median                      3.0       6.0       1.0      21.0            1.0
+vs_disc_top25_overlap_q1                          2.0       5.0       0.0      20.0            1.0
+vs_disc_top25_overlap_q3                          4.0       8.0       4.0      21.0            4.0
+vs_disc_ensemble_spearman_median                  NaN       NaN  -0.14408       NaN            NaN
+vs_disc_ensemble_spearman_q1                      NaN       NaN -0.208846       NaN            NaN
+vs_disc_ensemble_spearman_q3                      NaN       NaN  0.008612       NaN            NaN
+vs_disc_ensemble_top25_overlap_median             NaN       NaN       1.0       NaN            NaN
+vs_disc_ensemble_top25_overlap_q1                 NaN       NaN       0.0       NaN            NaN
+vs_disc_ensemble_top25_overlap_q3                 NaN       NaN       4.0       NaN            NaN
+OT_breast_AUPRC_median                       0.168546  0.168734  0.175891  0.179993       0.185484
+OT_breast_AUPRC_q1                           0.144734  0.147788  0.163757  0.168347       0.162015
+OT_breast_AUPRC_q3                           0.179971  0.178013  0.192406  0.197856       0.200016
+OT_clinical_AUPRC_median                     0.250329  0.248316  0.237343  0.298843       0.245306
+OT_clinical_AUPRC_q1                         0.242571  0.221591  0.233664  0.286301       0.230794
+OT_clinical_AUPRC_q3                          0.26787  0.275429  0.253055  0.318673       0.276811
+DepMap_breast_AUPRC_median                   0.027699  0.023471  0.027668  0.044313       0.027798
+DepMap_breast_AUPRC_q1                       0.017646  0.018142   0.02381  0.029195       0.018825
+DepMap_breast_AUPRC_q3                       0.033042  0.030349  0.030697  0.103018        0.04264
+OT_breast_donors_AUPRC_above_prevalence            14        15        16        17             14
+OT_breast_sign_test_p_one_sided              0.006363  0.001175  0.000137  0.000008       0.006363
+OT_clinical_donors_AUPRC_above_prevalence          13        10         7        17              9
+OT_clinical_sign_test_p_one_sided            0.024521  0.314529  0.833847  0.000008            0.5
+DepMap_breast_donors_AUPRC_above_prevalence        10        10         7        15             10
+DepMap_breast_sign_test_p_one_sided          0.314529  0.314529  0.833847  0.001175       0.314529
+PDGFRA      10
+TCF4        10
+CCPG1        9
+PTN          9
+RUNX1        9
+CRISPLD2     9
+FBLN1        8
+GLIPR1       8
+ITM2C        7
+LDHB         7
+C5orf46      6
+ACTG2        6
+GJB2         6
+EGFR         6
+ALDH1A3      6
+PTGDS        6
+LRRC15       5
+DPT          5
+ADAM9        5
+FSTL3        5
+CAV1         5
+BACE2        4
+PPARG        4
+SERPINA3     4
+CXCL12       4
