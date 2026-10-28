@@ -68,7 +68,8 @@ def marker_lineage(X, genes, cluster):
     Z = (M - M.mean(0)) / (M.std(0) + 1e-9)
     out = {}
     for i, c in enumerate(cl):
-        sc = {t: Z[i, [gi[g] for g in gs]].mean() for t, gs in sets.items()}
+        # markers absent from a smaller panel (e.g. KRT15, DERL3 on the 280-gene base panel) are skipped
+        sc = {t: Z[i, [gi[g] for g in gs if g in gi]].mean() for t, gs in sets.items()}
         out[int(c)] = max(sc, key=sc.get)
     return out
 
