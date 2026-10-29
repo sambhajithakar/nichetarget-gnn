@@ -1,0 +1,61 @@
+{"n_cells": 49579, "n_genes": 280, "n_target": 10366, "n_reference": 14826, "target_clusters": [7, 19], "reference_clusters": [3, 14], "lineage_of_cluster": {"0": "T cell", "1": "myoepithelial", "2": "fibroblast", "3": "malignant", "4": "perivascular", "5": "macrophage", "6": "endothelial", "7": "malignant", "8": "macrophage", "9": "T cell", "10": "B cell", "11": "T cell", "12": "mast cell", "13": "B cell", "14": "malignant", "15": "macrophage", "16": "plasma cell", "17": "fibroblast", "18": "T cell", "19": "malignant"}, "lineage_counts": {"malignant": 25192, "myoepithelial": 78, "fibroblast": 11867, "perivascular": 890, "endothelial": 1304, "macrophage": 6995, "T cell": 1658, "B cell": 944, "plasma cell": 275, "mast cell": 376, "immune-stromal mixed": 0}, "readout": ["KRT7", "KRT8", "SDC4", "S100A14", "ENAH", "SLC5A6", "KRT23", "HOOK2", "CCDC6", "RORC", "HPX", "SH3YL1", "DMKN", "TFAP2A", "DNAAF1"], "readout_rule": "malignant_specific", "readout_de": [0.24347269535064697, 0.15305685997009277, 0.10444633662700653, 0.10270237922668457, 0.09516829252243042, 0.08467164635658264, 0.06977365911006927, 0.057954221963882446, 0.05394276976585388, 0.01260586827993393, 0.009195100516080856, 0.007502883672714233, 0.006740674376487732, 0.004893973469734192, 0.003890886902809143], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.57           0.00        0.25          0.01         0.02        0.12    0.01    0.01         0.01       0.01                   0.0
+1       0.94           0.00        0.04          0.00         0.00        0.02    0.00    0.00         0.00       0.00                   0.0
+2       0.09           0.00        0.26          0.02         0.04        0.47    0.08    0.01         0.01       0.02                   0.0
+3       0.02           0.01        0.12          0.14         0.15        0.09    0.23    0.25         0.01       0.00                   0.0
+4       0.12           0.00        0.58          0.03         0.05        0.16    0.03    0.01         0.01       0.01                   0.0
+baselines done 7.166858196258545
+epoch    0 loss 0.3517
+epoch   25 loss 0.1104
+epoch   50 loss 0.1074
+epoch   75 loss 0.1048
+epoch  100 loss 0.1053
+epoch  125 loss 0.1154
+epoch  150 loss 0.1039
+epoch  175 loss 0.0996
+epoch  200 loss 0.1086
+epoch  225 loss 0.1075
+epoch  250 loss 0.1122
+epoch  275 loss 0.0952
+epoch  300 loss 0.0848
+epoch  325 loss 0.0992
+epoch  350 loss 0.0938
+epoch  375 loss 0.0909
+epoch  400 loss 0.1024
+epoch  425 loss 0.1046
+epoch  450 loss 0.1096
+epoch  475 loss 0.0891
+epoch  499 loss 0.0921
+model 0 trained in 692s
+model 0 scanned in 1861s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:307: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+        gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+61      CDH1                                  0.983929                         1.000000                             0.210084
+96     ERBB2                                  0.977679                         0.598652                             0.315151
+219   S100A8                                  0.947321                         0.207445                             0.349063
+92      EGFR                                  0.937500                         0.234433                             0.210084
+58       CD9                                  0.936607                         0.601143                             0.014720
+62   CEACAM6                                  0.923214                         0.185355                             0.183515
+195   PECAM1                                  0.921429                         0.192513                             0.126550
+56      CD86                                  0.910714                         0.186259                             0.062279
+170    MMRN2                                  0.906250                         0.152725                             0.167101
+169     MMP2                                  0.898214                         0.125736                             0.210084
+181    NCAM1                                  0.853571                         0.087890                             0.047809
+44     CD247                                  0.851786                         0.100013                             0.024750
+59      CD93                                  0.841071                         0.079338                             0.035289
+46     CD274                                  0.826786                         0.054907                             0.055270
+50      CD68                                  0.799107                         0.015395                             0.349063
+36      CCL5                                  0.758036                         0.003356                             0.358760
+65   CLEC14A                                  0.740179                         0.004411                             0.167101
+63   CEACAM8                                  0.728571                         0.004979                             0.044303
+74      CTTN                                  0.720536                         0.709299                             0.000000
+3      ADAM9                                  0.718750                         0.689228                             0.000000
+100  FAM107B                                  0.716964                         0.669023                             0.000000
+252     TCIM                                  0.715179                         0.662872                             0.000000
+248  TACSTD2                                  0.713393                         0.649080                             0.000000
+135      JUP                                  0.711607                         0.620807                             0.000000
+201    POSTN                                  0.706250                         0.566391                             0.000000

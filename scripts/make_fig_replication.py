@@ -19,13 +19,15 @@ COL = {"GNN": "#0072B2", "LR-niche": "#E69F00", "DE-niche": "#009E73", "DE": "#9
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--summary", required=True)
+    ap.add_argument("--sensitivity", default=None, help="summary folder of the post hoc sensitivity analysis")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     ps = pd.read_csv(f"{a.summary}/replication_per_section.csv")
     pur = pd.read_csv(f"{a.summary}/readout_purity.csv")
     prim = ps[ps.passed_gate & ~ps.section.isin(["B1_2", "B1_3"])]
     plt.rcParams.update({"font.family": "Arial", "font.size": 8, "axes.spines.top": False, "axes.spines.right": False})
-    fig, ax = plt.subplots(1, 2, figsize=(7.1, 2.8), gridspec_kw={"width_ratios": [1.1, 1]})
+    n = 3 if a.sensitivity else 2
+    fig, ax = plt.subplots(1, n, figsize=(3.6 * n, 2.8))
     rng = np.random.default_rng(0)
     for i, m in enumerate(LABELS):
         v = prim[prim.method == m].vs_disc_top25_overlap.to_numpy()
@@ -44,6 +46,18 @@ def main():
     ax[1].set_xlabel("Read-out purity")
     ax[1].set_ylabel("GNN top-25 genes shared with Rep1")
     ax[1].set_title("B  Read-out purity (post hoc)", loc="left", fontsize=9, fontweight="bold")
+    if a.sensitivity:
+        ss = pd.read_csv(f"{a.sensitivity}/replication_per_section.csv")
+        sp = ss[ss.passed_gate & ~ss.section.isin(["B1_2", "B1_3"])]
+        for i, m in enumerate(LABELS):
+            v = sp[sp.method == m].vs_disc_top25_overlap.to_numpy()
+            ax[2].scatter(i + rng.uniform(-0.15, 0.15, len(v)), v, s=12, color=COL[m], alpha=0.8, lw=0)
+            ax[2].plot([i - 0.25, i + 0.25], [np.median(v)] * 2, color="k", lw=1.2)
+        ax[2].axhline(25 * 25 / 265, color="k", ls=":", lw=0.8)
+        ax[2].set_xticks(range(len(LABELS)), LABELS.values(), rotation=20, ha="right")
+        ax[2].set_ylabel("Top-25 genes shared with Rep1")
+        ax[2].set_ylim(-0.5, 25.5)
+        ax[2].set_title("C  Malignant-specific read-out (post hoc)", loc="left", fontsize=9, fontweight="bold")
     fig.tight_layout()
     for ext in ("png", "pdf"):
         fig.savefig(f"{a.out}.{ext}", dpi=300)

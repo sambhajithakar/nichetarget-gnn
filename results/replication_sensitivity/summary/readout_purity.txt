@@ -1,0 +1,3 @@
+donors=17  Spearman(purity, GNN top-25 overlap with discovery)=nan  p=nan
+purity>=0.5: n=17 median overlap=7.0 median spearman=0.150 sections=B10,B11,B12,B13,B14,B15,B17,B1_1,B2,B3,B4,B5,B6,B7,B8,B9,sample2
+purity<0.5: n=0 median overlap=nan median spearman=nan sections=

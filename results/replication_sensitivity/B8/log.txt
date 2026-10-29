@@ -1,0 +1,61 @@
+{"n_cells": 48333, "n_genes": 280, "n_target": 10224, "n_reference": 20457, "target_clusters": [1, 10], "reference_clusters": [8, 12], "lineage_of_cluster": {"0": "perivascular", "1": "malignant", "2": "T cell", "3": "macrophage", "4": "myoepithelial", "5": "macrophage", "6": "T cell", "7": "endothelial", "8": "malignant", "9": "mast cell", "10": "malignant", "11": "myoepithelial", "12": "malignant", "13": "macrophage", "14": "B cell", "15": "plasma cell", "16": "fibroblast", "17": "T cell", "18": "endothelial", "19": "fibroblast"}, "lineage_counts": {"malignant": 30681, "myoepithelial": 1581, "fibroblast": 7681, "perivascular": 858, "endothelial": 1450, "macrophage": 4596, "T cell": 852, "B cell": 125, "plasma cell": 290, "mast cell": 219, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "PCLAF", "SDC4", "BASP1", "MDM2", "CCND1", "GATA3", "SH3YL1", "CTTN", "DNAAF1", "HPX", "SERHL2", "AR", "TFAP2A"], "readout_rule": "malignant_specific", "readout_de": [0.21587017178535461, 0.1355280578136444, 0.05378612130880356, 0.032789409160614014, 0.022654712200164795, 0.013222157955169678, 0.012384295463562012, 0.008154869079589844, 0.0074936747550964355, 0.0042841434478759766, -0.007402341812849045, -0.017662711441516876, -0.01892046071588993, -0.02664165198802948, -0.02804422378540039], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.26           0.03        0.44          0.04         0.05        0.12    0.02    0.00         0.03       0.01                   0.0
+1       0.64           0.00        0.18          0.01         0.03        0.12    0.01    0.00         0.00       0.00                   0.0
+2       0.90           0.00        0.06          0.00         0.01        0.03    0.00    0.00         0.00       0.00                   0.0
+3       0.04           0.68        0.16          0.02         0.02        0.03    0.01    0.00         0.04       0.00                   0.0
+4       0.12           0.00        0.17          0.10         0.15        0.28    0.14    0.01         0.01       0.01                   0.0
+baselines done 7.5385072231292725
+epoch    0 loss 0.6560
+epoch   25 loss 0.1461
+epoch   50 loss 0.1394
+epoch   75 loss 0.1335
+epoch  100 loss 0.1351
+epoch  125 loss 0.1394
+epoch  150 loss 0.1336
+epoch  175 loss 0.1355
+epoch  200 loss 0.1280
+epoch  225 loss 0.1245
+epoch  250 loss 0.1296
+epoch  275 loss 0.1300
+epoch  300 loss 0.1317
+epoch  325 loss 0.1249
+epoch  350 loss 0.1327
+epoch  375 loss 0.1238
+epoch  400 loss 0.1288
+epoch  425 loss 0.1270
+epoch  450 loss 0.1286
+epoch  475 loss 0.1264
+epoch  499 loss 0.1134
+model 0 trained in 721s
+model 0 scanned in 1987s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:307: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+         gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+61       CDH1                                  0.946429                         0.781060                             0.032606
+195    PECAM1                                  0.888393                         0.035853                             0.052250
+49        CD4                                  0.885714                         0.037850                             0.049831
+59       CD93                                  0.845536                         0.015479                             0.050929
+54       CD80                                  0.843750                         0.011423                             0.107539
+219    S100A8                                  0.843750                         0.012132                             0.054255
+56       CD86                                  0.833036                         0.010771                             0.085399
+79      CXCR4                                  0.829464                         0.008249                             0.117408
+65    CLEC14A                                  0.802679                         0.009742                             0.033209
+206       PTN                                  0.802679                         0.003440                             0.311357
+172      MRC1                                  0.786607                         0.004530                             0.099632
+63    CEACAM8                                  0.777679                         0.002308                             0.110799
+46      CD274                                  0.724107                         0.000464                             0.107539
+165     MKI67                                  0.721429                         1.000000                             0.000000
+17   APOBEC3B                                  0.717857                         0.655028                             0.000000
+242      SQLE                                  0.716071                         0.483643                             0.000000
+108      FLNB                                  0.714286                         0.434578                             0.000000
+95      EPCAM                                  0.712500                         0.407435                             0.000000
+72      CTLA4                                  0.711607                         0.000275                             0.085399
+16   APOBEC3A                                  0.710714                         0.364817                             0.000000
+149      KRT8                                  0.708929                         0.313464                             0.000000
+270    TUBA4A                                  0.707143                         0.272058                             0.000000
+103     FBLN1                                  0.705357                         0.255416                             0.000000
+26   C15orf48                                  0.703571                         0.245687                             0.000000
+181     NCAM1                                  0.701786                         0.001029                             0.009199

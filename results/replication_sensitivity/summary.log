@@ -1,0 +1,101 @@
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py:1452: RuntimeWarning: invalid value encountered in subtract
+  a = op(a[slice1], a[slice2])
+    section  n_cells  n_malignant  n_target  n_reference                                                                                                readout  passed_gate  mean_expr_ESR1_malignant  mean_expr_PGR_malignant  mean_expr_ERBB2_malignant
+0       B10    66084        29742     10238        19504            TOP2A;CENPF;MKI67;PCLAF;HMGA1;KRT8;S100A14;PTRHD1;KLF5;KRT23;ABCC11;DNAAF1;CCDC6;SMS;SH3YL1         True                  1.696102                 0.125665                   1.172430
+1       B11    79594        43169     14045        29124             CCND1;GATA3;C15orf48;TOP2A;S100A14;MKI67;KRT8;MDM2;CENPF;NOSTRIN;FOXA1;FLNB;NARS;CTTN;SDC4         True                  0.429670                 0.106737                   0.296270
+2       B12   151396        74251     17332        56919              MYBPC1;SCD;AR;S100A14;FASN;MDM2;KRT8;S100A8;MYO5B;CCND1;DNAAF1;EIF4EBP1;LYPD3;PTRHD1;MUC6         True                  1.040587                 0.573643                   1.113031
+3       B13    37562         9782      6159         3623                    PIGR;SFRP1;KIT;KRT7;SH3YL1;LDHB;TOMM7;DSC2;SLC5A6;LARS;QARS;KLF5;ZNF562;EPCAM;HMGA1         True                  0.215172                 0.166733                   0.413113
+4       B14    77387        47103      9942        37161       TOP2A;CENPF;MKI67;APOBEC3B;PCLAF;SRPK1;EIF4EBP1;ENAH;DNTTIP1;HPX;TAC1;DNAAF1;KLRF1;CEACAM6;THAP2         True                  1.769640                 0.009660                   1.441466
+5       B15    33517        12896      5266         7630          TOP2A;MKI67;CENPF;DAPK3;DNTTIP1;MDM2;ENAH;ZNF562;ABCC11;SQLE;KRT23;FSTL3;C6orf132;CCDC6;LYPD3         True                  0.710362                 0.606061                   0.293127
+6       B17    68194        27265     10018        17247     SERHL2;CEACAM6;KRT23;ABCC11;S100A8;CCDC6;SLC25A37;TFAP2A;SH3YL1;C6orf132;RORC;CTH;DNAAF1;TIFA;DMKN         True                  0.438409                 0.401473                   0.725190
+7      B1_1   124532        29844      2127        27717               TOP2A;MKI67;CENPF;PCLAF;MDM2;HMGA1;SRPK1;S100A8;MUC6;EPCAM;TRAPPC3;QARS;PTRHD1;TRAF4;HPX         True                  0.004956                 0.002933                   0.992718
+8        B2   131004        65521     22288        43233                      MUC6;ESR1;SCD;KRT8;AGR3;FASN;PGR;UCP1;FOXA1;C15orf48;S100A14;FLNB;TOP2A;CDH1;MLPH         True                  1.155119                 0.149484                   0.571557
+9        B3   125251        59278     13073        46205           MKI67;TOP2A;CENPF;PCLAF;CCDC6;NARS;SH3YL1;PTRHD1;SRPK1;HMGA1;EIF4EBP1;QARS;C15orf48;HPX;MDM2         True                  0.012125                 0.004148                   0.427209
+10       B4    37905         9984      2533         7451   RUNX1;KRT14;KRT23;MYBPC1;SH3YL1;SERHL2;SEC24A;HPX;DNAAF1;DNTTIP1;SLC5A6;PCLAF;CCDC6;SLC25A37;TRAPPC3         True                  1.336198                 0.174485                   1.203321
+11       B5   185585        98271     50246        48025                       MUC6;STC1;MDM2;ESR1;CCND1;PGR;MLPH;GATA3;FLNB;FOXA1;SRPK1;AGR3;HPX;LARS;EIF4EBP1         True                  0.816403                 0.665173                   0.992475
+12       B6    94953        42364     11236        31128                MKI67;TOP2A;CENPF;PCLAF;CTH;C15orf48;HPX;RORC;PTRHD1;TRAF4;SRPK1;NARS;HOOK2;CTTN;SEC24A         True                  0.016956                 0.006947                   0.566641
+13       B7    49579        25192     10366        14826                KRT7;KRT8;SDC4;S100A14;ENAH;SLC5A6;KRT23;HOOK2;CCDC6;RORC;HPX;SH3YL1;DMKN;TFAP2A;DNAAF1         True                  1.345395                 0.925036                   0.566819
+14       B8    48333        30681     10224        20457                  TOP2A;CENPF;PCLAF;SDC4;BASP1;MDM2;CCND1;GATA3;SH3YL1;CTTN;DNAAF1;HPX;SERHL2;AR;TFAP2A         True                  0.622845                 0.263927                   0.879591
+15       B9    98081        47293     16231        31062  TOP2A;CENPF;APOBEC3B;MKI67;PCLAF;RTKN2;APOBEC3A;HMGA1;SMS;C15orf48;SRPK1;TUBB2B;SDC4;DNTTIP1;EIF4EBP1         True                  1.121403                 0.679806                   0.435583
+16  sample2   135032        19882      6842        13040                   SCD;SERHL2;ABCC11;MYBPC1;ERBB2;FASN;EPCAM;HMGA1;CD9;MUC6;AKR1C1;TOP2A;KRT7;AQP3;SQLE         True                  0.192421                 0.081763                   1.577225
+                                                    0         1         2         3              4
+method                                             DE  DE-niche       GNN  LR-niche  NbrCorr-niche
+n_donors                                           17        17        17        17             17
+vs_disc_spearman_median                      0.570519  0.261565  0.149894  0.879451       0.114016
+vs_disc_spearman_q1                          0.532832  0.219755  0.035627   0.87137       0.050668
+vs_disc_spearman_q3                          0.617505  0.300263  0.252762    0.8941       0.157838
+vs_disc_top25_overlap_median                     11.0       8.0       7.0      19.0            4.0
+vs_disc_top25_overlap_q1                          9.0       7.0       5.0      18.0            2.0
+vs_disc_top25_overlap_q3                         11.0       9.0       9.0      20.0            7.0
+OT_breast_AUPRC_median                       0.139574  0.168944  0.204498  0.186776       0.198633
+OT_breast_AUPRC_q1                           0.127053    0.1551  0.159077  0.176653       0.167092
+OT_breast_AUPRC_q3                           0.144676  0.188304  0.239991  0.200261       0.205784
+OT_clinical_AUPRC_median                     0.208684  0.249818   0.23533  0.313109       0.218229
+OT_clinical_AUPRC_q1                         0.205215  0.242624  0.219286  0.306075       0.206197
+OT_clinical_AUPRC_q3                         0.220835  0.278727  0.240193  0.327467       0.225175
+DepMap_breast_AUPRC_median                   0.100641  0.012461  0.049987  0.065686       0.101946
+DepMap_breast_AUPRC_q1                       0.066027  0.010391  0.037706  0.029206       0.042109
+DepMap_breast_AUPRC_q3                       0.127365  0.016686  0.071199  0.115873       0.171189
+OT_breast_donors_AUPRC_above_prevalence             3        15        16        17             16
+OT_breast_sign_test_p_one_sided              0.998825  0.001175  0.000137  0.000008       0.000137
+OT_clinical_donors_AUPRC_above_prevalence           0         9         2        17              1
+OT_clinical_sign_test_p_one_sided                 1.0       0.5  0.999863  0.000008       0.999992
+DepMap_breast_donors_AUPRC_above_prevalence        17         4        15        16             17
+DepMap_breast_sign_test_p_one_sided          0.000008  0.993637  0.001175  0.000137       0.000008
+CDH1        10
+DST          9
+TUBA4A       8
+TIFA         8
+FBLN1        7
+PIM1         7
+KRT8         7
+RTKN2        7
+APOBEC3B     7
+SERPINA3     6
+DNTTIP1      6
+ANKRD28      6
+ADAM9        6
+FAM107B      6
+GATA3        6
+STC1         6
+TENT5C       6
+DSP          6
+APOBEC3A     6
+FLNB         5
+ANKRD30A     5
+TPD52        5
+RHOH         5
+JUP          5
+SMS          5

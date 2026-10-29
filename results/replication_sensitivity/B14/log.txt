@@ -1,0 +1,70 @@
+{"n_cells": 77387, "n_genes": 280, "n_target": 9942, "n_reference": 37161, "target_clusters": [6, 17], "reference_clusters": [1, 3, 9], "lineage_of_cluster": {"0": "endothelial", "1": "malignant", "2": "perivascular", "3": "malignant", "4": "endothelial", "5": "T cell", "6": "malignant", "7": "B cell", "8": "mast cell", "9": "malignant", "10": "plasma cell", "11": "fibroblast", "12": "macrophage", "13": "T cell", "14": "myoepithelial", "15": "fibroblast", "16": "macrophage", "17": "malignant", "18": "macrophage", "19": "T cell"}, "lineage_counts": {"malignant": 47103, "myoepithelial": 380, "fibroblast": 7296, "perivascular": 1426, "endothelial": 3340, "macrophage": 10849, "T cell": 3604, "B cell": 206, "plasma cell": 2211, "mast cell": 972, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "APOBEC3B", "PCLAF", "SRPK1", "EIF4EBP1", "ENAH", "DNTTIP1", "HPX", "TAC1", "DNAAF1", "KLRF1", "CEACAM6", "THAP2"], "readout_rule": "malignant_specific", "readout_de": [0.5604566335678101, 0.4299818277359009, 0.27036482095718384, 0.19682526588439941, 0.12139635533094406, 0.031203627586364746, 0.013644352555274963, 0.010580480098724365, -0.001754462718963623, -0.0024974551051855087, -0.008207488805055618, -0.010237565264105797, -0.011837251484394073, -0.013892417773604393, -0.01579488068819046], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.72           0.00        0.07          0.02         0.05        0.11    0.01    0.00         0.00       0.00                   0.0
+1       0.05           0.03        0.31          0.03         0.08        0.18    0.09    0.01         0.16       0.06                   0.0
+2       0.95           0.00        0.01          0.01         0.01        0.02    0.00    0.00         0.00       0.00                   0.0
+3       0.06           0.00        0.10          0.01         0.03        0.40    0.28    0.02         0.07       0.03                   0.0
+4       0.43           0.01        0.13          0.03         0.09        0.24    0.04    0.00         0.02       0.01                   0.0
+baselines done 16.069689750671387
+epoch    0 loss 0.2359
+epoch   25 loss 0.1055
+epoch   50 loss 0.1044
+epoch   75 loss 0.0988
+epoch  100 loss 0.0983
+epoch  125 loss 0.0977
+epoch  150 loss 0.0951
+epoch  175 loss 0.0979
+epoch  200 loss 0.0994
+epoch  225 loss 0.0942
+epoch  250 loss 0.0935
+epoch  275 loss 0.0935
+epoch  300 loss 0.0949
+epoch  325 loss 0.0956
+epoch  350 loss 0.0927
+epoch  375 loss 0.0904
+epoch  400 loss 0.0936
+epoch  425 loss 0.0902
+epoch  450 loss 0.0952
+epoch  475 loss 0.0916
+epoch  499 loss 0.0949
+model 0 trained in 656s
+{"n_cells": 77387, "n_genes": 280, "n_target": 9942, "n_reference": 37161, "target_clusters": [6, 17], "reference_clusters": [1, 3, 9], "lineage_of_cluster": {"0": "endothelial", "1": "malignant", "2": "perivascular", "3": "malignant", "4": "endothelial", "5": "T cell", "6": "malignant", "7": "B cell", "8": "mast cell", "9": "malignant", "10": "plasma cell", "11": "fibroblast", "12": "macrophage", "13": "T cell", "14": "myoepithelial", "15": "fibroblast", "16": "macrophage", "17": "malignant", "18": "macrophage", "19": "T cell"}, "lineage_counts": {"malignant": 47103, "myoepithelial": 380, "fibroblast": 7296, "perivascular": 1426, "endothelial": 3340, "macrophage": 10849, "T cell": 3604, "B cell": 206, "plasma cell": 2211, "mast cell": 972, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "APOBEC3B", "PCLAF", "SRPK1", "EIF4EBP1", "ENAH", "DNTTIP1", "HPX", "TAC1", "DNAAF1", "KLRF1", "CEACAM6", "THAP2"], "readout_rule": "malignant_specific", "readout_de": [0.5604566335678101, 0.4299818277359009, 0.27036482095718384, 0.19682526588439941, 0.12139635533094406, 0.031203627586364746, 0.013644352555274963, 0.010580480098724365, -0.001754462718963623, -0.0024974551051855087, -0.008207488805055618, -0.010237565264105797, -0.011837251484394073, -0.013892417773604393, -0.01579488068819046], "n_lr_pairs_in_panel": 32, "lr_pairs_used": 32, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.72           0.00        0.07          0.02         0.05        0.11    0.01    0.00         0.00       0.00                   0.0
+1       0.05           0.03        0.31          0.03         0.08        0.18    0.09    0.01         0.16       0.06                   0.0
+2       0.95           0.00        0.01          0.01         0.01        0.02    0.00    0.00         0.00       0.00                   0.0
+3       0.06           0.00        0.10          0.01         0.03        0.40    0.28    0.02         0.07       0.03                   0.0
+4       0.43           0.01        0.13          0.03         0.09        0.24    0.04    0.00         0.02       0.01                   0.0
+baselines done 36.72413730621338
+model 0 loaded from results/replication_sensitivity/B14/model0_params.pkl
+model 0 scanned in 5712s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:307: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+         gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+61       CDH1                                  0.951786                         0.548087                             0.048071
+207     PTPRC                                  0.904464                         0.014106                             0.117814
+50       CD68                                  0.894643                         0.015489                             0.089254
+65    CLEC14A                                  0.893750                         0.012927                             0.107277
+206       PTN                                  0.891964                         0.013660                             0.099744
+49        CD4                                  0.890179                         0.010523                             0.117814
+79      CXCR4                                  0.887500                         0.020911                             0.030222
+51       CD69                                  0.865179                         0.006631                             0.124392
+56       CD86                                  0.846429                         0.009515                             0.045352
+46      CD274                                  0.816964                         0.004565                             0.090588
+72      CTLA4                                  0.814286                         0.004955                             0.049104
+172      MRC1                                  0.794643                         0.003421                             0.085548
+170     MMRN2                                  0.768750                         0.001790                             0.107277
+190  PDCD1LG2                                  0.761607                         0.001978                             0.068682
+219    S100A8                                  0.754464                         0.000512                             0.124392
+169      MMP2                                  0.745536                         0.000249                             0.154665
+54       CD80                                  0.734821                         0.000504                             0.090588
+59       CD93                                  0.733036                         0.000906                             0.067262
+215     RTKN2                                  0.721429                         1.000000                             0.000000
+63    CEACAM8                                  0.720536                         0.001237                             0.026075
+199      PIM1                                  0.719643                         0.688039                             0.000000
+164      MDM2                                  0.717857                         0.608287                             0.000000
+16   APOBEC3A                                  0.714286                         0.525606                             0.000000
+7        AGR3                                  0.712500                         0.433735                             0.000000
+88        DST                                  0.710714                         0.333182                             0.000000
