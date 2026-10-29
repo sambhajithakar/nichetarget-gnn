@@ -403,6 +403,107 @@ def graphical_abstract(out, prev):
     return V.render("\n".join(body), W, H, os.path.join(out, "Graphical_abstract"), dpi=600, preview_dir=prev)
 
 
+def graphical_abstract_v2(out, prev):
+    """Graphical abstract of the CBC revision: method panels plus the cross-patient replication result."""
+    g = pd.read_csv(os.path.join(ROOT, "results", "xenium_rep1", "gene_scores.csv"))
+    g = g[~g.is_readout]
+    col = [c for c in g.columns if c.startswith("NicheTarget-GNN (ensemble")][0]
+    top5 = g.sort_values(col, ascending=False).head(5)[["gene", col]].to_numpy()
+    W, H = 160 * MM, 60 * MM - 14
+    body = [text(8, 13, "NicheTarget-GNN: niche-aware in-silico target ranking, tested across 17 patients", 9.5, weight="bold", fill="#1B3F80"),
+]
+    n, gap, mx, top = 5, 9.0, 6.0, 22.0
+    bw = (W - 2 * mx - (n - 1) * gap) / n
+    bh = H - top - 8
+    titles = [["Spatial", "cell graph"], ["Niche-aware", "GNN"], ["In-silico", "inhibition"], ["Niche-specific", "ranked targets"], ["Cross-patient", "replication"]]
+    for i in range(n):
+        x = mx + i * (bw + gap)
+        body.append(rect(x, top, bw, bh, "#F4F7FC", "#2A6FDB", 0.8, rx=4))
+        for j, t in enumerate(titles[i]):
+            body.append(text(x + bw / 2, top + 11 + j * 9.5, t, 8, "middle", weight="bold", fill="#1B3F80"))
+        if i < n - 1:
+            body.append(V.arrow(x + bw + 1, top + bh / 2, x + bw + gap - 1, top + bh / 2, "#1B3F80", 1.0, 3.5))
+    cy0 = top + 30
+    # 1: hand-placed illustrative graph (not data)
+    x = mx
+    pts = np.array([[10, 8], [22, 5], [33, 12], [15, 20], [27, 24], [40, 26], [8, 33], [20, 38], [34, 40],
+                    [45, 12], [47, 37], [13, 48], [28, 52], [42, 50]], float)
+    cols = [OI["vermillion"], OI["vermillion"], OI["orange"], OI["vermillion"], OI["orange"], OI["vermillion"],
+            OI["blue"], OI["vermillion"], OI["green"], OI["vermillion"], OI["green"], OI["blue"], OI["vermillion"],
+            OI["green"]]
+    sx = (bw - 52) / 2 + x
+    for a in range(len(pts)):
+        dd = np.linalg.norm(pts - pts[a], axis=1)
+        for b in np.argsort(dd)[1:4]:
+            if b > a or a not in np.argsort(np.linalg.norm(pts - pts[b], axis=1))[1:4]:
+                body.append(line(sx + pts[a, 0], cy0 + pts[a, 1], sx + pts[b, 0], cy0 + pts[b, 1], "#9AA7B8", 0.5))
+    for p, c in zip(pts, cols):
+        body.append(circle(sx + p[0], cy0 + p[1], 2.6, c, "white", 0.4))
+    body.append(text(x + bw / 2, top + bh - 6, "cells + LR edges", 7, "middle", fill="#444"))
+    # 2: network icon
+    x = mx + (bw + gap)
+    layers = [3, 4, 4, 2]
+    lx = [x + 14 + k * (bw - 28) / 3 for k in range(4)]
+    node = {}
+    for k, nn in enumerate(layers):
+        for j in range(nn):
+            node[(k, j)] = (lx[k], cy0 + 27 + (j - (nn - 1) / 2) * 12)
+    for k in range(3):
+        for j in range(layers[k]):
+            for j2 in range(layers[k + 1]):
+                (x1, y1), (x2, y2) = node[(k, j)], node[(k + 1, j2)]
+                body.append(line(x1, y1, x2, y2, "#B5C3D6", 0.4))
+    for (k, j), (px, py) in node.items():
+        body.append(circle(px, py, 3.0, "#2A6FDB" if k in (1, 2) else "#7FA7E8", "white", 0.4))
+    body.append(text(x + bw / 2, top + bh - 15, "LR-edge attention", 7, "middle", fill="#444"))
+    body.append(text(x + bw / 2, top + bh - 6, "+ niche conditioning", 7, "middle", fill="#444"))
+    # 3: inhibition
+    x = mx + 2 * (bw + gap)
+    gx, gyb = x + 16, cy0 + 40
+    for k, (hb, hb2) in enumerate([(26, 26), (30, 0), (18, 18)]):
+        bx = gx + k * 18
+        body.append(rect(bx, gyb - hb, 9, hb, "#C9D3E2"))
+        if k == 1:
+            body.append(rect(bx, gyb - hb, 9, hb, "none", OI["vermillion"], 0.8))
+            body.append(line(bx - 2, gyb - hb - 2, bx + 11, gyb + 2, OI["vermillion"], 1.1))
+    body.append(line(gx - 3, gyb, gx + 48, gyb, "#555", 0.5))
+    body.append(rich(gx + 22, gyb + 10, [("x", "i"), ("g", "isub"), (" → 0", "n")], 8))
+    body.append(text(x + bw / 2, top + bh - 15, "predict read-out", 7, "middle", fill="#444"))
+    body.append(text(x + bw / 2, top + bh - 6, "shift per niche", 7, "middle", fill="#444"))
+    # 4: ranked list (data: Xenium Rep1, GNN ensemble, scaled niche-max efficacy)
+    x = mx + 3 * (bw + gap)
+    ly0 = cy0 + 2
+    bmax = bw - 62
+    for k, (gene, v) in enumerate(top5):
+        yy = ly0 + k * 9.5
+        body.append(text(x + 6, yy + 3, f"{k + 1}", 7, fill="#666"))
+        body.append(text(x + 12, yy + 3, gene, 7))
+        body.append(rect(x + 54, yy - 3, float(v) * bmax, 6, OI["vermillion"]))
+    body.append(text(x + bw / 2, top + bh - 15, "Xenium breast Rep1", 7, "middle", fill="#444"))
+    body.append(text(x + bw / 2, top + bh - 6, "(GNN ensemble, top 5)", 7, "middle", fill="#444"))
+    # 5: replication (data: median top-25 overlap with Rep1 across 17 donors)
+    x = mx + 4 * (bw + gap)
+    pre = pd.read_csv(os.path.join(ROOT, "results", "replication", "summary", "replication_across_donors.csv"), index_col=0)
+    sen = pd.read_csv(os.path.join(ROOT, "results", "replication_sensitivity", "summary", "replication_across_donors.csv"), index_col=0)
+    gy, gh = cy0 + 44, 42.0
+    meths = [("GNN", "GNN"), ("DE", "DE"), ("LR-niche", "LR")]
+    for k, (m, lab) in enumerate(meths):
+        bx = x + 12 + k * 17
+        for q, (tab, colr) in enumerate([(pre, "#9AA7B8"), (sen, OI["vermillion"])]):
+            v = float(tab.loc[m, "vs_disc_top25_overlap_median"])
+            body.append(rect(bx + q * 6.5, gy - v / 25 * gh, 6, v / 25 * gh, colr))
+            body.append(text(bx + q * 6.5 + 3, gy - v / 25 * gh - 1.5, f"{v:.0f}", 5.5, "middle", fill="#333"))
+        body.append(text(bx + 6.2, gy + 7, lab, 6.5, "middle"))
+    body.append(line(x + 9, gy, x + bw - 6, gy, "#555", 0.5))
+    for q, (lab, colr) in enumerate([("as planned", "#9AA7B8"), ("malignant-only read-out", OI["vermillion"])]):
+        body.append(rect(x + 10, gy + 13 + q * 8, 4, 4, colr))
+        body.append(text(x + 16, gy + 16.5 + q * 8, lab, 6, fill="#444"))
+    body.append(text(x + bw / 2, top + bh - 15, "top-25 genes shared", 7, "middle", fill="#444"))
+    body.append(text(x + bw / 2, top + bh - 6, "with discovery tumour", 7, "middle", fill="#444"))
+    print("  GA top5:", [(gname, round(float(v), 2)) for gname, v in top5])
+    return V.render("\n".join(body), W, H, os.path.join(out, "Graphical_abstract_v2"), dpi=600, preview_dir=prev)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
@@ -431,6 +532,8 @@ def main():
         sizes["Figure_5"] = fig5(df, a.out, a.preview)
     if want("S1"):
         sizes["Figure_S1"] = fig_benchmark(df2, os.path.join(a.out, "Figure_S1"), a.preview)
+    if want("GA2"):
+        sizes["Graphical_abstract_v2"] = graphical_abstract_v2(a.out, a.preview)
     if want("GA"):
         sizes["Graphical_abstract"] = graphical_abstract(a.out, a.preview)
     for k, v in sizes.items():
