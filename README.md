@@ -1,6 +1,8 @@
 # NicheTarget-GNN
 
-Code and data outputs for the manuscript *Niche-Aware Heterogeneous Graph Neural Networks with Counterfactual Perturbation for Discovering Cell-State-Specific Druggable Targets in the Tumour Microenvironment* (Thakar and Ghorpade, submitted to Computers in Biology and Medicine). License: MIT. Please cite the archived release (see `CITATION.cff`).
+Code and data outputs for the manuscript *Artificial Intelligence-Driven Identification of Niche-Specific Therapeutic Targets in Cancer Using Graph Neural Networks and Spatial Transcriptomics: A Cross-Patient Reproducibility Study* (Thakar and Ghorpade; manuscript under review). License: MIT. Please cite the archived release (see `CITATION.cff`; Zenodo concept DOI [10.5281/zenodo.23349189](https://doi.org/10.5281/zenodo.23349189), which always resolves to the latest version).
+
+Releases: v1.0.0 and v1.1.0 accompanied an earlier single-tumour version of the manuscript. v1.2.0 (current) adds the pre-specified cross-patient replication in 17 breast cancer donors (`results/replication/`, plan in `results/replication/PRESPECIFIED.md`) and the post hoc read-out sensitivity analysis (`results/replication_sensitivity/`).
 
 Niche-aware graph neural network with counterfactual target inhibition for ranking cell-state-specific, selective drug targets from spatial transcriptomics.
 

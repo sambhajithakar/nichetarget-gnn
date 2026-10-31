@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "NicheTarget-GNN: niche-aware graph neural networks with counterfactual perturbation for cell-state-specific target discovery in the tumor microenvironment"
-version: 1.0.0
-date-released: 2026-10-13
+title: "NicheTarget-GNN: niche-conditioned graph neural network for spatial target ranking, with a cross-patient reproducibility study"
+version: 1.2.0
+date-released: 2026-10-31
 license: MIT
 repository-code: "https://github.com/sambhajithakar/nichetarget-gnn"
 authors:
   - family-names: Thakar
     given-names: Sambhaji Balaso
     orcid: "https://orcid.org/0000-0002-0423-2015"
-    affiliation: "Aditya BioNova Analytics, Pune, India"
+    affiliation: "Aditya BioNova Analytics, Haroli, Kolhapur, Maharashtra, India"
   - family-names: Ghorpade
     given-names: Pradnya Namdev
     orcid: "https://orcid.org/0000-0001-6593-825X"
-    affiliation: "Aditya BioNova Analytics, Pune, India"
+    affiliation: "Aditya BioNova Analytics, Haroli, Kolhapur, Maharashtra, India"
 keywords: [graph neural network, spatial transcriptomics, tumor microenvironment, drug target discovery, counterfactual perturbation]
