@@ -158,7 +158,7 @@ def run_members(a, members, g, genes, coords, target_cells, ref_cells, niche, in
                     pickle.dump(model.state(), f)
             tm = time.time()
             cand = list(range(a.debug_genes)) if a.debug_genes else None
-            rows, _ = NC.scan_targets(model, g, genes, scan_cells, ref_cells, niche, chunk=None, candidates=cand,
+            rows, _ = NC.scan_targets(model, g, genes, scan_cells, ref_cells, niche, chunk=a.scan_chunk, candidates=cand,
                                       axis_cells=target_cells)
             if cand is not None:
                 rows = rows + [(genes[j], 0.0, {}) for j in range(a.debug_genes, len(genes))]
@@ -189,6 +189,9 @@ def main():
     ap.add_argument("--members", type=int, nargs="*", default=None,
                     help="ensemble members trained in this process (default: all); others are loaded if saved")
     ap.add_argument("--no-combine", action="store_true", help="only train/scan the given members")
+    ap.add_argument("--scan-chunk", type=int, default=None,
+                    help="scan target cells in chunks of this size, each with its own 2-hop halo (bounds memory on "
+                         "large sections; exact because the model is local to the 2-hop neighbourhood)")
     ap.add_argument("--readout-rule", default="de", choices=["de", "malignant_specific"],
                     help="malignant_specific: read-out genes restricted to genes expressed more highly in malignant "
                          "cells than in every non-malignant lineage (sensitivity analysis, SENSITIVITY_PLAN.md)")

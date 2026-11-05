@@ -85,3 +85,10 @@ one-sided sign test of AUPRC > prevalence.
 All runs and all endpoints are reported, including any that fail. Earlier results (pre-specified negative
 replication; post hoc sensitivity) are not changed or re-labelled. Any analysis not listed here is labelled
 exploratory.
+
+## Implementation note (added 5 Nov 2026, before any external ranking was inspected)
+
+The external tumours P17-P32 (247k-478k cells) exceeded memory during the target scan. The scan now runs in
+chunks of 2,000 target cells, each with its full 2-hop halo (`--scan-chunk 2000`). The model is local to the
+2-hop neighbourhood, so results are identical: checked on P24 for 4 genes (efficacy equal to the last digit with
+and without chunking). Trained models saved before the memory failure are reused, not retrained.
