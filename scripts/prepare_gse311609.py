@@ -45,19 +45,28 @@ def main():
     ap.add_argument("--cells", required=True)
     ap.add_argument("--min-counts", type=int, default=10)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--genes", default=None,
+                    help="text file of genes to keep (counts restricted before normalisation and clustering; "
+                         "used for the 5K-panel external cohort, results/revision/PRESPECIFIED_REVISION.md)")
     a = ap.parse_args()
     m = h5lite.read_10x_h5(a.h5)
     nf, nb = m["shape"]
-    M = np.zeros((nb, nf), np.float32)
+    is_gene = np.array([t == "Gene Expression" for t in m["feature_type"]])
+    if a.genes:
+        keep_set = set(open(a.genes).read().split())
+        is_gene &= np.array([n in keep_set for n in m["feature_name"]])
+    col = np.full(nf, -1)
+    col[is_gene] = np.arange(is_gene.sum())
+    genes = [n for n, g in zip(m["feature_name"], is_gene) if g]
+    counts = np.zeros((nb, len(genes)), np.float32)
     for j in range(nb):
         s, e = m["indptr"][j], m["indptr"][j + 1]
-        M[j, m["indices"][s:e]] = m["data"][s:e]
-    is_gene = np.array([t == "Gene Expression" for t in m["feature_type"]])
-    genes = [n for n, g in zip(m["feature_name"], is_gene) if g]
+        c = col[m["indices"][s:e]]
+        ok = c >= 0
+        counts[j, c[ok]] = m["data"][s:e][ok]
     cells = load_cells(a.cells)
     cells["cell_id"] = cells["cell_id"].astype(str)
     cells = cells.set_index("cell_id").loc[[str(b) for b in m["barcodes"]]]
-    counts = M[:, is_gene]
     keep = counts.sum(1) >= a.min_counts
     counts = counts[keep]
     X = xenium.lognorm(counts)

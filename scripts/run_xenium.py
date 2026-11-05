@@ -77,7 +77,8 @@ def marker_lineage(X, genes, cluster):
 def tumour_states_by_reference(X, genes, cluster, lineage_of):
     """Invasive vs DCIS for malignant clusters, from the DCIS markers found in Rep1."""
     gi = {g: i for i, g in enumerate(genes)}
-    dcis = [gi[g] for g in ["CEACAM6", "SERPINA3", "TACSTD2"]]
+    # markers absent from a smaller panel are skipped (5K external cohort: SERPINA3 only, PRESPECIFIED_REVISION.md)
+    dcis = [gi[g] for g in ["CEACAM6", "SERPINA3", "TACSTD2"] if g in gi]
     mal = [c for c, l in lineage_of.items() if l == 0]
     score = {c: X[cluster == c][:, dcis].mean() for c in mal}
     thr = np.median(list(score.values()))
