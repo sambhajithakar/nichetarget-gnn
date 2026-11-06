@@ -1,0 +1,26 @@
+[malignant_specific] DE: n=6 overlap median=18.5 (expected 4.0); above expectation 6/6 sign p=0.016; spearman median=0.492, >0 in 6/6 p=0.016
+[malignant_specific] DE-niche: n=6 overlap median=6.5 (expected 4.0); above expectation 6/6 sign p=0.016; spearman median=0.166, >0 in 6/6 p=0.016
+[malignant_specific] GNN: n=6 overlap median=5.0 (expected 4.0); above expectation 5/6 sign p=0.109; spearman median=-0.007, >0 in 3/6 p=0.656
+[malignant_specific] LR-niche: n=6 overlap median=22.0 (expected 4.0); above expectation 6/6 sign p=0.016; spearman median=0.877, >0 in 6/6 p=0.016
+[malignant_specific] NbrCorr-niche: n=6 overlap median=4.5 (expected 4.0); above expectation 3/6 sign p=0.656; spearman median=0.023, >0 in 3/6 p=0.656
+[de] DE: n=6 overlap median=4.5 (expected 4.1); above expectation 3/6 sign p=0.656; spearman median=0.076, >0 in 3/6 p=0.656
+[de] DE-niche: n=6 overlap median=7.0 (expected 4.1); above expectation 5/6 sign p=0.109; spearman median=0.105, >0 in 6/6 p=0.016
+[de] GNN: n=6 overlap median=3.5 (expected 4.1); above expectation 1/6 sign p=0.984; spearman median=-0.041, >0 in 2/6 p=0.891
+[de] LR-niche: n=6 overlap median=23.0 (expected 4.1); above expectation 6/6 sign p=0.016; spearman median=0.944, >0 in 6/6 p=0.016
+[de] NbrCorr-niche: n=6 overlap median=5.0 (expected 4.1); above expectation 3/6 sign p=0.656; spearman median=-0.038, >0 in 1/6 p=0.984
+H2 DE vs_disc_top25_overlap: n=6 median diff=13.500 improved in 6/6; Wilcoxon one-sided p=0.016
+H2 DE vs_disc_spearman: n=6 median diff=0.414 improved in 6/6; Wilcoxon one-sided p=0.016
+H2 DE-niche vs_disc_top25_overlap: n=6 median diff=0.500 improved in 3/6; Wilcoxon one-sided p=0.250
+H2 DE-niche vs_disc_spearman: n=6 median diff=0.048 improved in 5/6; Wilcoxon one-sided p=0.078
+H2 GNN vs_disc_top25_overlap: n=6 median diff=1.500 improved in 5/6; Wilcoxon one-sided p=0.031
+H2 GNN vs_disc_spearman: n=6 median diff=0.002 improved in 3/6; Wilcoxon one-sided p=0.500
+H2 LR-niche vs_disc_top25_overlap: n=6 median diff=0.500 improved in 3/6; Wilcoxon one-sided p=0.719
+H2 LR-niche vs_disc_spearman: n=6 median diff=0.001 improved in 3/6; Wilcoxon one-sided p=0.656
+H2 NbrCorr-niche vs_disc_top25_overlap: n=6 median diff=0.000 improved in 3/6; Wilcoxon one-sided p=0.641
+H2 NbrCorr-niche vs_disc_spearman: n=6 median diff=0.092 improved in 5/6; Wilcoxon one-sided p=0.031
+H3 new tumours: n=6 spearman(purity, GNN overlap)=-0.030 p=0.955
+H3 pooled (17 + new): n=25 spearman=0.699 p=0.0001
+H3 new tumours gated purity>=0.5: n=5 median GNN overlap=3.0
+H3 new tumours flagged purity<0.5: n=1 median GNN overlap=4.0
+H4 [malignant_specific] seeds [1, 2, 3]: top-25 overlap [20, 21, 21], Jaccard [0.667, 0.724, 0.724]
+H4 [de] seeds [1, 2, 3]: top-25 overlap [19, 20, 21], Jaccard [0.613, 0.667, 0.724]

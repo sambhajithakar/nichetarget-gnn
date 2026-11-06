@@ -1,0 +1,99 @@
+{"n_cells": 246823, "n_genes": 180, "n_target": 10093, "n_reference": 80010, "target_clusters": [13], "reference_clusters": [2, 9], "lineage_of_cluster": {"0": "macrophage", "1": "B cell", "2": "malignant", "3": "fibroblast", "4": "T cell", "5": "T cell", "6": "endothelial", "7": "mast cell", "8": "T cell", "9": "malignant", "10": "macrophage", "11": "macrophage", "12": "perivascular", "13": "malignant", "14": "macrophage", "15": "plasma cell", "16": "myoepithelial", "17": "endothelial", "18": "T cell", "19": "fibroblast"}, "lineage_counts": {"malignant": 90103, "myoepithelial": 16624, "fibroblast": 74974, "perivascular": 5479, "endothelial": 14267, "macrophage": 22879, "T cell": 15881, "B cell": 1616, "plasma cell": 1818, "mast cell": 3182, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "SCD", "SQLE", "RTKN2", "EIF4EBP1", "HMGA1", "MDM2", "EPCAM", "CCDC6", "SRPK1", "LYZ", "SDC4", "CXCR4"], "readout_rule": "de", "readout_de": [0.6059926152229309, 0.3873405158519745, 0.35857993364334106, 0.27275508642196655, 0.17222899198532104, 0.09748877584934235, 0.07398928701877594, 0.06272333860397339, 0.041123807430267334, 0.02990075945854187, 0.02947045862674713, 0.029456153512001038, 0.016610974445939064, 0.016572222113609314, 0.01488950103521347], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.16           0.59        0.11          0.01         0.04        0.04    0.04    0.01         0.01       0.00                   0.0
+1       0.46           0.02        0.31          0.02         0.05        0.08    0.05    0.00         0.01       0.01                   0.0
+2       0.77           0.02        0.11          0.01         0.02        0.04    0.02    0.00         0.00       0.00                   0.0
+3       0.13           0.01        0.60          0.03         0.06        0.09    0.05    0.00         0.01       0.02                   0.0
+4       0.08           0.02        0.24          0.05         0.15        0.22    0.18    0.03         0.01       0.02                   0.0
+baselines done 22.99341344833374
+epoch    0 loss 0.1263
+epoch   25 loss 0.0683
+epoch   50 loss 0.0581
+epoch   75 loss 0.0605
+epoch  100 loss 0.0565
+epoch  125 loss 0.0560
+epoch  150 loss 0.0574
+epoch  175 loss 0.0565
+epoch  200 loss 0.0537
+epoch  225 loss 0.0582
+epoch  250 loss 0.0575
+epoch  275 loss 0.0532
+epoch  300 loss 0.0550
+epoch  325 loss 0.0566
+epoch  350 loss 0.0535
+epoch  375 loss 0.0558
+epoch  400 loss 0.0553
+epoch  425 loss 0.0533
+epoch  450 loss 0.0511
+epoch  475 loss 0.0524
+epoch  499 loss 0.0548
+model 0 trained in 526s
+{"n_cells": 246823, "n_genes": 180, "n_target": 10093, "n_reference": 80010, "target_clusters": [13], "reference_clusters": [2, 9], "lineage_of_cluster": {"0": "macrophage", "1": "B cell", "2": "malignant", "3": "fibroblast", "4": "T cell", "5": "T cell", "6": "endothelial", "7": "mast cell", "8": "T cell", "9": "malignant", "10": "macrophage", "11": "macrophage", "12": "perivascular", "13": "malignant", "14": "macrophage", "15": "plasma cell", "16": "myoepithelial", "17": "endothelial", "18": "T cell", "19": "fibroblast"}, "lineage_counts": {"malignant": 90103, "myoepithelial": 16624, "fibroblast": 74974, "perivascular": 5479, "endothelial": 14267, "macrophage": 22879, "T cell": 15881, "B cell": 1616, "plasma cell": 1818, "mast cell": 3182, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "SCD", "SQLE", "RTKN2", "EIF4EBP1", "HMGA1", "MDM2", "EPCAM", "CCDC6", "SRPK1", "LYZ", "SDC4", "CXCR4"], "readout_rule": "de", "readout_de": [0.6059926152229309, 0.3873405158519745, 0.35857993364334106, 0.27275508642196655, 0.17222899198532104, 0.09748877584934235, 0.07398928701877594, 0.06272333860397339, 0.041123807430267334, 0.02990075945854187, 0.02947045862674713, 0.029456153512001038, 0.016610974445939064, 0.016572222113609314, 0.01488950103521347], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.16           0.59        0.11          0.01         0.04        0.04    0.04    0.01         0.01       0.00                   0.0
+1       0.46           0.02        0.31          0.02         0.05        0.08    0.05    0.00         0.01       0.01                   0.0
+2       0.77           0.02        0.11          0.01         0.02        0.04    0.02    0.00         0.00       0.00                   0.0
+3       0.13           0.01        0.60          0.03         0.06        0.09    0.05    0.00         0.01       0.02                   0.0
+4       0.08           0.02        0.24          0.05         0.15        0.22    0.18    0.03         0.01       0.02                   0.0
+baselines done 25.151690244674683
+model 0 loaded from results/revision/external/de/P17/model0_params.pkl
+{"n_cells": 246823, "n_genes": 180, "n_target": 10093, "n_reference": 80010, "target_clusters": [13], "reference_clusters": [2, 9], "lineage_of_cluster": {"0": "macrophage", "1": "B cell", "2": "malignant", "3": "fibroblast", "4": "T cell", "5": "T cell", "6": "endothelial", "7": "mast cell", "8": "T cell", "9": "malignant", "10": "macrophage", "11": "macrophage", "12": "perivascular", "13": "malignant", "14": "macrophage", "15": "plasma cell", "16": "myoepithelial", "17": "endothelial", "18": "T cell", "19": "fibroblast"}, "lineage_counts": {"malignant": 90103, "myoepithelial": 16624, "fibroblast": 74974, "perivascular": 5479, "endothelial": 14267, "macrophage": 22879, "T cell": 15881, "B cell": 1616, "plasma cell": 1818, "mast cell": 3182, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "SCD", "SQLE", "RTKN2", "EIF4EBP1", "HMGA1", "MDM2", "EPCAM", "CCDC6", "SRPK1", "LYZ", "SDC4", "CXCR4"], "readout_rule": "de", "readout_de": [0.6059926152229309, 0.3873405158519745, 0.35857993364334106, 0.27275508642196655, 0.17222899198532104, 0.09748877584934235, 0.07398928701877594, 0.06272333860397339, 0.041123807430267334, 0.02990075945854187, 0.02947045862674713, 0.029456153512001038, 0.016610974445939064, 0.016572222113609314, 0.01488950103521347], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.16           0.59        0.11          0.01         0.04        0.04    0.04    0.01         0.01       0.00                   0.0
+1       0.46           0.02        0.31          0.02         0.05        0.08    0.05    0.00         0.01       0.01                   0.0
+2       0.77           0.02        0.11          0.01         0.02        0.04    0.02    0.00         0.00       0.00                   0.0
+3       0.13           0.01        0.60          0.03         0.06        0.09    0.05    0.00         0.01       0.02                   0.0
+4       0.08           0.02        0.24          0.05         0.15        0.22    0.18    0.03         0.01       0.02                   0.0
+baselines done 22.719319343566895
+model 0 loaded from results/revision/external/de/P17/model0_params.pkl
+model 0 scanned in 3586s
+{"n_cells": 246823, "n_genes": 180, "n_target": 10093, "n_reference": 80010, "target_clusters": [13], "reference_clusters": [2, 9], "lineage_of_cluster": {"0": "macrophage", "1": "B cell", "2": "malignant", "3": "fibroblast", "4": "T cell", "5": "T cell", "6": "endothelial", "7": "mast cell", "8": "T cell", "9": "malignant", "10": "macrophage", "11": "macrophage", "12": "perivascular", "13": "malignant", "14": "macrophage", "15": "plasma cell", "16": "myoepithelial", "17": "endothelial", "18": "T cell", "19": "fibroblast"}, "lineage_counts": {"malignant": 90103, "myoepithelial": 16624, "fibroblast": 74974, "perivascular": 5479, "endothelial": 14267, "macrophage": 22879, "T cell": 15881, "B cell": 1616, "plasma cell": 1818, "mast cell": 3182, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "SCD", "SQLE", "RTKN2", "EIF4EBP1", "HMGA1", "MDM2", "EPCAM", "CCDC6", "SRPK1", "LYZ", "SDC4", "CXCR4"], "readout_rule": "de", "readout_de": [0.6059926152229309, 0.3873405158519745, 0.35857993364334106, 0.27275508642196655, 0.17222899198532104, 0.09748877584934235, 0.07398928701877594, 0.06272333860397339, 0.041123807430267334, 0.02990075945854187, 0.02947045862674713, 0.029456153512001038, 0.016610974445939064, 0.016572222113609314, 0.01488950103521347], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.16           0.59        0.11          0.01         0.04        0.04    0.04    0.01         0.01       0.00                   0.0
+1       0.46           0.02        0.31          0.02         0.05        0.08    0.05    0.00         0.01       0.01                   0.0
+2       0.77           0.02        0.11          0.01         0.02        0.04    0.02    0.00         0.00       0.00                   0.0
+3       0.13           0.01        0.60          0.03         0.06        0.09    0.05    0.00         0.01       0.02                   0.0
+4       0.08           0.02        0.24          0.05         0.15        0.22    0.18    0.03         0.01       0.02                   0.0
+baselines done 38.951757192611694
+model 0 loaded from results/revision/external/de/P17/model0_params.pkl
+model 0 scanned in 4348s
+{"n_cells": 246823, "n_genes": 180, "n_target": 10093, "n_reference": 80010, "target_clusters": [13], "reference_clusters": [2, 9], "lineage_of_cluster": {"0": "macrophage", "1": "B cell", "2": "malignant", "3": "fibroblast", "4": "T cell", "5": "T cell", "6": "endothelial", "7": "mast cell", "8": "T cell", "9": "malignant", "10": "macrophage", "11": "macrophage", "12": "perivascular", "13": "malignant", "14": "macrophage", "15": "plasma cell", "16": "myoepithelial", "17": "endothelial", "18": "T cell", "19": "fibroblast"}, "lineage_counts": {"malignant": 90103, "myoepithelial": 16624, "fibroblast": 74974, "perivascular": 5479, "endothelial": 14267, "macrophage": 22879, "T cell": 15881, "B cell": 1616, "plasma cell": 1818, "mast cell": 3182, "immune-stromal mixed": 0}, "readout": ["TOP2A", "CENPF", "MKI67", "SCD", "SQLE", "RTKN2", "EIF4EBP1", "HMGA1", "MDM2", "EPCAM", "CCDC6", "SRPK1", "LYZ", "SDC4", "CXCR4"], "readout_rule": "de", "readout_de": [0.6059926152229309, 0.3873405158519745, 0.35857993364334106, 0.27275508642196655, 0.17222899198532104, 0.09748877584934235, 0.07398928701877594, 0.06272333860397339, 0.041123807430267334, 0.02990075945854187, 0.02947045862674713, 0.029456153512001038, 0.016610974445939064, 0.016572222113609314, 0.01488950103521347], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.16           0.59        0.11          0.01         0.04        0.04    0.04    0.01         0.01       0.00                   0.0
+1       0.46           0.02        0.31          0.02         0.05        0.08    0.05    0.00         0.01       0.01                   0.0
+2       0.77           0.02        0.11          0.01         0.02        0.04    0.02    0.00         0.00       0.00                   0.0
+3       0.13           0.01        0.60          0.03         0.06        0.09    0.05    0.00         0.01       0.02                   0.0
+4       0.08           0.02        0.24          0.05         0.15        0.22    0.18    0.03         0.01       0.02                   0.0
+baselines done 34.7606737613678
+model 0 loaded from results/revision/external/de/P17/model0_params.pkl
+model 0 scanned in 4961s
+/home/user/nichetarget-gnn/scripts/run_xenium.py:312: RuntimeWarning: Mean of empty slice.
+  table[f"mean_expr_{LINEAGES[t].replace(' ', '_')}"] = X[cell_type == t].mean(0)
+/home/user/tools/mroot/envs/cmp/lib/python3.11/site-packages/numpy/_core/_methods.py:130: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+         gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+109      MMP2                                  0.945833                         0.030063                             0.025586
+28       CD68                                  0.943056                         0.116889                             0.009405
+123  PDCD1LG2                                  0.929167                         0.004771                             0.031496
+36       CD93                                  0.906944                         0.003343                             0.017770
+140    S100A8                                  0.890278                         0.002567                             0.009405
+65       FASN                                  0.720833                         1.000000                             0.000000
+61      ERBB2                                  0.718056                         0.876051                             0.000000
+49     CXCL12                                  0.715278                         0.000000                             0.161016
+102       LUM                                  0.712500                         0.109717                             0.000000
+134     PTPRC                                  0.709722                         0.000000                             0.062857
+27        CD4                                  0.709722                         0.000000                             0.062857
+0       ACTA2                                  0.709722                         0.103039                             0.000000
+107      MMP1                                  0.706944                         0.076786                             0.000000
+149    SLAMF7                                  0.704167                         0.051578                             0.000000
+40    CLEC14A                                  0.704167                         0.000000                             0.033351
+118     NCAM1                                  0.704167                         0.000000                             0.033351
+68     FCGR3A                                  0.701389                         0.034819                             0.000000
+45      CTLA4                                  0.698611                         0.000000                             0.032314
+32       CD80                                  0.698611                         0.000000                             0.032314
+16       CCL8                                  0.695833                         0.026560                             0.000000
+122     PDCD1                                  0.693056                         0.000000                             0.031496
+63       ESM1                                  0.693056                         0.024622                             0.000000
+101    LRRC15                                  0.690278                         0.013557                             0.000000
+34       CD86                                  0.688889                         0.000000                             0.028595
+3      ADIPOQ                                  0.687500                         0.013364                             0.000000

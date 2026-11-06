@@ -1,0 +1,57 @@
+{"n_cells": 164000, "n_genes": 180, "n_target": 37067, "n_reference": 28855, "target_clusters": [1, 7, 17, 18], "reference_clusters": [3, 12, 16, 19], "lineage_of_cluster": {"1": "malignant", "3": "malignant", "7": "malignant", "9": "malignant", "12": "malignant", "16": "malignant", "17": "malignant", "18": "malignant", "19": "malignant", "13": "myoepithelial", "2": "fibroblast", "11": "perivascular", "8": "endothelial", "4": "macrophage", "5": "T cell", "6": "T cell", "15": "B cell", "14": "plasma cell", "20": "mast cell", "10": "immune-stromal mixed"}, "lineage_counts": {"malignant": 69958, "myoepithelial": 5465, "fibroblast": 20256, "perivascular": 5725, "endothelial": 7250, "macrophage": 16083, "T cell": 23621, "B cell": 4677, "plasma cell": 4788, "mast cell": 400, "immune-stromal mixed": 5777}, "readout": ["FASN", "MDM2", "TCIM", "FOXA1", "TENT5C", "CENPF", "CXCR4", "AR", "EPCAM", "TOP2A", "POSTN", "CTTN", "HMGA1", "TRAF4", "LUM"], "readout_rule": "de", "readout_de": [0.504448413848877, 0.3888680934906006, 0.37796998023986816, 0.3566073179244995, 0.31166738271713257, 0.2363339215517044, 0.22849833965301514, 0.22320041060447693, 0.21250319480895996, 0.20423254370689392, 0.2001437097787857, 0.19029855728149414, 0.18983852863311768, 0.18662986159324646, 0.15734350681304932], "n_lr_pairs_in_panel": 23, "lr_pairs_used": 23, "hidden_lr": []}
+   malignant  myoepithelial  fibroblast  perivascular  endothelial  macrophage  T cell  B cell  plasma cell  mast cell  immune-stromal mixed
+0       0.93           0.01        0.01          0.01         0.01        0.02    0.01    0.00         0.00       0.00                  0.00
+1       0.04           0.03        0.16          0.08         0.12        0.19    0.17    0.05         0.08       0.01                  0.07
+2       0.02           0.00        0.05          0.02         0.04        0.12    0.57    0.11         0.04       0.00                  0.05
+3       0.02           0.02        0.55          0.04         0.04        0.15    0.06    0.02         0.05       0.01                  0.06
+4       0.50           0.12        0.08          0.05         0.05        0.09    0.07    0.00         0.01       0.00                  0.02
+baselines done 24.337223291397095
+epoch    0 loss 0.9010
+epoch   25 loss 0.2324
+epoch   50 loss 0.2079
+epoch   75 loss 0.2188
+epoch  100 loss 0.2073
+epoch  125 loss 0.1893
+epoch  150 loss 0.2277
+epoch  175 loss 0.1989
+epoch  200 loss 0.1875
+epoch  225 loss 0.1868
+epoch  250 loss 0.1962
+epoch  275 loss 0.2021
+epoch  300 loss 0.1771
+epoch  325 loss 0.1785
+epoch  350 loss 0.1837
+epoch  375 loss 0.1930
+epoch  400 loss 0.1752
+epoch  425 loss 0.2026
+epoch  450 loss 0.1905
+epoch  475 loss 0.1805
+epoch  499 loss 0.1790
+model 0 trained in 838s
+model 0 scanned in 457s
+         gene  Hybrid (GNN ensemble + LR-communication)  NicheTarget-GNN (ensemble of 1)  LR-communication (niche-stratified)
+40    CLEC14A                                  0.912500                         0.066879                             0.257736
+109      MMP2                                  0.912500                         0.071453                             0.252024
+49     CXCL12                                  0.787500                         0.000451                             0.412771
+29       CD69                                  0.780556                         0.004190                             0.118557
+22      CD247                                  0.775000                         0.003242                             0.091791
+17      CCND1                                  0.719444                         1.000000                             0.000000
+74      GATA3                                  0.716667                         0.614392                             0.000000
+95       KRT8                                  0.713889                         0.584917                             0.000000
+14      CCDC6                                  0.711111                         0.583397                             0.000000
+105     MKI67                                  0.708333                         0.466756                             0.000000
+106      MLPH                                  0.705556                         0.456974                             0.000000
+116     MYO5B                                  0.702778                         0.391291                             0.000000
+1       ADAM9                                  0.700000                         0.389109                             0.000000
+141       SCD                                  0.697222                         0.385085                             0.000000
+173    TUBA4A                                  0.694444                         0.279458                             0.000000
+155      SQLE                                  0.691667                         0.257731                             0.000000
+7    ANKRD30A                                  0.688889                         0.253151                             0.000000
+136      RHOH                                  0.686111                         0.218523                             0.000000
+172     TRIB1                                  0.683333                         0.178600                             0.000000
+156     SRPK1                                  0.680556                         0.154361                             0.000000
+177      WARS                                  0.677778                         0.153451                             0.000000
+138     RTKN2                                  0.675000                         0.151641                             0.000000
+89       KLF5                                  0.672222                         0.122478                             0.000000
+55        DST                                  0.669444                         0.122175                             0.000000
+62       ERN1                                  0.666667                         0.089811                             0.000000
