@@ -282,11 +282,12 @@ def main():
     model0 = NM.NicheTargetGNN(len(genes), len(LINEAGES), len(g.lr_idx), seed=0)
     model0.load(pickle.load(open(os.path.join(a.out, "model0_params.pkl"), "rb")))
     pred = np.zeros((len(cells), len(readout_idx)), np.float32)
-    for i in range(0, len(cells), 8000):          # chunked to bound memory
-        cc = cells[i:i + 8000]
+    step = a.scan_chunk or 8000                   # chunked to bound memory
+    for i in range(0, len(cells), step):
+        cc = cells[i:i + step]
         nd = NG.hops(g, cc, n_layers)
         sgc = NG.subgraph(g, nd)
-        pred[i:i + 8000] = model0.predict(NM.make_input(sgc.x, sgc.readout_idx), sgc)[np.searchsorted(nd, cc)][:, readout_idx]
+        pred[i:i + step] = model0.predict(NM.make_input(sgc.x, sgc.readout_idx), sgc)[np.searchsorted(nd, cc)][:, readout_idx]
     yt = X[cells][:, readout_idx]
     info["readout_R2_model0"] = float(1 - ((yt - pred) ** 2).sum() / ((yt - yt.mean(0)) ** 2).sum())
 
