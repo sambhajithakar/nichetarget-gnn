@@ -1,4 +1,4 @@
-"""Figure 7: pre-registered external validation on six GSE350571 tumours (results/revision).
+"""Figure 7 (tie-aware, corrected 7 Nov 2026): pre-registered external validation on six GSE350571 tumours (results/revision).
 
     python scripts/make_fig_revision.py --root results/revision --out figures/Figure_7
 """
@@ -27,7 +27,14 @@ def main():
     ap.add_argument("--root", default="results/revision")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
-    d = pd.read_csv(os.path.join(a.root, "summary", "external_per_tumour.csv"))
+    # tie-aware overlaps (scripts/audit_ties.py); DE under the contamination-aware rule is the unmasked DE
+    parts = []
+    for r in ["de", "malignant_specific"]:
+        t = pd.read_csv(os.path.join(a.root, "tie_audit", f"external_{r}.csv"))
+        if r == "malignant_specific":
+            t = t[t.method != "DE"].replace({"method": {"DE-unmasked": "DE"}})
+        parts.append(t.assign(rule=r))
+    d = pd.concat(parts).rename(columns={"overlap_tie_aware": "vs_disc_top25_overlap"})
     plt.rcParams.update({"font.family": "Arial", "font.size": 8, "axes.spines.top": False, "axes.spines.right": False})
     fig, ax = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw={"width_ratios": [2.2, 1]})
     exp = (25 * 25 / d.n_common).median()
