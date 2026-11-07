@@ -9,6 +9,52 @@ GSE350571 tumours (2 rules, seed 1). All six tumours passed the pre-specified qu
 Comparator: Rep1-G180 with the same read-out rule, seed 1. Top-25 overlap expected by chance about 4/25
 (155 shared candidates on average).
 
+
+## CORRECTION (7 Nov 2026): the headline below was wrong
+
+While preparing the manuscript we found two artefacts in the top-25 overlap used for H1, H2 and the baselines.
+Audit: `scripts/audit_ties.py`, tables in `tie_audit/`.
+
+1. **Masked DE baseline.** With `--readout-rule malignant_specific`, `run_xenium.py` stored the read-out selection
+   vector, in which every gene that is not malignant-specific was set to minus infinity, as the "DE" baseline. The
+   DE baseline therefore ranked only the malignant-specific genes (about 15-20 of 165 candidates here), and the
+   rest of its top 25 was filled in alphabetical order, the same in every tumour. The reported improvement of DE
+   from 4.5 to 18.5 of 25 is an artefact. DE does not depend on the read-out; recomputed without the mask it
+   shares a median of 4.5 of 25 with discovery under both rules (chance about 4). The code is fixed (the DE
+   baseline is never masked).
+2. **Ties.** `top()` broke ties by input (alphabetical) order. With 180 genes, LR-communication gives the same
+   zero score to most candidates, and the GNN gives zero to some, so tied genes entered the top 25 in the same
+   order everywhere. With ties broken at random (1,000 draws), LR-communication drops from 23 to 18.4 (default)
+   and from 22 to 19.3 (contamination-aware), and the GNN from 5 to 4.0.
+
+Corrected results (median over six tumours, tie-aware top-25 overlap; chance about 4.0):
+
+| Method | Default read-out | Contamination-aware read-out |
+|---|---|---|
+| DE (unmasked) | 4.5 | 4.5 |
+| DE (niche-stratified) | 7.0 | 6.5 |
+| NicheTarget-GNN | 3.7 | 4.0 (above chance in 3/6) |
+| Neighbourhood correlation (niche) | 5.0 | 4.5 |
+| LR-communication (niche) | 18.4 | 19.3 |
+
+- **H1 not supported.** Under the contamination-aware read-out the GNN overlap equals chance (above chance in
+  3 of 6 tumours).
+- **H2 not supported.** GNN paired change median +1, Wilcoxon one-sided p = 0.063; no baseline improved.
+- H3 and H4 are unaffected (H4 stands: GNN seed overlap 19-21 of 25 in discovery).
+- The 17-donor analyses were re-audited with the same script: no tie problem (every method has at least 25
+  distinct scores), so the pre-specified result (GNN 1 of 25) and the post hoc GNN gain to 7 of 25 stand. The
+  post hoc "DE 11 of 25" was the same masked baseline (it ranked only about 55 malignant-specific genes);
+  unmasked DE shares 4 of 25. Any text saying the malignant-specific read-out made DE more reproducible is wrong.
+
+Conclusion after correction: the post hoc GNN gain seen in the 17 donors (1 to 7 of 25) did not replicate in six
+unseen tumours on a different panel restricted to 180 genes. The contamination-aware read-out is not shown to
+improve cross-patient reproducibility of any method. The only reproducible ranking is LR-communication, whose
+scores are driven by the curated ligand-receptor list.
+
+---
+
+# Original write-up of 6 Nov 2026 (SUPERSEDED by the correction above; kept unchanged for the record)
+
 ## Headline
 
 1. **The contamination-aware read-out made spatial target ranking reproducible across patients.** With the

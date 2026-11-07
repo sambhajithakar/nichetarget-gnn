@@ -217,6 +217,7 @@ def main():
     malignant_states[mal_cells] = True
 
     de = NB.de_score(X, target_cells, ref_cells)
+    de_baseline = de.copy()   # the DE baseline is never masked (fix 7 Nov 2026; see scripts/audit_ties.py)
     if a.readout_rule == "malignant_specific":
         # excludes stromal/immune genes that spill into tumour cells at tissue boundaries
         lin_mean = np.stack([X[cell_type == t].mean(0) for t in range(len(LINEAGES) - 1) if (cell_type == t).any()])
@@ -258,7 +259,7 @@ def main():
     # ---- baselines ------------------------------------------------------------
     scores = {}
     tb = time.time()
-    scores["DE"] = de
+    scores["DE"] = de_baseline
     scores["DE (niche-stratified)"] = NB.de_niche_max(X, target_cells, ref_cells, niche)
     scores["NeighbourhoodCorr"] = NB.neighbourhood_correlation(X, nbr, malignant_states, programme)
     scores["NeighbourhoodCorr (niche-stratified)"] = NB.niche_stratified(
