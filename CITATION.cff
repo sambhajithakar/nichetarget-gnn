@@ -1,8 +1,8 @@
-cff-version: 1.2.0
+cff-version: 1.3.0
 message: "If you use this software, please cite it as below."
-title: "NicheTarget-GNN: niche-conditioned graph neural network for spatial target ranking, with a cross-patient reproducibility study"
-version: 1.2.0
-date-released: 2026-10-31
+title: "NicheTarget-GNN: code and results for a two-stage pre-specified cross-patient evaluation of spatial target rankings in breast cancer"
+version: 1.3.0
+date-released: 2026-11-09
 license: MIT
 repository-code: "https://github.com/sambhajithakar/nichetarget-gnn"
 authors:
@@ -14,4 +14,4 @@ authors:
     given-names: Pradnya Namdev
     orcid: "https://orcid.org/0000-0001-6593-825X"
     affiliation: "Aditya BioNova Analytics, Haroli, Kolhapur, Maharashtra, India"
-keywords: [graph neural network, spatial transcriptomics, tumor microenvironment, drug target discovery, counterfactual perturbation]
+keywords: [graph neural network, spatial transcriptomics, breast cancer, target ranking, cross-patient reproducibility, pre-specified evaluation]

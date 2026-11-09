@@ -1,12 +1,29 @@
 {
-  "title": "NicheTarget-GNN: niche-aware graph neural networks with counterfactual perturbation for cell-state-specific target discovery in the tumor microenvironment",
+  "title": "NicheTarget-GNN v1.3.0: code and results for a two-stage pre-specified cross-patient evaluation of spatial target rankings",
   "upload_type": "software",
-  "description": "Code, simulator, analysis scripts and raw outputs for the manuscript 'Niche-Aware Heterogeneous Graph Neural Networks with Counterfactual Perturbation for Discovering Cell-State-Specific Druggable Targets in the Tumor Microenvironment' (Computers in Biology and Medicine, submitted). Includes the simulation benchmark, the Xenium breast cancer and Perturb-map analyses, and per-gene scores for every method.",
+  "description": "Code, analysis scripts and raw outputs for the manuscript 'Do Artificial Intelligence-Driven Spatial Target Rankings Hold Across Cancer Patients? A Two-Stage Pre-Specified Evaluation of a Graph Neural Network in Breast Cancer' (Thakar and Ghorpade; submitted to Computer Methods and Programs in Biomedicine). Includes the original single-tumour NicheTarget-GNN analyses, the pre-specified 17-donor replication (results/replication/), the post hoc read-out sensitivity analysis (results/replication_sensitivity/), and the stage-2 evaluation in six unseen tumours with its public pre-specified plan (results/revision/, plan in PRESPECIFIED_REVISION.md).",
   "creators": [
-    {"name": "Thakar, Sambhaji Balaso", "affiliation": "Aditya BioNova Analytics, Pune, India", "orcid": "0000-0002-0423-2015"},
-    {"name": "Ghorpade, Pradnya Namdev", "affiliation": "Aditya BioNova Analytics, Pune, India", "orcid": "0000-0001-6593-825X"}
+    {
+      "name": "Thakar, Sambhaji Balaso",
+      "affiliation": "Aditya BioNova Analytics, Haroli, Kolhapur, Maharashtra, India",
+      "orcid": "0000-0002-0423-2015"
+    },
+    {
+      "name": "Ghorpade, Pradnya Namdev",
+      "affiliation": "Aditya BioNova Analytics, Haroli, Kolhapur, Maharashtra, India",
+      "orcid": "0000-0001-6593-825X"
+    }
   ],
   "license": "MIT",
-  "keywords": ["graph neural network", "spatial transcriptomics", "tumor microenvironment", "drug target discovery", "counterfactual perturbation"],
-  "access_right": "open"
+  "keywords": [
+    "graph neural network",
+    "spatial transcriptomics",
+    "breast cancer",
+    "target ranking",
+    "cross-patient reproducibility",
+    "pre-specified evaluation",
+    "negative result"
+  ],
+  "access_right": "open",
+  "version": "1.3.0"
 }

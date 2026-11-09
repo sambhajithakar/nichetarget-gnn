@@ -1,8 +1,8 @@
 # NicheTarget-GNN
 
-Code and data outputs for the manuscript *Artificial Intelligence-Driven Identification of Niche-Specific Therapeutic Targets in Cancer Using Graph Neural Networks and Spatial Transcriptomics: A Cross-Patient Reproducibility Study* (Thakar and Ghorpade; manuscript under review). License: MIT. Please cite the archived release (see `CITATION.cff`; Zenodo concept DOI [10.5281/zenodo.23349189](https://doi.org/10.5281/zenodo.23349189), which always resolves to the latest version).
+Code and data outputs for the manuscript *Do Artificial Intelligence-Driven Spatial Target Rankings Hold Across Cancer Patients? A Two-Stage Pre-Specified Evaluation of a Graph Neural Network in Breast Cancer* (Thakar and Ghorpade; manuscript under review). License: MIT. Please cite the archived release (see `CITATION.cff`; Zenodo concept DOI [10.5281/zenodo.23349189](https://doi.org/10.5281/zenodo.23349189), which always resolves to the latest version).
 
-Releases: v1.0.0 and v1.1.0 accompanied an earlier single-tumour version of the manuscript. v1.2.0 (current) adds the pre-specified cross-patient replication in 17 breast cancer donors (`results/replication/`, plan in `results/replication/PRESPECIFIED.md`) and the post hoc read-out sensitivity analysis (`results/replication_sensitivity/`).
+Releases: v1.0.0 and v1.1.0 accompanied an earlier single-tumour version of the manuscript. v1.2.0 adds the pre-specified cross-patient replication in 17 breast cancer donors (`results/replication/`, plan in `results/replication/PRESPECIFIED.md`) and the post hoc read-out sensitivity analysis (`results/replication_sensitivity/`). v1.3.0 (current) adds the stage-2 evaluation in six unseen tumours, whose plan was made public before the expression data were downloaded (`results/revision/`, plan in `results/revision/PRESPECIFIED_REVISION.md`).
 
 Niche-aware graph neural network with counterfactual target inhibition for ranking cell-state-specific, selective drug targets from spatial transcriptomics.
 
